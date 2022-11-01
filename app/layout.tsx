@@ -30,14 +30,32 @@ export default function RootLayout({
         <title>JavaZone 2023</title>
       </head>
       <body>
+        <header>Her kommer en navigasjonsbar</header>
         {children}
         <footer>
+          <a href="https://java.no" target="_blank" rel="noopener noreferrer">
+            Laget av JavaBin
+          </a>
+          <a href="https://java.no/principles" target="_blank" rel="noopener noreferrer">
+            Code of Conduct
+          </a>
+          <a href="mailto:javazone@java.no">Mail</a>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://facebook.com/javazoneconference"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Laget av JavaBin
+            Facebook
+          </a>
+          <a href="https://twitter.com/javazone" target="_blank" rel="noopener noreferrer">
+            Twitter
+          </a>
+          <a
+            href="https://www.linkedin.com/company/javazone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
         </footer>
       </body>
