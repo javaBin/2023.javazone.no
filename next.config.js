@@ -4,7 +4,8 @@ const ContentSecurityPolicy = `
   style-src 'self';
   font-src 'self';
   base-uri 'self';
-  form-action 'self'
+  img-src 'self';
+  form-action 'self';
   frame-ancestors 'none';
 `
 
