@@ -1,14 +1,3 @@
-const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self';
-  style-src 'self';
-  font-src 'self';
-  base-uri 'self';
-  img-src 'self';
-  form-action 'self';
-  frame-ancestors 'none';
-`
-
 const headers = [
   {
     key: 'Strict-Transport-Security',
@@ -33,14 +22,8 @@ const headers = [
   {
     key: 'X-DNS-Prefetch-Control',
     value: 'on',
-  },
-  {
-    key: 'Content-Security-Policy',
-    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
-  },
+  }
 ]
-
-const productionOnlyHeaders = [""]
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -54,10 +37,7 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        headers: headers.filter((header) => {
-          if (productionOnlyHeaders.includes(header.key)) return process.env.NODE_ENV === 'production'
-          return true
-        }),
+        headers
       },
     ]
   },
