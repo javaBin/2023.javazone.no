@@ -1,0 +1,10 @@
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background-color: var(--banner_bakgrunn);
+  padding: 1rem 2rem;
+}
