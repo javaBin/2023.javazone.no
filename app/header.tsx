@@ -1,9 +1,17 @@
+import Link from 'next/link'
 import styles from './layout.module.css'
 
 export function Header() {
   return (
-    <header className={styles.header}>
-      <p>JavaZone 2023 - JavaBin</p>
-    </header>
+    <nav className={styles.navigation}>
+      <ul className={styles['navigation-links']}>
+        <li>
+          <Link href="/">JavaZone 2023 - JavaBin</Link>
+        </li>
+        <li>
+          <Link href="/partners">Partners</Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
