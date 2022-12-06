@@ -12,5 +12,5 @@ body {
 
 * {
   box-sizing: border-box;
-  --banner_bakgrunn: rgba(255, 255, 255, 0.50);
+  --banner_bakgrunn: #191919;
 }
