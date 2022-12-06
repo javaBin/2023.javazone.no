@@ -9,7 +9,7 @@ body {
 
 * {
   box-sizing: border-box;
-  --banner_bakgrunn: rgba(255, 255, 255, 0.15);
+  --banner_bakgrunn: rgba(255, 255, 255, 0.50);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,14 +1,21 @@
 .footer {
-  background-color: var(--banner_bakgrunn);
   min-height: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   align-items: center;
   justify-items: center;
   display: grid;
-  color: white;
+  color: black;
+  background-color: lightgrey;
 }
 
 .footer a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    color: white;
+    background-color: var(--banner_bakgrunn);
+  }
 }
