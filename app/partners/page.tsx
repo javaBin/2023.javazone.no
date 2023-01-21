@@ -31,7 +31,6 @@ export default function Partners() {
             <StandardPackage />
             <DonutStand />
             <h2>Possible expansions</h2>
-            <ExtendedPackage />
             <ConceptStand />
             <RestaurantStand />
             <h2>Partner tickets</h2>
@@ -144,14 +143,6 @@ const DonutStand = () => (
   </PartnerCard>
 )
 
-const ExtendedPackage = () => (
-  <PartnerCard title="Extended Package" price={{ value: 48000, additional: true }}>
-    <ul>
-      <li>Location outside the main hall in the “Donut” which runs around the hall</li>
-      <li>Greater opportunity for a bit more freedom with decorations</li>
-    </ul>
-  </PartnerCard>
-)
 
 const ConceptStand = () => (
   <PartnerCard title="Concept Stand" price={{ value: 72000, additional: true }}>
