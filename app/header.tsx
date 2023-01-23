@@ -11,9 +11,9 @@ export function Header() {
         <li>
           <Link href="/partners">Partners</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/speakers">Speakers</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )
