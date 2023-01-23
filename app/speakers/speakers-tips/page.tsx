@@ -4,7 +4,7 @@ export default function SpeakersTipsPage() {
     return (
         <main className={mainstyles.main}>
             <div style={{ width: '75%' }}>
-                <h1>Tips And Tricks for Speakers</h1>
+                <h1>Submission tips for speakers</h1>
                 <div>
                     <h2>Increase the chance of your talk being accepted</h2>
                     <p>

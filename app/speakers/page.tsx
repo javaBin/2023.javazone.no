@@ -59,7 +59,7 @@ export default function SpeakersPage() {
                         JavaZone is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
                     </p>
                 </div>
-                <div><h2>Formats and Durations</h2>
+                <div><h2>Formats and durations</h2>
                     <p>
                         You should think about which format your talk will work best in. Are you presenting a new idea, or do you require more time to elaborate on your subject? How hands-on do you want to be? We have three formats you can present your material in.
                     </p>
@@ -74,15 +74,15 @@ export default function SpeakersPage() {
                     </TalkTypeCard>
                 </div>
 
-                <div><h2>Audience and Topics</h2>
+                <div><h2>Audience and topics</h2>
                     <p>
                         JavaZone is a conference for developers and technical architects, with an emphasis on technical talks. However, we are open to talks about other areas, including methodology, project management, and other topics related to programming.
                     </p>
                     <p>
-                        Despite our conference's name, we do not limit our content to Java technology. We will consider all talks based on their relevance to developers and technical architects. We do however set a focus on technology surrounding the JVM when selecting talks.
+                        Despite our conference name, we do not limit our content to Java technology. We will consider all talks based on their relevance to developers and technical architects. We do however set a focus on technology surrounding the JVM when selecting talks.
                     </p>
                 </div>
-                <div><h2>Ongoing Evaluation of Talks</h2>
+                <div><h2>Ongoing evaluation of talks</h2>
                     <p>
                         Each year we receive hundreds of submissions and we consider each submission as it arrives. Due to a large number of submissions, we can not guarantee that you will hear from us immediately. We do however answer all submissions and will do so no later than end of June.
                     </p>
@@ -99,7 +99,7 @@ export default function SpeakersPage() {
                     <p>
                         As a JavaZone speaker, you get free admission to the conference. Additionally, you are also invited to the speakers' dinner, held on September 6th.
                     </p>
-                    <h3>Coverage of Expenses</h3>
+                    <h3>Coverage of expenses</h3>
                     <p>
                         Please see our <a href='/speakers/monetary-policy'>reimbursement policy</a> if you have any questions regarding coverage of other expenses.
                     </p>
