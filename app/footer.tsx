@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <a href="https://java.no" target="_blank" rel="noopener noreferrer">
-        Laget av JavaBin
+        About JavaBin
       </a>
       <a href="https://java.no/principles" target="_blank" rel="noopener noreferrer">
         Code of Conduct
