@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 
-import '../styles/globals.css'
-import styles from './layout.module.css'
+import '../styles/globals.scss'
 import { Footer } from './footer'
 import { Header } from './header'
 
@@ -26,12 +25,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:site_name" content="javazone.no" />
         <title>JavaZone 2023</title>
       </head>
-      <body>
-        <div className={styles.container}>
-          <Header />
-          {children}
-          <Footer />
+      <body className="has-navbar-fixed-top">
+
+      <Header />
+        <div className="hero is-fullheight">
+          <div className="hero-body">
+            <div className="container is-max-desktop">
+              {children}
+            </div>
+          </div>
+          <div className="hero-foot">
+            <Footer />
+          </div>
         </div>
+
       </body>
     </html>
   )

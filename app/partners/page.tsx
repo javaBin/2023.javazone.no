@@ -4,8 +4,7 @@ import mainstyles from '../page.module.css'
 export default function Partners() {
   return (
     <main className={mainstyles.main}>
-      <div style={{ width: '75%' }}>
-        <section>
+        <section className="content is-normal">
           <h2>Partner information</h2>
           <p>
             Even though all partners are considered equal, there are a few options to choose from.
@@ -18,15 +17,14 @@ export default function Partners() {
             contact your organisation to confirm your choices. After the initial draw, the remaining
             available packages will be allocated on a first-come, first-served basis.
           </p>
-          <a
-            href="https://docs.google.com/forms/d/1faOABDDGZ-w1pzeorrXO_qzw6rLG7keKFpMhEMtrq9o"
-            style={{ fontWeight: 'bold', fontSize: '2rem' }}
-          >
-            Link to registration form
-          </a>
+          <h3 className="has-text-weight-bold">
+            <a href="https://docs.google.com/forms/d/1faOABDDGZ-w1pzeorrXO_qzw6rLG7keKFpMhEMtrq9o">
+              Link to registration form
+            </a>
+          </h3>
         </section>
-        <section>
-          <div>
+
+        <section className="content is-normal">
             <h2>Packages</h2>
             <StandardPackage />
             <DonutStand />
@@ -51,13 +49,12 @@ export default function Partners() {
                 </li>
               </ul>
             </PartnerCard>
-          </div>
         </section>
+
         <p>
           You can contact us about partnership details at{' '}
           <a href="mailto:partner@java.no">partner@java.no</a>
         </p>
-      </div>
     </main>
   )
 }
@@ -78,64 +75,58 @@ const PartnerCard = (props: {
 }) => {
   const priceText = props.price?.additional ? 'Additional price' : 'Price'
   return (
-    <div
-      style={{
-        backgroundColor: '#191919',
-        padding: '1rem',
-        marginBottom: '1rem',
-      }}
-    >
-      <h3>{props.title}</h3>
-      {props.children}
-      {props.price && (
-        <p style={{ marginTop: 'auto' }}>
-          {priceText}:{' '}
-          <span style={{ fontWeight: 'bold' }}>
+      <section className="panel content is-normal is-info">
+      <h3 className="panel-heading">{props.title}</h3>
+      <div className="panel-list p-0 ml-5 pb-5">
+        {props.children}
+        {props.price && (
+          <p className="mt-auto">
+            {priceText}:{' '}
+            <span className="has-text-weight-bold">
             <data value={props.price.value}>{moneyFormat.format(props.price.value)}</data>
           </span>{' '}
-          excl. MVA / fees
-        </p>
-      )}
-    </div>
+            excl. MVA / fees
+          </p>
+        )}
+
+      </div>
+    </section>
   )
 }
 
 const StandardPackage = () => (
   <PartnerCard title="Standard Package" price={{ value: 87000 }}>
-    <ul>
-      <li>
-        Stand
+
+        <strong>Stand</strong>
         <ul>
           <li>Location in conference hall</li>
           <li>6 square meters with backing wall</li>
         </ul>
-      </li>
-      <li>
-        Profiling
+
+        <strong>Profiling</strong>
         <ul>
           <li>
             Logo on homepage, program, announcements, and other activities related to JavaZone
           </li>
         </ul>
-      </li>
-      <li>
-        Stand tickets
+
+        <strong>Stand tickets</strong>
         <ul>
           <li>4 flexible conference tickets for operating the stand</li>
         </ul>
-      </li>
-      <li>
-        Participant tickets
+
+
+        <strong>Participant tickets</strong>
         <ul>
           <li>Reduced price on tickets for your colleagues</li>
         </ul>
-      </li>
-    </ul>
+
   </PartnerCard>
 )
 
 const DonutStand = () => (
   <PartnerCard title="Donut Stand" price={{ value: 87000 }}>
+    <strong>Stand</strong>
     <ul>
       <li>Location outside the main hall in the “Donut” which runs around the hall</li>
       <li>Greater opportunity for a bit more freedom with decorations</li>
