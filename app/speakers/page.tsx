@@ -1,5 +1,6 @@
 import mainstyles from '../page.module.css'
 import { ReactNode } from 'react'
+import Link from "next/link";
 
 export default function SpeakersPage() {
 
@@ -36,9 +37,9 @@ export default function SpeakersPage() {
                     <p>
                         Our call for speakers is open from <b className="is-underlined">February 1st</b> until <b className="is-underlined">April 17th</b>.
                     </p>
-                    <a className="has-text-weight-bold" href="https://talks.javazone.no">
-                        Submit your talk!
-                    </a>
+                  <strong>
+                    <Link className="button is-primary" href="https://talks.javazone.no">Submit your talk!</Link>
+                  </strong>
                 </section>
 
                 <section className="content is-normal">
