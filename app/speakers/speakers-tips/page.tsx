@@ -3,9 +3,10 @@ import mainstyles from '../../page.module.css'
 export default function SpeakersTipsPage() {
     return (
         <main className={mainstyles.main}>
-            <div style={{ width: '75%' }}>
+            <section className="content is-normal">
                 <h1>Submission tips for speakers</h1>
-                <div>
+
+                <section className="block">
                     <h2>Increase the chance of your talk being accepted</h2>
                     <p>
                         There is generally a very high correlation between how much work one puts into the creation of a
@@ -14,9 +15,9 @@ export default function SpeakersTipsPage() {
                         have gathered some tips that should be considered when writing a JavaZone proposal, and a few
                         reasons why proposals may be rejected.
                     </p>
-                </div>
+                </section>
 
-                <div>
+                <section className="block">
                     <h2>Things to think about when writing your abstract</h2>
                     <p>
                         <h3>Create a good title</h3>
@@ -79,9 +80,9 @@ export default function SpeakersTipsPage() {
                         You will definitely be noticed IF YOUR TITLE IS ENTIRELY UPPERCASE (!!!!!!!!), but not necessarily
                         in a positive way.
                     </p>
-                </div>
+                </section>
 
-                <div>
+                <section className="block">
                     <h2>Why was my talk rejected?</h2>
                     <p>
                         Even though we are rooting for your talk to be accepted, the fact is that some talks must be
@@ -94,6 +95,7 @@ export default function SpeakersTipsPage() {
                         The program committee was not sure what you're going to present, or there was not enough information
                         about the technology/things you want to talk about to decide how awesome the presentation will be.
                     </p>
+
                     <p>
                         <h3>The proposal is too thin</h3>
                         The abstract doesn't convey the feeling that you have put a lot of work into it, or that you have
@@ -133,8 +135,8 @@ export default function SpeakersTipsPage() {
                         covering "how we do DevOps in the cloud". Limited space in the program meant that many of these
                         ended up being rejected.
                     </p>
-                </div>
-            </div>
+                </section>
+            </section>
         </main>
     )
 }
