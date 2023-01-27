@@ -35,7 +35,7 @@ export default function SpeakersPage() {
                         JavaZone hosts both international and Norwegian speakers. We'd love to have you join us the coming September!
                     </p>
                     <p>
-                        Our call for speakers is open from <b className="is-underlined">February 1st</b> until <b className="is-underlined">April 17th</b>.
+                        Our call for speakers is open from <b className="is-underlined">January 27th</b> until <b className="is-underlined">April 17th</b>.
                     </p>
                   <strong>
                     <Link className="button is-primary" href="https://talks.javazone.no">Submit your talk!</Link>
