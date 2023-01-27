@@ -26,7 +26,7 @@ export default function SpeakersPage() {
                 <section className="content is-normal">
                     <h2>About JavaZone</h2>
                     <p>
-                        JavaZone 2023 will be the 21th physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
+                        JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of pre-conference workshop, followed by two days of lightning talks and presentations in September.
                     </p>
                     <p>
                         JavaZone is typically sold out, with more than 3200 attendees enjoying well over 100 sessions.
