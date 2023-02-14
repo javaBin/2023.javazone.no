@@ -26,7 +26,7 @@ export default function TicketsPage() {
                 </section>
                 <section className="content is-normal">
                     <h2>Partner tickets</h2>
-                    <p>If you are working for one of our partners you will not order your tickets here. Instead your partner contact will order your tickets directly from us. Read more about partnership <a href="/partners">here</a></p>
+                    <p>If you are working for one of our partners, do not order your tickets here. Instead your partner contact will order your tickets directly from us. Read more about partnership <a href="/partners">here</a></p>
                 </section>
                 <section className="content is-normal">
                     <h2>What's included?</h2>

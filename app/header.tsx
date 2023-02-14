@@ -34,6 +34,7 @@ export function Header() {
         <Link className="navbar-item" href="/partners">Partners</Link>
 
         <Link className="navbar-item" href="/speakers">Speakers</Link>
+        <Link className="navbar-item" href="/tickets">Tickets</Link>
       </div>
 
       <div className="navbar-end">
