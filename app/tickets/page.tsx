@@ -30,7 +30,7 @@ export default function TicketsPage() {
                 </section>
                 <section className="content is-normal">
                     <h2>What's included?</h2>
-                    <p>The tickets includes admission to JavaZone both days (September 6th and 7th). It also includes admission to the workshops on September 5th (The workshop have limited seating, and participants needs to preregister. Registration to workshops will open in August).</p>
+                    <p>The tickets includes admission to JavaZone both days (September 6th and 7th). It also includes admission to the workshops on September 5th (The workshops have limited seating, and participants will need to sign up. Registration opens in August).</p>
 
                     <p>The price also includes a 1-year membership in javaBin, the Norwegian Java User Group. Prices are ex. VAT and ticket fee (NOK 120 per ticket)</p>
                 </section>
