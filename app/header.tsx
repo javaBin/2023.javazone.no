@@ -1,16 +1,27 @@
 'use client';
 
-import { useState } from 'react';
-
+import {useEffect, useState} from 'react';
 import Link from 'next/link'
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 export function Header() {
-
+  const router = useRouter();
   const [burger, setBurger] = useState(false);
+  const [isOnRootPage, setIsOnRootPage] = useState(false);
+
+  console.log(router)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsOnRootPage(window.location.pathname === '/');
+    }
+
+    console.log(window.location.pathname)
+  }, []);
 
   return (
-  <nav className="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav className={`navbar is-fixed-top ${isOnRootPage ? 'is-transparent' : 'is-dark'}`} role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <a className="navbar-item" href="/">
         <Image src="/logo-sharp.svg" height={48} width={48}  alt="logo"/>
@@ -28,7 +39,7 @@ export function Header() {
     </div>
 
     <div id="navbarBasicExample" className={burger ? "navbar-menu is-active" : "navbar-menu"}>
-      <div className="navbar-start">
+      <div className="navbar-center">
         <Link className="navbar-item" href="/">JavaZone 2023 - JavaBin</Link>
 
         <Link className="navbar-item" href="/partners">Partners</Link>
@@ -41,7 +52,7 @@ export function Header() {
         <div className="navbar-item">
           <div className="buttons">
             <strong>
-              <Link className="button is-primary" href="/speakers">Submit your talk!</Link>
+              <Link className="button is-dark-blue" href="/speakers">Submit your talk!</Link>
             </strong>
           </div>
         </div>
