@@ -1,2 +1,11 @@
 @charset "utf-8";
 @import "~bulma/bulma.sass";
+
+:root{
+  --background-JZ-gradient: linear-gradient(#650729, #033E4F);
+}
+
+@font-face {
+  font-family: noto-serif-bold;
+  src: url(https://www.dafontfree.net/embed/bm90by1zZXJpZi1ib2xkJmRhdGEvMjEvbi85OTcxNi9Ob3RvU2VyaWYtQm9sZC50dGY);
+}

@@ -1,13 +1,14 @@
 import { ReactNode } from 'react'
-
 import '../styles/globals.scss'
 import { Footer } from './footer'
 import { Header } from './header'
+import styles from './layout.module.css'
+import Head from "next/head";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
         <meta name="theme-color" content="#fff" />
@@ -24,12 +25,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:description" content="The biggest community-driven Java conference." />
         <meta property="og:site_name" content="javazone.no" />
         <title>JavaZone 2023</title>
-      </head>
+      </Head>
       <body className="has-navbar-fixed-top">
 
       <Header />
-        <div className="hero is-fullheight">
-          <div className="hero-body">
+        <div className={`hero is-fullheight`}>
+          <div className={`hero-body ${styles.mainBackGround}`}>
             <div className="container is-max-desktop">
               {children}
             </div>

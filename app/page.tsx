@@ -1,9 +1,19 @@
 import Link from 'next/link'
+import Image from "next/image";
+import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className="has-text-centered">
-      <h1 className="title">JavaZone 2023</h1>
+    <main className={`has-text-centered`}>
+
+      <div className="mb-6">
+        <Image src="/JZ2023-Hero.svg" height={600} width={600} alt="hero"/>
+      </div>
+      <div>
+        <Image src="/JZ2023-Divider.svg" height={200} width={200} alt="divider"/>
+      </div>
+
+      <h1 className={`title ${styles.test} mt-6`} style={{color: "#FED12D"}}>Welcome to the The Amazing JavaZone 6-7 September in Oslo Spektrum</h1>
       <h2 className="subtitle">Conference: September 6-7, 2023</h2>
       <h2>Workshop: September 5, 2023</h2>
       <h3>Location: Oslo Spektrum, Norway</h3>
