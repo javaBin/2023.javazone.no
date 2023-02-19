@@ -13,6 +13,10 @@ export default function Home() {
         <Image src="/JZ2023-Divider.svg" height={200} width={200} alt="divider"/>
       </div>
 
+      <strong>
+      <Link className="button is-dark-blue" href="/speakers">Submit your talk!</Link>
+      </strong>
+
       <h1 className={`title ${styles.fontAndColor} mt-6`}>Welcome to the The Amazing JavaZone 6-7 September in Oslo
         Spektrum</h1>
       <h2 className={`subtitle ${styles.fontAndColor}`}>Conference: September 6-7, 2023</h2>

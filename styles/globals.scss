@@ -6,6 +6,7 @@
   --big-text-color: #FED12D;
   --normal-text-color: #F6DA98;
   --hover-text-color: #FF8525;
+  --link-color: #5AD0A6;
 }
 
 @font-face {
@@ -26,6 +27,10 @@
 
 .navbar a:hover {
   color: var(--hover-text-color);
+}
+
+.navbar a:focus{
+  color: var(--big-text-color);
 }
 
 .navbar-center {
@@ -49,3 +54,31 @@ body{
   color: var(--normal-text-color);
   background: var(--background-JZ-gradient);
 }
+
+a {
+  color: var(--link-color);
+}
+
+a:hover{
+  color: #26A27E;
+  text-decoration: none;
+}
+
+.title {
+  color: var(--big-text-color);
+}
+
+.content h2, .content h3{
+  color: var(--big-text-color);
+}
+
+strong {
+  color: var(--big-text-color);
+}
+
+.box{
+  background-color: #033E4F;
+  color: white;
+}
+
+
