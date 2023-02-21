@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "~bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap");
 
 :root{
   --background-JZ-gradient: linear-gradient(#650729, #033E4F);
@@ -9,40 +10,7 @@
   --link-color: #5AD0A6;
 }
 
-@font-face {
-  font-family: noto-serif-bold;
-  src: url(https://www.dafontfree.net/embed/bm90by1zZXJpZi1ib2xkJmRhdGEvMjEvbi85OTcxNi9Ob3RvU2VyaWYtQm9sZC50dGY);
-}
 
-.navbar{
-  background-color: inherit;
-  display:flex;
-  justify-content:center;
-}
-
-.navbar a {
-  color: var(--big-text-color);
-  outline: none;
-}
-
-.navbar a:hover {
-  color: var(--hover-text-color);
-}
-
-.navbar a:focus{
-  color: var(--big-text-color);
-}
-
-.navbar-center {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.navbar-menu {
-  display: flex;
-  justify-content: center;
-}
 
 .button.is-dark-blue {
   background-color: var(--normal-text-color);
