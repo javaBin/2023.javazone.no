@@ -30,9 +30,6 @@ export function Header() {
 
       <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
         <div className="navbar-start">
-          <Link className={`navbar-item`} style={{ color: '#FED12D', fontWeight: 'bold' }} href="/">
-            JavaZone 2023 - JavaBin
-          </Link>
 
           <Link
             className={`navbar-item`}

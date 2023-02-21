@@ -1,0 +1,5 @@
+.panelHeading {
+  color: black !important;
+  background-color: var(--normal-text-color);
+  padding: 2rem 1rem;
+}
