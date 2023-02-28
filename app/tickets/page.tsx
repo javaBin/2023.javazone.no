@@ -20,9 +20,12 @@ export default function TicketsPage() {
                     <h2>Price</h2>
                     <p><b>7 990,- (ex MVA and fee)</b></p>
                     <p>Late bird (after April 1st) : 8 790,- (ex MVA and fee)</p>
-                    <Link className="button is-primary" href="https://app.checkin.no/event/52747/javazone-2023">Order your tickets</Link>
-                    <p>Note: Tickets are ordered from our ticket partner Checkin, this button will send you to their site</p>
-                    <p>Ticket sale opens February 20th at 08:00</p>
+                </section>
+                <section className="content is-normal">
+                    <h2>Sold out</h2>
+                    <p>We currently do not have any more tickets availble. Some tickets might be come available at a later time. You can sign up on the waiting below. We will then contact you if we get tickets availble.</p>
+                    <Link className="button is-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfnTr0RkltFZO7QpNqPsx_Lwdq-aogH3w5LwhnXkkZ3BGYKbA/viewform?usp=sf_link">Register on waiting list</Link>
+                    
                 </section>
                 <section className="content is-normal">
                     <h2>Partner tickets</h2>
