@@ -28,7 +28,9 @@ export function Header() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
+      <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'} style={{
+        backgroundColor: "hsl(0, 0%, 21%)"
+      }}>
         <div className="navbar-start">
 
           <Link
