@@ -7,7 +7,7 @@ export function Footer() {
 
         <p className="level-item has-text-centered">
           <a className="link is-info" href="https://java.no" target="_blank" rel="noopener noreferrer">
-            About JavaBin
+            About javaBin
           </a>
         </p>
 
