@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import mainstyles from '../page.module.css'
+import styles from "./partners.module.css"
 
 export default function Partners() {
   return (
@@ -74,7 +75,7 @@ const PartnerCard = (props: {
   const priceText = props.price?.additional ? 'Additional price' : 'Price'
   return (
       <section className="panel content is-normal is-info">
-      <h3 className="panel-heading">{props.title}</h3>
+      <h3 className={styles.panelHeading}>{props.title}</h3>
       <div className="panel-list p-0 ml-5 pb-5">
         {props.children}
         {props.price && (

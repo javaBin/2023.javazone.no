@@ -1,13 +1,14 @@
 import Image from "next/image";
+import styles from "./footer.module.css"
 
 export function Footer() {
   return (
-    <footer className="footer">
+    <footer className={`footer ${styles.footer}`}>
       <nav className="level">
 
         <p className="level-item has-text-centered">
           <a className="link is-info" href="https://java.no" target="_blank" rel="noopener noreferrer">
-            About JavaBin
+            About javaBin
           </a>
         </p>
 

@@ -1,14 +1,11 @@
 import mainstyles from '../page.module.css'
-import { ReactNode } from 'react'
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function TicketsPage() {
-
-    
-    return (
-        <main className={mainstyles.main}>
-            <div>
-                <h1 className="title">Tickets</h1>
+  return (
+    <main className={mainstyles.main}>
+      <div>
+        <h1 className="title">Tickets</h1>
 
                 <section className="content is-normal">
                     <h2>About JavaZone</h2>
@@ -25,7 +22,6 @@ export default function TicketsPage() {
                     <h2>Sold out</h2>
                     <p>We currently do not have any more tickets availble. Some tickets might be come available at a later time. You can sign up on the waiting below. We will then contact you if we get tickets availble.</p>
                     <Link className="button is-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfnTr0RkltFZO7QpNqPsx_Lwdq-aogH3w5LwhnXkkZ3BGYKbA/viewform?usp=sf_link">Register on waiting list</Link>
-                    
                 </section>
                 <section className="content is-normal">
                     <h2>Partner tickets</h2>
@@ -35,10 +31,12 @@ export default function TicketsPage() {
                     <h2>What's included?</h2>
                     <p>The tickets includes admission to JavaZone both days (September 6th and 7th). It also includes admission to the workshops on September 5th (The workshops have limited seating, and participants will need to sign up. Registration opens in August).</p>
 
-                    <p>The price also includes a 1-year membership in javaBin, the Norwegian Java User Group. Prices are ex. VAT and ticket fee (NOK 120 per ticket)</p>
-                </section>
-            </div>
-        </main>
-    )
+          <p>
+            The price also includes a 1-year membership in javaBin, the Norwegian Java User Group.
+            Prices are ex. VAT and ticket fee (NOK 120 per ticket)
+          </p>
+        </section>
+      </div>
+    </main>
+  )
 }
-
