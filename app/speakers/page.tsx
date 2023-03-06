@@ -127,11 +127,11 @@ export default function SpeakersPage() {
           <br />
 
           <div className="container">
-            <div className="columns is-centered is-vcentered is-mobile">
+            <div className="columns is-centered">
               <div className="column is-half">
                 <div className="circle">
                   <div className="tile notification box is-justify-content-center">
-                    <div className="tile is-child box content is-small">
+                    <div className="tile is-child box content is-medium">
                       <h3>Submission tips</h3>
                       <p>Learn how to increase your chance of getting accepted.</p>
                       <a className="has-text-weight-bold" href="/speakers/speakers-tips">
