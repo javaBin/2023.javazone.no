@@ -6,6 +6,8 @@ export default function Partners() {
   return (
     <main className={mainstyles.main}>
         <section className="content is-normal">
+          <h2>Sold out</h2>
+          <p>We are now sold out of partner packages.</p>
           <h2>Partner information</h2>
           <p>
             Even though all partners are considered equal, there are a few options to choose from.
@@ -18,11 +20,7 @@ export default function Partners() {
             contact your organisation to confirm your choices. After the initial draw, the remaining
             available packages will be allocated on a first-come, first-served basis.
           </p>
-          <h3 className="has-text-weight-bold">
-            <a href="https://docs.google.com/forms/d/1faOABDDGZ-w1pzeorrXO_qzw6rLG7keKFpMhEMtrq9o">
-              Link to registration form
-            </a>
-          </h3>
+          
         </section>
 
         <section className="content is-normal">
