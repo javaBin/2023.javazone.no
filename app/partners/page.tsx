@@ -20,7 +20,7 @@ export default function Partners() {
             contact your organisation to confirm your choices. After the initial draw, the remaining
             available packages will be allocated on a first-come, first-served basis.
           </p>
-          
+
         </section>
 
         <section className="content is-normal">
@@ -74,9 +74,9 @@ const PartnerCard = (props: {
 }) => {
   const priceText = props.price?.additional ? 'Additional price' : 'Price'
   return (
-      <section className="panel content is-normal is-info">
-      <h3 className={styles.panelHeading}>{props.title}</h3>
-      <div className="panel-list p-0 ml-5 pb-5">
+      <section className={`panel content ${styles.panelShadow} is-normal is-info`}>
+        <h3 className={styles.panelHeading}>{props.title}</h3>
+        <div className="panel-list p-0 ml-5 pb-5">
         {props.children}
         {props.price && (
           <p className="mt-auto">
