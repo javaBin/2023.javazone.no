@@ -23,7 +23,9 @@ export function Footer() {
         </p>
 
         <p className="level-item has-text-centered">
-          <Image src="/logo-sharp.svg" alt="" height={48} width={48} />
+          <a href="/" >
+            <Image src="/JZ2023-Hero.svg" alt="logo" height={100} width={64} />
+          </a>
         </p>
 
         <p className="level-item has-text-centered">
