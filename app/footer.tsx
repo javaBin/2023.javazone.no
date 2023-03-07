@@ -3,7 +3,7 @@ import styles from "./footer.module.css"
 
 export function Footer() {
   return (
-    <footer className={`footer ${styles.footer}`}>
+    <footer className={`footer ${styles.app_footer}`}>
       <nav className="level">
 
         <p className="level-item has-text-centered">
