@@ -21,7 +21,7 @@ export default function TicketsPage() {
                 <section className="content is-normal">
                     <h2>Sold out</h2>
                     <p>We currently do not have any more tickets availble. Some tickets might be come available at a later time. You can sign up on the waiting below. We will then contact you if we get tickets availble.</p>
-                    <Link className="button is-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfnTr0RkltFZO7QpNqPsx_Lwdq-aogH3w5LwhnXkkZ3BGYKbA/viewform?usp=sf_link">Register on waiting list</Link>
+                    <Link className="button is-dark-blue" href="https://docs.google.com/forms/d/e/1FAIpQLSfnTr0RkltFZO7QpNqPsx_Lwdq-aogH3w5LwhnXkkZ3BGYKbA/viewform?usp=sf_link"><b>Register on waiting list</b></Link>
                 </section>
                 <section className="content is-normal">
                     <h2>Partner tickets</h2>
