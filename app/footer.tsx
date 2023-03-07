@@ -1,9 +1,8 @@
 import Image from "next/image";
-import styles from "./footer.module.css"
 
 export function Footer() {
   return (
-    <footer className={`footer ${styles.app_footer}`}>
+    <footer className="footer">
       <nav className="level">
 
         <p className="level-item has-text-centered">
