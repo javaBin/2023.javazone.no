@@ -54,6 +54,13 @@ export function Header() {
           >
             Tickets
           </Link>
+          <Link
+            className={`navbar-item`}
+            style={{ color: '#FED12D', fontWeight: 'bold' }}
+            href="/about"
+          >
+            About us
+          </Link>
         </div>
 
         <div className="navbar-end">
