@@ -27,7 +27,7 @@ export default function Home() {
       <div>
         <p>
           Click <Link href="https://2022.javazone.no/#/program">here</Link> to view the program of
-          JavaZone 2022
+          JavaZone 2023
         </p>
         <p><Link href="/tickets">Ticket sale</Link> opens February 20th</p>
         <p className="has-text-weight-bold">

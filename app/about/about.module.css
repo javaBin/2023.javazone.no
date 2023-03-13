@@ -1,7 +1,7 @@
 .child {
   width: 100vw;
   position: relative;
-  left: calc(-50vw + 50%);
+  left: calc(-55vw + 50%);
 
   /* Set a specific height */
   min-height: 800px;
