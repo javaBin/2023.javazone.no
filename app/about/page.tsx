@@ -1,6 +1,5 @@
 import mainstyles from "../page.module.css";
-import Link from "next/link";
-import Image from "next/image";
+import pagestyles from './about.module.css';
 
 export default function About() {
   return (
@@ -30,11 +29,9 @@ export default function About() {
           </p>
         </section>
 
-        <section className="content is-normal is-fullwidth">
-          <Image src="/JavaZone2022Hall.jpg" height={600} width={1000} alt="hero"/>
-        </section>
+        <section className={pagestyles.child}/>
 
-        <section className="content is-normal">
+        <section className="content is-normal mt-5">
           <h2>WHO IS BEHIND IT?</h2>
           <p>
             Organizing a conference of this size on a voluntary basis is a lot of hard work (and it is great fun too!).

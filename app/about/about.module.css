@@ -1,0 +1,12 @@
+.child {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background: url("../../public/JavaZone2022Hall.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
