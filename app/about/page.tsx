@@ -48,7 +48,7 @@ export default function About() {
                                                 rel="noreferrer">program@java.no</a> – Marek Machnik
             </li>
             <li><em>Partners</em> – <a href="mailto:partner@java.no" target="_blank"
-                                       rel="noreferrer">partner@java.no</a> – Gareth Western
+                                       rel="noreferrer">partner@java.no</a> – Kjetil Myhre
             </li>
             <li><em>Volunteers</em> – <a href="mailto:student@java.no" target="_blank"
                                          rel="noreferrer">student@java.no</a> – Ellaoui Abdellaoui
