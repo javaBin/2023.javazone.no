@@ -38,7 +38,7 @@ export default function About() {
             JUG members. An example of such groups can be Program Committee, IT systems, etc.
           </p>
           <p>
-            The JavaZone Core Team for 2022:
+            The JavaZone Core Team for 2023:
           </p>
           <ul>
             <li><em>Leader</em> – <a href="mailto:javazone@java.no" target="_blank"
