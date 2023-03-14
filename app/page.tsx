@@ -21,10 +21,10 @@ export default function Home() {
       <h1 className={`title ${styles.fontAndColor} mt-4`}>
         Welcome to the The Amazing JavaZone 6-7 September in Oslo Spektrum
       </h1>
-      <h2 className={`subtitle ${styles.fontAndColor}`}>Conference: September 6-7, 2023</h2>
       <div className={'mb-4'}>
-        <h2 style={{ color: '#F6DA98' }}>Workshop: September 5, 2023</h2>
-        <h3>Location: Oslo Spektrum, Norway</h3>
+        <p>Conference: September 6-7, 2023</p>
+        <p>Workshop: September 5, 2023</p>
+        <p>Location: Oslo Spektrum, Norway</p>
       </div>
       <div>
         <p>
