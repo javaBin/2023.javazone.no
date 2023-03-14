@@ -1,9 +1,7 @@
-import mainstyles from "../page.module.css";
 import pagestyles from './about.module.css';
 
 export default function About() {
   return (
-    <main className={mainstyles.main}>
       <div>
         <div className="is-inline-block">
           <h1 className="title is-size-1">JavaZone: The biggest community-driven Java conference</h1>
@@ -66,6 +64,5 @@ export default function About() {
 
         </section>
       </div>
-    </main>
   )
 }

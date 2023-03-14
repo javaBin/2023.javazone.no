@@ -31,7 +31,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className={`hero is-fullheight`}>
           <div className={`hero-body`}>
             <div className="container is-max-desktop">
-              {children}
+              <main>
+                {children}
+              </main>
             </div>
           </div>
           <div className="hero-foot">
