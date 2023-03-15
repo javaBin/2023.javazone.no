@@ -21,7 +21,7 @@ export default function Partners() {
         </p>
       </section>
 
-      <section className={`content is-normal ${styles.titleFont} `}>
+      <section className={`content is-normal ${styles.sectionCards} `}>
         <h2>Packages</h2>
         <StandardPackage />
         <DonutStand />
