@@ -29,7 +29,7 @@ export default function Home() {
       <div>
         <p>
           Click <Link href="https://2022.javazone.no/#/program">here</Link> to view the program of
-          JavaZone 2023
+          JavaZone 2022
         </p>
         <p>
           <Link href="/tickets">Ticket sale</Link> opens February 20th
