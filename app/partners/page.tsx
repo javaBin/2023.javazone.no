@@ -31,13 +31,13 @@ export default function Partners() {
         <h2>Partner tickets</h2>
         <PartnerCard title="Ticket types">
           <ul>
-            <li>EarlyBird 0-30 billetter (inkl javaBin-medlemskap) - {moneyFormat.format(7590)}</li>
+            <li>EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7590)}</li>
             <li>
-              EarlyBird 30-50 billetter (inkl javaBin-medlemskap) - {moneyFormat.format(7390)}
+              EarlyBird 30-50 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7390)}
             </li>
-            <li>EarlyBird 50+ billetter (inkl javaBin-medlemskap) - {moneyFormat.format(7190)}</li>
+            <li>EarlyBird 50+ billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7190)}</li>
             <li>
-              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap) - {moneyFormat.format(8390.0)}
+              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(8390.0)}
             </li>
           </ul>
         </PartnerCard>
