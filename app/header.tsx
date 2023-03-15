@@ -3,11 +3,12 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+
 export function Header() {
   const [burger, setBurger] = useState(false)
 
   return (
-    <nav className={'navbar is-fixed-top is-dark'} role="navigation" aria-label="main navigation">
+    <nav className={'navbar is-fixed-top'} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
           <Image src="/JZ2023-Hero.svg" height={48} width={48} alt="logo" />
@@ -27,38 +28,19 @@ export function Header() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'} style={{
-        backgroundColor: "hsl(0, 0%, 21%)"
-      }}>
+      <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
         <div className="navbar-start">
-
-          <Link
-            className={`navbar-item`}
-            style={{ color: '#FED12D', fontWeight: 'bold' }}
-            href="/partners"
-          >
+          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/partners">
             Partners
           </Link>
 
-          <Link
-            className={`navbar-item`}
-            style={{ color: '#FED12D', fontWeight: 'bold' }}
-            href="/speakers"
-          >
+          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/speakers">
             Speakers
           </Link>
-          <Link
-            className={`navbar-item`}
-            style={{ color: '#FED12D', fontWeight: 'bold' }}
-            href="/tickets"
-          >
+          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/tickets">
             Tickets
           </Link>
-          <Link
-            className={`navbar-item`}
-            style={{ color: '#FED12D', fontWeight: 'bold' }}
-            href="/about"
-          >
+          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/about">
             About us
           </Link>
         </div>

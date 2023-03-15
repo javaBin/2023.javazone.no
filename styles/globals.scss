@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-$footer-padding: 1rem 0;
-$footer-background-color: hsl(0, 0%, 21%);
-
-@import "~bulma/bulma.sass";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap");
-
 :root{
   --background-JZ-gradient: linear-gradient(#650729, #033E4F);
   --big-text-color: #FED12D;
@@ -14,12 +8,29 @@ $footer-background-color: hsl(0, 0%, 21%);
   --link-color: #5AD0A6;
 }
 
+$footer-padding: 1rem 0;
+$footer-background-color: hsl(0, 0%, 21%);
+$navbar-background-color: #033E4F;
+$footer-background-color: #033E4F;
+$navbar-item-color: var(--big-text-color);
+$navbar-item-hover-color: var(--hover-text-color);
+$navbar-item-hover-background-color: #033443;
+
+@import "~bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap");
+
+
+
 
 
 .button.is-dark-blue {
   background-color: var(--normal-text-color);
   border-color: transparent;
-  color: black;
+  color: #650729;
+}
+
+.button.is-dark-blue:hover {
+  color: var(--hover-text-color);
 }
 
 body{
