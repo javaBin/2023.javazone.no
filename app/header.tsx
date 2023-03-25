@@ -1,11 +1,27 @@
 'use client'
 
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+const HeaderLink = ({
+  children,
+  href,
+  onClick,
+}: {
+  children?: ReactNode
+  href: string
+  onClick?: () => void
+}) => (
+  <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href={href} onClick={onClick}>
+    {children}
+  </Link>
+)
+
 export function Header() {
   const [burger, setBurger] = useState(false)
+
+  const handleLinkClick = () => setBurger(false)
 
   return (
     <nav className={'navbar is-fixed-top'} role="navigation" aria-label="main navigation">
@@ -17,7 +33,7 @@ export function Header() {
         <a
           role="button"
           onClick={() => setBurger(!burger)}
-          className={burger ? 'navbar-burger is-active' : 'navbar-burger'}
+          className={`navbar-burger ${burger && 'is-active'}`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -30,29 +46,28 @@ export function Header() {
 
       <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
         <div className="navbar-start">
-          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/partners">
+          <HeaderLink onClick={handleLinkClick} href="/partners">
             Partners
-          </Link>
-
-          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/speakers">
+          </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/speakers">
             Speakers
-          </Link>
-          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/tickets">
+          </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/tickets">
             Tickets
-          </Link>
-          <Link className={`navbar-item`} style={{ color: '#FED12D', fontWeight: 'bold' }} href="/volunteers">
+          </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/volunteers">
             Frivillig
-          </Link>
-          <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/about">
+          </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/about">
             About us
-          </Link>
+          </HeaderLink>
         </div>
 
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
               <strong>
-                <Link className="button is-dark-blue" href="/speakers">
+                <Link className="button is-dark-blue" href="/speakers" onClick={handleLinkClick}>
                   Submit your talk!
                 </Link>
               </strong>
