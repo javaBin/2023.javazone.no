@@ -40,7 +40,7 @@ export default function VolunteersPage(){
           <section className="content is-normal">
             <h2 className="title">Ofte stilte spørsmål</h2>
             <section className="content is-normal">
-              <h2>I don't speak Norwegian what about me?</h2>
+              <h2>I don&apos;t speak Norwegian what about me?</h2>
               <p>
               Being a volunteer at JavaZone requires you to be fluent in both Norwegian and English. This is because you are one of the main goto-people for 3200 guests.
               </p>
