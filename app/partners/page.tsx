@@ -12,6 +12,23 @@ export default function Partners() {
       <section className="content is-normal">
         <h2>Sold out</h2>
         <p>We are now sold out of partner packages.</p>
+      </section>
+
+      <section className="content is-normal">
+        <h2>Video from JavaZone 2023 Partner meeting on March 14th</h2>
+        <video controls>
+          <source src="/videos/javazone_2023_partnermeeting_%232%20(720p).mp4" type="video/mp4" />
+          <track
+            label="English"
+            kind="subtitles"
+            srcLang="en"
+            src="/videos/partner-meeting-captions.vtt"
+            default
+          />
+        </video>
+      </section>
+
+      <section className="content is-normal">
         <h2>Partner information</h2>
         <p>
           Even though all partners are considered equal, there are a few options to choose from.
