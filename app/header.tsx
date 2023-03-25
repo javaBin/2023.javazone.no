@@ -40,6 +40,9 @@ export function Header() {
           <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/tickets">
             Tickets
           </Link>
+          <Link className={`navbar-item`} style={{ color: '#FED12D', fontWeight: 'bold' }} href="/volunteers">
+            Frivillig
+          </Link>
           <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href="/about">
             About us
           </Link>
