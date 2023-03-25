@@ -1,5 +1,10 @@
 import { ReactNode } from 'react'
 import styles from './partners.module.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Partners',
+}
 
 export default function Partners() {
   return (
@@ -31,13 +36,20 @@ export default function Partners() {
         <h2>Partner tickets</h2>
         <PartnerCard title="Ticket types">
           <ul>
-            <li>EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7590)}</li>
             <li>
-              EarlyBird 30-50 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7390)}
+              EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(7590)}
             </li>
-            <li>EarlyBird 50+ billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7190)}</li>
             <li>
-              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(8390.0)}
+              EarlyBird 30-50 billetter (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(7390)}
+            </li>
+            <li>
+              EarlyBird 50+ billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7190)}
+            </li>
+            <li>
+              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(8390.0)}
             </li>
           </ul>
         </PartnerCard>

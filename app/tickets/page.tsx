@@ -1,4 +1,9 @@
 import Link from 'next/link'
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Tickets',
+}
 
 export default function TicketsPage() {
   return (

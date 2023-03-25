@@ -1,5 +1,10 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Speakers',
+}
 
 export default function SpeakersPage() {
   const TalkTypeCard = (props: { type: string; timing: string; children: ReactNode }) => {

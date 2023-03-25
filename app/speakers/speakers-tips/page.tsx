@@ -1,3 +1,9 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Speakers Tips',
+}
+
 export default function SpeakersTipsPage() {
   return (
     <section className="content is-normal">
