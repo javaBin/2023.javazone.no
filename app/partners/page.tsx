@@ -1,5 +1,10 @@
 import { ReactNode } from 'react'
 import styles from './partners.module.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Partners',
+}
 
 export default function Partners() {
   return (
@@ -7,6 +12,23 @@ export default function Partners() {
       <section className="content is-normal">
         <h2>Sold out</h2>
         <p>We are now sold out of partner packages.</p>
+      </section>
+
+      <section className="content is-normal">
+        <h2>Video from JavaZone 2023 Partner meeting on March 14th</h2>
+        <video controls>
+          <source src="/videos/partner-meeting.mp4" type="video/mp4" />
+          <track
+            label="English"
+            kind="subtitles"
+            srcLang="en"
+            src="/videos/partner-meeting-captions.vtt"
+            default
+          />
+        </video>
+      </section>
+
+      <section className="content is-normal">
         <h2>Partner information</h2>
         <p>
           Even though all partners are considered equal, there are a few options to choose from.
@@ -31,13 +53,20 @@ export default function Partners() {
         <h2>Partner tickets</h2>
         <PartnerCard title="Ticket types">
           <ul>
-            <li>EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7590)}</li>
             <li>
-              EarlyBird 30-50 billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7390)}
+              EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(7590)}
             </li>
-            <li>EarlyBird 50+ billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7190)}</li>
             <li>
-              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(8390.0)}
+              EarlyBird 30-50 billetter (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(7390)}
+            </li>
+            <li>
+              EarlyBird 50+ billetter (inkl javaBin-medlemskap, ex MVA) - {moneyFormat.format(7190)}
+            </li>
+            <li>
+              LateBird (ekstrabestillinger) (inkl javaBin-medlemskap, ex MVA) -{' '}
+              {moneyFormat.format(8390.0)}
             </li>
           </ul>
         </PartnerCard>

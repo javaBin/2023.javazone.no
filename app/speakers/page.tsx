@@ -1,5 +1,10 @@
 import { ReactNode } from 'react'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Speakers',
+}
 
 export default function SpeakersPage() {
   const TalkTypeCard = (props: { type: string; timing: string; children: ReactNode }) => {
@@ -19,17 +24,17 @@ export default function SpeakersPage() {
       <section className="content is-normal">
         <h2>About JavaZone</h2>
         <p>
-          JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of
+          {`JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of
           pre-conference workshop, followed by two days of lightning talks and presentations in
-          September.
+          September.`}
         </p>
         <p>
           JavaZone is typically sold out, with more than 3200 attendees enjoying well over 100
           sessions.
         </p>
         <p>
-          JavaZone hosts both international and Norwegian speakers. We'd love to have you join us
-          the coming September!
+          {`JavaZone hosts both international and Norwegian speakers. We'd love to have you join us
+          the coming September!`}
         </p>
         <p>
           Our call for speakers is open from <b className="is-underlined">January 27th</b> until{' '}
@@ -52,10 +57,10 @@ export default function SpeakersPage() {
           available.
         </p>
         <p>
-          We can brag as much as we want, but JavaZone would be nothing without all the great
+          {`We can brag as much as we want, but JavaZone would be nothing without all the great
           speakers! That's why we need your help to make sure that JavaZone 2023 will be at least as
           awesome as the earlier events. If you think you have something interesting to share,
-          please submit your talk or workshop.
+          please submit your talk or workshop.`}
         </p>
         <p>
           JavaZone is committed to diversity, and we are especially interested in quality
@@ -143,11 +148,11 @@ export default function SpeakersPage() {
       </section>
 
       <section className="content is-normal">
-        <h2>What's in it for me?</h2>
+        <h2>{`What's in it for me?`}</h2>
         <h3>Accepted presentations, lightning talks, and workshops</h3>
         <p>
-          As a JavaZone speaker, you get free admission to the conference. Additionally, you are
-          also invited to the speakers' dinner, held on September 6th.
+          {`As a JavaZone speaker, you get free admission to the conference. Additionally, you are
+          also invited to the speakers' dinner, held on September 6th.`}
         </p>
         <h3>Coverage of expenses</h3>
         <p>

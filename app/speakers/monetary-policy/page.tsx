@@ -1,3 +1,9 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'JavaZone 2023 - Monetary Policy',
+}
+
 export default function MonetaryPolicyPage() {
   return (
     <section className="content is-normal">
