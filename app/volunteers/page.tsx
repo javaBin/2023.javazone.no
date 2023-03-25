@@ -42,7 +42,7 @@ export default function VolunteersPage(){
             <section className="content is-normal">
               <h2>I don&apos;t speak Norwegian what about me?</h2>
               <p>
-              Being a volunteer at JavaZone requires you to be fluent in both Norwegian and English. This is because you are one of the main go-to-people for 3200 guests.
+              Being a volunteer at JavaZone you need to be able to communicate in both Norwegian and English. This is because you are one of the main go-to-people for 3200 guests.
               </p>
             </section>
             <section className="content is-normal">
