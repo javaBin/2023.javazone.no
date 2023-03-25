@@ -48,7 +48,7 @@ export default function TicketsPage() {
         </p>
       </section>
       <section className="content is-normal">
-        <h2>What's included?</h2>
+        <h2>What is included?</h2>
         <p>
           The tickets includes admission to JavaZone both days (September 6th and 7th). It also
           includes admission to the workshops on September 5th (The workshops have limited seating,
