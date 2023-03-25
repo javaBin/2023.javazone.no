@@ -17,7 +17,7 @@ export default function Partners() {
       <section className="content is-normal">
         <h2>Video from JavaZone 2023 Partner meeting on March 14th</h2>
         <video controls>
-          <source src="/videos/javazone_2023_partnermeeting_%232%20(720p).mp4" type="video/mp4" />
+          <source src="/videos/partner-meeting.mp4" type="video/mp4" />
           <track
             label="English"
             kind="subtitles"
