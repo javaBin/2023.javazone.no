@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
+import AnimatedDivider from "../components/AnimatedDivider";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <Image src="/svg/JZ2023-Hero.svg" height={600} width={600} alt="hero" />
       </div>
       <div>
-        <Image src="/svg/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
+        <AnimatedDivider />
       </div>
 
       <strong>
@@ -39,7 +40,7 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-6">
-        <Image src="/svg/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
+        <AnimatedDivider />
       </div>
     </section>
   )
