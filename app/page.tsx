@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <section className={`has-text-centered`}>
       <div className="mb-4">
-        <Image src="/JZ2023-Hero.svg" height={600} width={600} alt="hero" />
+        <Image src="/svg/JZ2023-Hero.svg" height={600} width={600} alt="hero" />
       </div>
       <div>
-        <Image src="/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
+        <Image src="/svg/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
       </div>
 
       <strong>
@@ -39,7 +39,7 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-6">
-        <Image src="/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
+        <Image src="/svg/JZ2023-Divider.svg" height={60} width={60} alt="divider" />
       </div>
     </section>
   )

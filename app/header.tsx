@@ -11,7 +11,7 @@ export function Header() {
     <nav className={'navbar is-fixed-top'} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
-          <Image src="/JZ2023-Hero.svg" height={48} width={48} alt="logo" />
+          <Image src="/svg/JZ2023-Hero.svg" height={48} width={48} alt="logo" />
         </a>
 
         <a
