@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function SpeakersTipsPage() {
   return (
     <section className="content is-normal">
-      <h2 className="title">Submission tips for speakers</h2>
+      <h1 className="title">Submission tips for speakers</h1>
 
       <section className="block">
         <h2>Increase the chance of your talk being accepted</h2>
