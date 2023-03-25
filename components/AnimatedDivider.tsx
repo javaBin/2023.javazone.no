@@ -11,10 +11,7 @@ export default function AnimatedDivider() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentDivider((prevDivider) => {
-        console.log(prevDivider)
-        return prevDivider === dividers.length ? 1 : prevDivider + 1
-      })
+      setCurrentDivider((prevDivider) => (prevDivider === dividers.length ? 1 : prevDivider + 1))
     }, 300)
     return () => clearInterval(interval)
   }, [])
