@@ -11,18 +11,6 @@ import * as React from "react";
 import Image from "next/image";
 import styles from "../footer.module.css";
 
-export function SectionContent(title: string, content: string, contentTwo?: string) {
-  return (
-    <section className={`content is-normal ${voulenterstyles.displayFlex}`}>
-      <h2 data-aos="fade-right" data-aos-duration="1000">{title}</h2>
-      <div className={voulenterstyles.pDiv} data-aos="fade" data-aos-duration="1000" data-aos-delay="500">
-        <p>{content}</p>
-        {contentTwo ? <p>{contentTwo}</p> : <></>}
-      </div>
-    </section>
-  );
-}
-
 export default function VolunteersPage() {
 
   useEffect(() => {
@@ -34,11 +22,11 @@ export default function VolunteersPage() {
       <div className={voulenterstyles.fontSize}>
         <h1 className="title has-text-centered">Frivillig</h1>
 
-        {SectionContent("Bli frivillig på JavaZone", "JavaZone er verdens største community-drevne Java-konferanse.", "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere.")}
+        {SectionContent({title: "Bli frivillig på JavaZone", content: "JavaZone er verdens største community-drevne Java-konferanse.", contentTwo: "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere."})}
 
-        {SectionContent("Hva er Javazone?", "JavaZone er verdens største community-drevne Java-konferanse.", "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere.")}
+        {SectionContent({title: "Hva er Javazone?", content: "JavaZone er verdens største community-drevne Java-konferanse.", contentTwo: "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere."})}
 
-        {SectionContent("Hvem leter vi etter?", "Har du lyst til å bidra til at disse menneskene skal få en fantastisk opplevelse, og også få ta del i dette selv?", "Er du student høsten 2023?")}
+        {SectionContent({title: "Hvem leter vi etter?", content: "Har du lyst til å bidra til at disse menneskene skal få en fantastisk opplevelse, og også få ta del i dette selv?", contentTwo: "Er du student høsten 2023?"})}
 
         <div className="has-text-centered">
           <Image src="/svg/JZ2023-Character-Bendy-cropped.svg" height={500} width={500} alt="hero" />
@@ -52,23 +40,23 @@ export default function VolunteersPage() {
 
         <h1 className="title has-text-centered mt-6">Ofte stilte spørsmål</h1>
 
-        {SectionContent("I don't speak Norwegian what about me?", "Being a volunteer at JavaZone you need to be able to communicate in both Norwegian and English. This is because you are one of the main go-to-people for 3200 guests.")}
+        {SectionContent({title: "I don't speak Norwegian what about me?", content: "Being a volunteer at JavaZone you need to be able to communicate in both Norwegian and English. This is because you are one of the main go-to-people for 3200 guests."})}
 
-        {SectionContent("Hvem kan bli frivillig på JavaZone?", "Alle studenter som behersker norsk og engelsk flytende kan bli frivillige på JavaZone. Så lenge du vil gjøre en innsats, så er du hjertelig velkommen til å søke!")}
+        {SectionContent({title: "Hvem kan bli frivillig på JavaZone?", content: "Alle studenter som behersker norsk og engelsk flytende kan bli frivillige på JavaZone. Så lenge du vil gjøre en innsats, så er du hjertelig velkommen til å søke!"})}
 
-        {SectionContent("Hva skal jeg gjøre som frivillig?", "Det vil være en del ulike oppgaver, og du kan blant annet være salvakt, ha ansvar for info-stand eller utdeling av headsett. Nærmere informasjon om oppgavene vil gis rett før JavaZone og under opplæringsmøtet i forkant av konferansen. Vi vil prøve å dele ut vakter og arbeidoppgaver tilpasset dine ønsker og interesser.")}
+        {SectionContent({title: "Hva skal jeg gjøre som frivillig?", content: "Det vil være en del ulike oppgaver, og du kan blant annet være salvakt, ha ansvar for info-stand eller utdeling av headsett. Nærmere informasjon om oppgavene vil gis rett før JavaZone og under opplæringsmøtet i forkant av konferansen. Vi vil prøve å dele ut vakter og arbeidoppgaver tilpasset dine ønsker og interesser."})}
 
-        {SectionContent("Hvor mange frivillige bidrar på JavaZone?", "Hvert år deltar over 50 frivillige på JavaZone. Interessen for dette er stor, så dessverre får ikke alle søkere plass. Men ikke la dette hindre deg i å søke, prøv da vel!")}
+        {SectionContent({title: "Hvor mange frivillige bidrar på JavaZone?", content: "Hvert år deltar over 50 frivillige på JavaZone. Interessen for dette er stor, så dessverre får ikke alle søkere plass. Men ikke la dette hindre deg i å søke, prøv da vel!"})}
 
-        {SectionContent("Får jeg med meg noe faglig som frivillig?", "Å være frivillig på JavaZone er litt som å være frivillig på en musikkfestival, bare mer nerdete! Du får ca. 50% fri, og kan da gå på foredrag, spise god mat og snakke med kule folk.")}
+        {SectionContent({title: "Får jeg med meg noe faglig som frivillig?", content: "Å være frivillig på JavaZone er litt som å være frivillig på en musikkfestival, bare mer nerdete! Du får ca. 50% fri, og kan da gå på foredrag, spise god mat og snakke med kule folk."})}
 
-        {SectionContent("Hva med reise hvis jeg ikke bor i Oslo?", "JavaZone dekker ikke reise eller overnatting for frivillige. Men erfaringsmessig så er det mange studiesteder som velger å gi reisestøtte. Spør derfor studentforeningen eller instituttet ditt om dette.")}
+        {SectionContent({title: "Hva med reise hvis jeg ikke bor i Oslo?", content: "JavaZone dekker ikke reise eller overnatting for frivillige. Men erfaringsmessig så er det mange studiesteder som velger å gi reisestøtte. Spør derfor studentforeningen eller instituttet ditt om dette."})}
 
-        {SectionContent("Får jeg bli med på AweZone?", "Selvsagt får du det! JavaZone er ikke det samme uten! Her får du se de kuleste bandene og snakke med de beste folka i IT-bransjen! Ingen jobbing på kvelden – bare fest og moro =)")}
+        {SectionContent({title: "Får jeg bli med på AweZone?", content: "Selvsagt får du det! JavaZone er ikke det samme uten! Her får du se de kuleste bandene og snakke med de beste folka i IT-bransjen! Ingen jobbing på kvelden – bare fest og moro =)"})}
 
-        {SectionContent("Når må jeg møte opp som frivillig?", "Det er oppmøte i Oslo Spektrum kl. 19:00 tirsdag 5. september for opplæring, noen oppgaver, mat og omvisning i lokalene. JavaZone er ferdig kl. 18 på torsdag 7. september. Da rigger vi ned i ca. 1 time, og deretter går vi videre for mat og drikke. Vi spanderer :) Detaljer blir sendt ut til de som blir tatt opp som frivillige.")}
+        {SectionContent({title: "Når må jeg møte opp som frivillig?", content: "Det er oppmøte i Oslo Spektrum kl. 19:00 tirsdag 5. september for opplæring, noen oppgaver, mat og omvisning i lokalene. JavaZone er ferdig kl. 18 på torsdag 7. september. Da rigger vi ned i ca. 1 time, og deretter går vi videre for mat og drikke. Vi spanderer :) Detaljer blir sendt ut til de som blir tatt opp som frivillige."})}
 
-        {SectionContent("Når må jeg søke?", "Søknadsfristen er mandag 5. juni.")}
+        {SectionContent({title: "Når må jeg søke?", content: "Søknadsfristen er mandag 5. juni."})}
 
 
         <section className={`content is-normal ${voulenterstyles.displayFlex}`}>
@@ -86,4 +74,19 @@ export default function VolunteersPage() {
       </div>
     </main>
   )
+}
+
+const SectionContent = (props:{
+  title: string
+  content: string
+  contentTwo?: string }) => {
+  return (
+    <section className={`content is-normal ${voulenterstyles.displayFlex}`}>
+      <h2 data-aos="fade-right" data-aos-duration="1000">{props.title}</h2>
+      <div className={voulenterstyles.pDiv} data-aos="fade" data-aos-duration="1000" data-aos-delay="500">
+        <p>{props.content}</p>
+        {props.contentTwo ? <p>{props.contentTwo}</p> : <></>}
+      </div>
+    </section>
+  );
 }
