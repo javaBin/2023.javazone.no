@@ -1,16 +1,18 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from './page.module.css'
 import AnimatedDivider from "../components/AnimatedDivider";
+import AnimatedHero from "../components/AnimatedHero";
 
 export default function Home() {
   return (
     <section className={`has-text-centered`}>
+
       <div className="mb-4">
-        <Image src="/svg/JZ2023-Hero.svg" height={600} width={600} alt="hero" />
+        <AnimatedHero/>
       </div>
+
       <div>
-        <AnimatedDivider />
+        <AnimatedDivider/>
       </div>
 
       <strong>
@@ -40,7 +42,7 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-6">
-        <AnimatedDivider />
+        <AnimatedDivider/>
       </div>
     </section>
   )
