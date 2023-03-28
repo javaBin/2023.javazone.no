@@ -20,9 +20,8 @@ export default function VolunteersPage() {
   return (
     <main className={mainstyles.main}>
       <div className={voulenterstyles.fontSize}>
-        <h1 className="title has-text-centered">Frivillig</h1>
-
-        {SectionContent({title: "Bli frivillig på JavaZone", content: "JavaZone er verdens største community-drevne Java-konferanse.", contentTwo: "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere."})}
+        <h1 className="title has-text-centered">Bli frivillig på JavaZone</h1>
+        <p className="title has-text-centered mb-6">Information in Norwegian for potential student volunteers</p>
 
         {SectionContent({title: "Hva er Javazone?", content: "JavaZone er verdens største community-drevne Java-konferanse.", contentTwo: "Hvert år strømmer over 3200 utviklere til Oslo for å delta på JavaZone. I tillegg kommer nærmere 160 foredragsholdere fra hele verden, pluss mennesker fra over 50 ulike partnere."})}
 
