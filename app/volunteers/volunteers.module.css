@@ -1,0 +1,19 @@
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pDiv {
+  right: 0;
+  width: 60%;
+}
+
+.fontSize h2 {
+  font-size: 32px;
+  max-width: 300px;
+}
+
+.fontSize p {
+  font-size: 24px;
+}
+
