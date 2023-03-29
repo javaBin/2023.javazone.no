@@ -30,16 +30,16 @@ export default function Home() {
         <p>Location: Oslo Spektrum, Norway</p>
       </div>
       <div>
-        <p>
+        <div>
           Click <Link href="https://2022.javazone.no/#/program">here</Link> to view the program of
           JavaZone 2022
-        </p>
-        <p>
+        </div>
+        <div>
           <Link href="/tickets">Ticket sale</Link> opens February 20th
-        </p>
-        <p className="has-text-weight-bold">
+        </div>
+        <div className="has-text-weight-bold">
           NB! Want to be a partner? Click <Link href="/partners">here</Link>
-        </p>
+        </div>
       </div>
       <div className="mt-6">
         <AnimatedDivider/>
