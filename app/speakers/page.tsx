@@ -152,13 +152,14 @@ export default function SpeakersPage() {
         <h3>Accepted presentations, lightning talks, and workshops</h3>
         <p>
           {`As a JavaZone speaker, you get free admission to the conference. Additionally, you are
-          also invited to the speakers' dinner, held on September 6th.`}
+          also invited to the speakers' dinner, held on September 6th.`}          
         </p>
+        <p>All accepted speakers can apply to join us on JourneyZone. See more information on Journeyzone <a className="has-text-weight-bold" href="/speakers/journeyzone">here</a></p>
         <h3>Coverage of expenses</h3>
         <p>
           Please see our <a href="/speakers/monetary-policy">reimbursement policy</a> if you have
           any questions regarding coverage of other expenses.
-        </p>
+        </p>        
       </section>
 
       <section className="content is-normal">
