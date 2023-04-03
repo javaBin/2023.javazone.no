@@ -2,6 +2,8 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import AnimatedDivider from "../components/AnimatedDivider";
 import AnimatedHero from "../components/AnimatedHero";
+import AnimatedFireworks from "../components/AnimatedFireworks";
+
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
 
       <div>
         <AnimatedDivider/>
+        <AnimatedFireworks/>
       </div>
 
       <strong>
