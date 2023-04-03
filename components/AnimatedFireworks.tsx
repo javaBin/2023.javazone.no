@@ -11,7 +11,7 @@ export default function AnimatedFireworks() {
   }, 5000);
 
   return ( /*if timeout is true, then show the fireworks */
-    timeOver && (
+    timeOver ? (
       <div>
         <Fireworks
           options={{
@@ -30,5 +30,10 @@ export default function AnimatedFireworks() {
         />
       </div>
     )
+      :
+      (
+        <>
+        </>
+      )
   )
 }
