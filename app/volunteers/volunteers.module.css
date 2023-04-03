@@ -17,3 +17,13 @@
   font-size: 24px;
 }
 
+/*change the display in displayFlex to grid and width in pDiv to 100% when screen size is 890 and less  */
+@media screen and (max-width: 890px) {
+  .displayFlex {
+    display: grid;
+  }
+
+  .pDiv {
+    width: 100%;
+  }
+}

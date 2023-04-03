@@ -4,8 +4,9 @@ import AnimatedDivider from "../components/AnimatedDivider";
 import AnimatedHero from "../components/AnimatedHero";
 import AnimatedFireworks from "../components/AnimatedFireworks";
 
-
 export default function Home() {
+
+
   return (
     <section className={`has-text-centered`}>
 
@@ -15,7 +16,7 @@ export default function Home() {
 
       <div>
         <AnimatedDivider/>
-        <AnimatedFireworks/>
+         <AnimatedFireworks/>
       </div>
 
       <strong>
