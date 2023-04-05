@@ -64,9 +64,9 @@ export default function VolunteersPage() {
           <div className={voulenterstyles.pDiv} style={{display: "flex", gap: 9}}>
             <p>
               Lik og del gjerne en av våre poster i sosiale medier:{" "}
-              <a className={`link is-info ${styles.link}`} href="https://www.facebook.com/javazoneconference/posts/pfbid02kvYPb6m3FkqPbtiexsA6MYDPyNkXDoTv5eaQ9ugRJoRoUitLgQmwJwUdYneRLaswl">Facebook</a>,
-              <a className={`link is-info ${styles.link}`} href="https://twitter.com/javazone/status/1559618872998871041">{" "}Twitter</a>,
-              <a className={`link is-info ${styles.link}`} href="https://www.linkedin.com/feed/update/urn:li:share:6965354996812910592">{" "}LinkedIn</a>
+              <a className={`link is-info ${styles.link}`} href="https://www.facebook.com/javazoneconference/posts/pfbid0fE6STTXjpepZV89NPwCJDGCRFTCouw1Z1pQXtPcjrjJ5UbRjnhCs8ppR82FGuMHel" target="_blank" rel="noreferrer">Facebook</a>,
+              <a className={`link is-info ${styles.link}`} href="https://twitter.com/javazone/status/1643639280625938432" target="_blank" rel="noreferrer">{" "}Twitter</a>,
+              <a className={`link is-info ${styles.link}`} href="https://www.linkedin.com/feed/update/urn:li:share:6965354996812910592" target="_blank" rel="noreferrer">{" "}LinkedIn</a>
             </p>
           </div>
         </section>
