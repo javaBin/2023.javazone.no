@@ -66,7 +66,7 @@ export default function VolunteersPage() {
               Lik og del gjerne en av våre poster i sosiale medier:{" "}
               <a className={`link is-info ${styles.link}`} href="https://www.facebook.com/javazoneconference/posts/pfbid0fE6STTXjpepZV89NPwCJDGCRFTCouw1Z1pQXtPcjrjJ5UbRjnhCs8ppR82FGuMHel" target="_blank" rel="noreferrer">Facebook</a>,
               <a className={`link is-info ${styles.link}`} href="https://twitter.com/javazone/status/1643639280625938432" target="_blank" rel="noreferrer">{" "}Twitter</a>,
-              <a className={`link is-info ${styles.link}`} href="https://www.linkedin.com/feed/update/urn:li:share:6965354996812910592" target="_blank" rel="noreferrer">{" "}LinkedIn</a>
+              <a className={`link is-info ${styles.link}`} href="https://www.linkedin.com/posts/javazone_it-student-og-lyst-til-%C3%A5-f%C3%A5-med-deg-verdens-activity-7049437067902164993-y1EF?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer">{" "}LinkedIn</a>
             </p>
           </div>
         </section>
