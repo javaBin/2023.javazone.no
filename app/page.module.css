@@ -3,3 +3,68 @@
   color: var(--big-text-color);
 }
 
+/*make the div with class wheely move in from the right of the screen to its current position*/
+.wheely {
+  right:-28rem;
+  position: absolute;
+  animation: moveInRight 1s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+}
+
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.wendy {
+  left:-28rem;
+  position: absolute;
+  animation: moveInLeft 1s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .wheely {
+    width: 18rem;
+  }
+  .wendy {
+    width: 14.5rem;
+  }
+}
+
+/* media that makes the wheely and wendy calss hidden when screen size is 890 and less */
+@media screen and (max-width: 1850px) {
+  .wheely {
+    display: none;
+  }
+  .wendy {
+    display: none;
+  }
+}
+
