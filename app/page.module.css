@@ -61,7 +61,7 @@
 }
 
 /* media that makes the wheely and wendy calss hidden when screen size is 890 and less */
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1140px) {
   .wheely {
     display: none;
   }
