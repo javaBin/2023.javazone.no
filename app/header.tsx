@@ -66,18 +66,6 @@ export function Header() {
             About us
           </HeaderLink>
         </div>
-
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <strong>
-                <Link className="button is-dark-blue" href="/speakers" onClick={handleLinkClick}>
-                  Submit your talk!
-                </Link>
-              </strong>
-            </div>
-          </div>
-        </div>
       </div>
     </nav>
   )

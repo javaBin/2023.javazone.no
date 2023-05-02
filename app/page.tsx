@@ -26,12 +26,6 @@ export default function Home() {
           <AnimatedFireworks/>
         </div>
 
-        <strong>
-          <Link className="button is-dark-blue mt-4" href="/speakers">
-            Submit your talk!
-          </Link>
-        </strong>
-
         <h1 className={`title ${styles.fontAndColor} mt-4`}>
           Welcome to the The Amazing JavaZone 6-7 September in Oslo Spektrum
         </h1>
