@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-const partners = [
+export const partners = [
   {
     homepageUrl: 'https://www.vegvesen.no/',
     logoUrl: 'https://2023.javazone.no/logos/vegvesen.svg',
