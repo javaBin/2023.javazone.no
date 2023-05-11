@@ -205,7 +205,7 @@ export const partners = [
     name: 'Dfind',
   },
   {
-    homepageUrl: ' https://www.postennorge.no/',
+    homepageUrl: 'https://www.postennorge.no/',
     logoUrl: 'https://2023.javazone.no/logos/postenbring.svg',
     name: 'Posten Bring',
   },
