@@ -152,7 +152,7 @@ const DonutStand = () => (
 const ConceptStand = () => (
   <PartnerCard title="Concept Stand" price={{ value: 72000, additional: true }}>
     <ul>
-      <li>70 (10 x 7) square meters</li>
+      <li>60 (10 x 6) square meters</li>
       <li>Large space for showing off your own concept</li>
       <li>Extremely limited – only 3 available</li>
     </ul>
@@ -162,8 +162,7 @@ const ConceptStand = () => (
 const RestaurantStand = () => (
   <PartnerCard title="Restaurant Stand" price={{ value: 78000, additional: true }}>
     <ul>
-      <li>108 (12 x 9) square meters</li>
-      <li>Large back wall</li>
+      <li>24 square meters (12m back wall)</li>
       <li>Food area with seating</li>
       <li>Continuous service of food throughout the conference</li>
       <li>Menu selection in cooperation with event partners</li>
