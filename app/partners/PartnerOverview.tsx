@@ -2,11 +2,6 @@ import { partners } from '../api/partners/partners'
 import '../../styles/globals.css'
 import Image from "next/image";
 
-/**
- *     width: 100vw;
- *     margin-left: calc(-50vw + 50%);
- *     margin-right: calc(-50vw + 50%);
- * */
 export default function PartnerOverview() {
   return (
     <section className="block w-screen bg-[#FED12D] p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
