@@ -1,5 +1,6 @@
 import { partners } from '../api/partners/partners'
 import '../../styles/globals.css'
+import Image from "next/image";
 
 /**
  *     width: 100vw;
@@ -16,11 +17,14 @@ export default function PartnerOverview() {
           .map((partner) => {
             return (
               <a key={partner.name} href={partner.homepageUrl}>
-                <img
+                <Image
+                  height={0}
+                  width={0}
+                  sizes={"100vw"}
                   className="h-16 w-40 hover:scale-[1.2]"
                   src={partner.logoUrl}
                   alt={partner.name}
-                ></img>
+                ></Image>
               </a>
             )
           })}
