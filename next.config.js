@@ -41,6 +41,12 @@ const nextConfig = {
       },
     ]
   },
+  images: {
+    remotePatterns: [{
+      hostname: "2023.javazone.no",
+      protocol: "https"
+    }]
+  }
 }
 
 module.exports = nextConfig
