@@ -2,7 +2,9 @@ import { ReactNode } from 'react'
 import styles from './partners.module.css'
 import { Metadata } from 'next'
 import { partners } from '../api/partners/partners'
-import PartnerOverview from "./PartnerOverview";
+import dynamic from 'next/dynamic'
+
+const PartnerOverview = dynamic(() => import('./PartnerOverview'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - Partners',
