@@ -1,7 +1,8 @@
 import { ReactNode } from 'react'
 import styles from './partners.module.css'
 import { Metadata } from 'next'
-import PartnerOverview from './PartnerOverview'
+import { partners } from '../api/partners/partners'
+import PartnerOverview from "./PartnerOverview";
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - Partners',
@@ -14,7 +15,7 @@ export default function Partners() {
         <h2>Sold out</h2>
         <p>We are now sold out of partner packages.</p>
       </section>
-      <PartnerOverview />
+      <PartnerOverview partners={partners} />
 
       <section className="content is-normal">
         <h2>Video from JavaZone 2023 Partner meeting on March 14th</h2>

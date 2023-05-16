@@ -1,8 +1,19 @@
-import { partners } from '../api/partners/partners'
+"use client"
+
 import '../../styles/globals.css'
 import Image from 'next/image'
 
-export default function PartnerOverview() {
+interface Partner {
+  homepageUrl: string
+  name: string
+  logoUrl: string
+}
+
+interface Props {
+  partners: Partner[]
+}
+
+export default function PartnerOverview({ partners }: Props) {
   return (
     <section className="block w-screen bg-[#FED12D] p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
       <h1 className="text-2xl text-center text-black uppercase my-4">Partners in 2023</h1>
