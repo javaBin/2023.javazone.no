@@ -1,6 +1,6 @@
 import { partners } from '../api/partners/partners'
 import '../../styles/globals.css'
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function PartnerOverview() {
   return (
@@ -15,11 +15,11 @@ export default function PartnerOverview() {
                 <Image
                   height={0}
                   width={0}
-                  sizes={"100vw"}
+                  sizes={'100vw'}
                   className="h-16 w-40 hover:scale-[1.2]"
                   src={partner.logoUrl}
                   alt={partner.name}
-                ></Image>
+                />
               </a>
             )
           })}
