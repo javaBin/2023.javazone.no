@@ -27,7 +27,7 @@ export default function JourneyZonePage() {
         </p>
       </section>
       <Image
-        className={styles.journeyzone_image}
+        className="pb-8"
         src="/images/journeyzone06.jpeg"
         alt="Team picture on top of Åndalsnes"
         width={1000}
