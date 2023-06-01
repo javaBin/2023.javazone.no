@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import styles from './page.module.css'
 
 export default function JourneyZonePage() {
   return (
@@ -68,7 +67,7 @@ export default function JourneyZonePage() {
       </section>
 
       <Image
-        className={styles.journeyzone_image}
+        className="pb-4"
         src="/images/journeyzone05.jpeg"
         alt="Picture of woman looking down at Åndalsnes"
         width={1000}
