@@ -30,6 +30,7 @@ export default function PartnerOverview({ partners }: Props) {
                   className="h-16 w-40 hover:scale-[1.2]"
                   src={partner.logoUrl}
                   alt={partner.name}
+                  style={{"padding":"5px"}}
                 />
               </a>
             )
