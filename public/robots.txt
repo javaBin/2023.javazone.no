@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://2023.javazone.no
+
+# Sitemaps
+Sitemap: https://2023.javazone.no/sitemap.xml

@@ -13,13 +13,11 @@ export const metadata: Metadata = {
     name: 'JavaBin',
   },
   themeColor: '#fff',
-  icons: '/images/javazone2023-fav.png',
   twitter: {
     card: 'summary',
     title: 'JavaZone',
     site: '@javazone',
     creator: 'JavaZone',
-    images: 'https://pbs.twimg.com/profile_images/1635386828239912960/Wrrd1NMU_400x400.png',
     description: 'JavaZone - The biggest community-driven Java conference.',
   },
   openGraph: {
