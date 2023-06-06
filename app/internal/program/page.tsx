@@ -7,7 +7,7 @@ const formatter = new Intl.DateTimeFormat(['en'], {
   minute: 'numeric',
 })
 
-const toFormat = (format: SessionFormat) => {
+const prettyFormat = (format: SessionFormat) => {
   switch (format) {
     case 'presentation':
       return 'Presentation'
@@ -18,7 +18,7 @@ const toFormat = (format: SessionFormat) => {
   }
 }
 
-const toLanguage = (language: SessionLanguage) => (language === 'no' ? 'Norwegian' : 'English')
+const prettyLanguage = (language: SessionLanguage) => (language === 'no' ? 'Norwegian' : 'English')
 
 export default async function ProgramPage() {
   const data: Program = await fetch(
@@ -40,8 +40,8 @@ export default async function ProgramPage() {
             >
               <p>{session.title}</p>
               <p>Speakers: {session.speakers.map((speaker) => speaker.name).join(', ')}</p>
-              <p>{toFormat(session.format)}</p>
-              <p>{toLanguage(session.language)}</p>
+              <p>{prettyFormat(session.format)}</p>
+              <p>{prettyLanguage(session.language)}</p>
               <p>{formatter.format(new Date(session.startTime))}</p>
               <p>{formatter.format(new Date(session.endTime))}</p>
               <p>{session.room}</p>
