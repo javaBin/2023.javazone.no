@@ -24,7 +24,8 @@ export default async function ProgramPage() {
   const data: Program = await fetch(
     'https://sleepingpill.javazone.no/public/allSessions/javazone_2022', {
       next: {
-        revalidate: 60 * 10 // 10 minute cache
+        revalidate: 60 * 10, // 10 minute cache
+        tags: ["talks"]
       }
     }
   ).then((res) => res.json())
