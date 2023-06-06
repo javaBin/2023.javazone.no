@@ -22,7 +22,11 @@ const prettyLanguage = (language: SessionLanguage) => (language === 'no' ? 'Norw
 
 export default async function ProgramPage() {
   const data: Program = await fetch(
-    'https://sleepingpill.javazone.no/public/allSessions/javazone_2022',
+    'https://sleepingpill.javazone.no/public/allSessions/javazone_2022', {
+      next: {
+        revalidate: 60 * 10 // 10 minute cache
+      }
+    }
   ).then((res) => res.json())
 
   return (
