@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 export default function SuperOverflowPage() {
   return (
     <section className="content is-normal">
-      <h1>Super Overflow</h1>
+      <h1>SuperOverflow</h1>
 
       <section className="content is-normal">
         <h2>JavaZone SuperOverflow 2023, Sept 6th - 7th</h2>
