@@ -15,7 +15,7 @@ export default function About() {
       </div>
       <h2 className="text-3xl mb-8">What is it? Who is behind it?</h2>
 
-      <section className="block last:mb-6">
+      <section className="block mb-6">
         <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">WHAT IS JAVAZONE?</h2>
 
         <p className="mb-4">
@@ -38,7 +38,7 @@ export default function About() {
 
       <section className={pagestyles.child} />
 
-      <section className="block last:mb-6 mt-5">
+      <section className="block mb-6 mt-5">
         <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">WHO IS BEHIND IT?</h2>
         <p className="mb-4">
           Organizing a conference of this size on a voluntary basis is a lot of hard work (and it is

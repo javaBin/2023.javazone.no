@@ -6,16 +6,16 @@ export const metadata: Metadata = {
 
 export default function MonetaryPolicyPage() {
   return (
-    <section className="content is-normal">
-      <h1>Monetary policy</h1>
+    <section className="block mb-6">
+      <h1 className="text-4xl leading-tight font-semibold text-[#FED12D]">Monetary policy</h1>
 
-      <section className="content is-normal">
-        <h2>What & How</h2>
-        <p>
+      <section className="block mb-6">
+        <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">What & How</h2>
+        <p className="mb-4">
           If your presentation or a workshop is accepted, you may apply for a refund for travel and
           accommodation. Read below to find out if you are eligible.
         </p>
-        <p>
+        <p className="mb-4">
           Applications for speaker reimbursements{' '}
           <strong>
             <em>must</em>
@@ -24,9 +24,9 @@ export default function MonetaryPolicyPage() {
         </p>
       </section>
 
-      <section className="content is-normal">
-        <h2>How to Apply</h2>
-        <p>
+      <section className="block mb-6">
+        <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">How to Apply</h2>
+        <p className="mb-4">
           The first thing to note is that you need to{' '}
           <strong>
             <em>apply</em>
@@ -35,25 +35,25 @@ export default function MonetaryPolicyPage() {
           financial support, please reach out to <a href="mailto:refund@java.no">refund@java.no</a>{' '}
           after your session or workshop was accepted.
         </p>
-        <p>
+        <p className="mb-4">
           In this mail, provide an estimate of your travel expenses and the days you will be
           visiting Oslo during the conference.
         </p>
-        <p>
+        <p className="mb-4">
           We have a deal with a hotel, so if you need accomondation, we will reserve a room for you.
           Please state in your application which days you are planning to stay. We do not refund
           travel costs above the cost of a reasonably priced economy ticket.
         </p>
-        <p>
+        <p className="mb-4">
           Please also note that we do not refund travel expenses for those holding lightning talks.
           However, speakers (including the ones holding lightning talks) will receive a free
           conference ticket.
         </p>
       </section>
 
-      <section className="content is-normal">
-        <h2>Confirmation & Reimbursement</h2>
-        <p>
+      <section className="block mb-6">
+        <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">Confirmation & Reimbursement</h2>
+        <p className="mb-4">
           Applications{' '}
           <strong>
             <em>must</em>
