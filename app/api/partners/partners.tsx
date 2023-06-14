@@ -33,6 +33,7 @@ export const partners = [
   {logoUrl: '/logos/kodemaker.svg',name: 'Kodemaker',	homepageUrl: 'https://www.kodemaker.no/'},
   {logoUrl: '/logos/enso.svg',name: 'Konsulentselskapet Ensō AS',	homepageUrl: 'https://www.enso.no/'},
   {logoUrl: '/logos/kosli.svg',name: 'Kosli',	homepageUrl: 'https://www.kosli.com/'},
+  {logoUrl: '/logos/kraftlauget.svg',name: 'Kraftlauget',	homepageUrl: 'https://kraftlauget.no/'},
   {logoUrl: '/logos/mastercard.svg',name: 'Mastercard',	homepageUrl: 'https://www.mastercard.no/no-no.html'},
   {logoUrl: '/logos/miles.svg',name: 'Miles',	homepageUrl: 'https://www.miles.no/'},
   {logoUrl: '/logos/nav.svg',name: 'NAV IT',	homepageUrl: 'https://www.detsombetyrnoe.no/'},
