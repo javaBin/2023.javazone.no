@@ -55,6 +55,9 @@ export function Header() {
           <HeaderLink onClick={handleLinkClick} href="/tickets">
             Tickets
           </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/superoverflow">
+            SuperOverflow
+          </HeaderLink>
           <HeaderLink onClick={handleLinkClick} href="/volunteers">
             Frivillig
           </HeaderLink>
