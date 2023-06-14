@@ -1,6 +1,5 @@
 'use client'
 
-import mainstyles from '../page.module.css';
 import voulenterstyles from './volunteers.module.css';
 import Link from 'next/link';
 // @ts-ignore
@@ -18,7 +17,6 @@ export default function VolunteersPage() {
   }, [])
 
   return (
-    <main className={mainstyles.main}>
       <div className={voulenterstyles.fontSize}>
         <h1 className="title has-text-centered">Bli frivillig på JavaZone</h1>
         <p className="title has-text-centered mb-6">Information in Norwegian for potential student volunteers</p>
@@ -71,7 +69,6 @@ export default function VolunteersPage() {
           </div>
         </section>
       </div>
-    </main>
   )
 }
 
