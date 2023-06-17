@@ -4,11 +4,11 @@
   padding: 2rem 1rem;
 }
 
-.panelShadow{
+.panelShadow {
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.05);
 }
 
-.sectionCards h2{
+.sectionCards h2 {
   font-family: 'Noto Serif';
 }
 

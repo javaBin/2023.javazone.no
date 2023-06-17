@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {Metadata} from "next";
+import PageBanner from "../../components/PageBanner";
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - Tickets',
@@ -8,7 +9,9 @@ export const metadata: Metadata = {
 export default function TicketsPage() {
   return (
     <div>
-      <h1 className="title">Tickets</h1>
+      <h1 className="title has-text-centered">Tickets</h1>
+
+      <PageBanner/>
 
       <section className="content is-normal">
         <h2>About JavaZone</h2>
