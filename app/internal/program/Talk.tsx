@@ -1,8 +1,9 @@
-"use client"
+'use client'
 
 import { Session } from './program'
 import styles from './page.module.css'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
+import { ReadMore } from "@/components/ReadMore"
 
 export const Talk = ({
   session: { endTime, format, language, room, speakers, startTime, title, abstract },
@@ -17,6 +18,7 @@ export const Talk = ({
     {startTime && <p>{formatter.format(new Date(startTime))}</p>}
     {endTime && <p>{formatter.format(new Date(endTime))}</p>}
     {room && <p>{room}</p>}
-    {<p>{abstract}</p>}
+    <ReadMore>{abstract}</ReadMore>
   </li>
 )
+
