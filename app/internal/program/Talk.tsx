@@ -1,5 +1,3 @@
-'use client'
-
 import { Session } from './program'
 import styles from './page.module.css'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
