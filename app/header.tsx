@@ -65,6 +65,10 @@ export function Header() {
             JourneyZone
           </HeaderLink>
 
+          <HeaderLink onClick={handleLinkClick} href="/theme">
+            This year{"'"}s theme
+          </HeaderLink>
+
           <HeaderLink onClick={handleLinkClick} href="/about">
             About us
           </HeaderLink>
