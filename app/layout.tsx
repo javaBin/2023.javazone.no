@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   themeColor: '#fff',
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'JavaZone',
     site: '@javazone',
     creator: 'JavaZone',

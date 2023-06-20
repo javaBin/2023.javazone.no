@@ -28,15 +28,13 @@ export default function TicketsPage() {
       <section className="content is-normal">
         <h2>Sold out</h2>
         <p>
-          We currently do not have any more tickets availble. Some tickets might be come available
-          at a later time. You can sign up on the waiting below. We will then contact you if we get
-          tickets availble.
+          We are all out of normal tickets, but there now is an alternative:
         </p>
         <Link
           className="button is-dark-blue"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfnTr0RkltFZO7QpNqPsx_Lwdq-aogH3w5LwhnXkkZ3BGYKbA/viewform?usp=sf_link"
+          href="/superoverflow"
         >
-          <b>Register on waiting list</b>
+          <b>Info about Superoverflow</b>
         </Link>
       </section>
       <section className="content is-normal">
