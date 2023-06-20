@@ -2,7 +2,8 @@
 
 
 :root{
-  --background-JZ-gradient: linear-gradient(#650729, #033E4F);
+  --dark-blue-background: #033E4F;
+  --background-JZ-gradient: linear-gradient(#650729, var(--dark-blue-background));
   --big-text-color: #FED12D;
   --normal-text-color: #F6DA98;
   --hover-text-color: #FF8525;
@@ -12,8 +13,8 @@
 
 $footer-padding: 1rem 0;
 $footer-background-color: hsl(0, 0%, 21%);
-$navbar-background-color: #033E4F;
-$footer-background-color: #033E4F;
+$navbar-background-color: var(--dark-blue-background);
+$footer-background-color: var(--dark-blue-background);
 $navbar-item-color: var(--big-text-color);
 $navbar-item-hover-color: var(--hover-text-color);
 $navbar-item-hover-background-color: #033443;
