@@ -1,8 +1,6 @@
 import styles from './pageBanner.module.css';
 import Image from "next/image";
 
-type Props = {}
-
 export default function PageBanner() {
   return (
     <div className={styles.banner}>

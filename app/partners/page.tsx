@@ -3,7 +3,6 @@ import styles from './partners.module.css'
 import { Metadata } from 'next'
 import { partners } from '../api/partners/partners'
 import dynamic from 'next/dynamic'
-import PageBanner from "../../components/PageBanner";
 
 const PartnerOverview = dynamic(() => import('./PartnerOverview'), { ssr: false })
 

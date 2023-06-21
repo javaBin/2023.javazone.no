@@ -9,9 +9,7 @@ import 'aos/dist/aos.css';
 import * as React from "react";
 import {useEffect} from "react";
 
-type Props = {}
-
-export default function Theme({}: Props) {
+export default function Theme() {
   useEffect(() => {
     AOS.init();
   }, [])
