@@ -56,7 +56,6 @@ export default function Theme() {
   )
 }
 
-
 const SectionContent = (props: {
   src: string
   alt: string
