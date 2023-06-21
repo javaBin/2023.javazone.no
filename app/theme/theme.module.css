@@ -6,11 +6,6 @@
   position: relative;
 }
 
-.displayFlex img {
-  min-width: 50%;
-  height: 400px;
-}
-
 .pDiv {
   left: 0;
   width: 60%;
