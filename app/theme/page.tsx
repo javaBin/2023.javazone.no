@@ -1,6 +1,8 @@
 'use client'
 
+/*
 import PageBanner from "../../components/PageBanner";
+*/
 import Image from "next/image";
 import styles from "./theme.module.css";
 import voulenterstyles from "../volunteers/volunteers.module.css";
@@ -19,7 +21,9 @@ export default function Theme() {
       <h1 className="title">Dear JavaZone community,
         We are excited to announce that this year’s JavaZone conference theme is Circus!</h1>
 
+{/*
       <PageBanner/>
+*/}
 
       <h1 className={"title has-text-centered"} style={{marginBottom: "4rem"}}>Why Circus, you might ask?</h1>
 
