@@ -14,8 +14,8 @@ export interface Session {
   abstract: string
   title: string
   room?: string
-  startTime?: string
-  endTime?: string
+  startTime: string
+  endTime: string
   video?: string
   startTimeZulu: string
   endTimeZulu: string
