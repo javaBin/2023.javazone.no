@@ -17,7 +17,6 @@ export default function Partners() {
         <h2>Sold out</h2>
         <p>We are now sold out of partner packages.</p>
       </section>
-
       <PartnerOverview partners={partners} />
 
       <section className="content is-normal">

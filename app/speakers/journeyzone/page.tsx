@@ -1,13 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import PageBanner from "../../../components/PageBanner";
 
 export default function JourneyZonePage() {
   return (
     <section className="content is-normal">
-      <h1 className={"has-text-centered"}>JourneyZone 2023</h1>
-
-      <PageBanner/>
+      <h1>JourneyZone 2023</h1>
 
       <section className="content is-normal">
         <h2>What is this?</h2>
