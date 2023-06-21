@@ -66,7 +66,7 @@ const SectionContent = (props: {
 }) => {
   return (
     <section className={`content is-normal ${styles.displayFlex}`} style={props.style}>
-      <Image src={props.src} data-aos="fade-right" data-aos-duration="1000" width={100} height={200} alt={props.alt}/>
+      <Image src={props.src} data-aos="fade-right" data-aos-duration="1000" width={300} height={200} alt={props.alt}/>
       <div className={voulenterstyles.pDiv} data-aos="fade" data-aos-duration="1000" data-aos-delay="500">
         <h1>{props.content}</h1>
         {props.contentTwo ? <p>{props.contentTwo}</p> : <></>}
