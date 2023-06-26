@@ -1,6 +1,5 @@
 'use client'
 
-import mainstyles from '../page.module.css';
 import voulenterstyles from './volunteers.module.css';
 import Link from 'next/link';
 // @ts-ignore
