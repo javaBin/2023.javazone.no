@@ -52,12 +52,10 @@ export default function SuperOverflowPage() {
 
       <section className="content is-normal">
         <h2>Tickets</h2>
-        <p>Ticket price: NOK3000 ex.VAT<br/>
-          Pre-sale opens on June 12th.<br/>
-          Official sale opens on June 15th.<br/></p>
+        <p>Ticket price: NOK3000 ex.VAT</p>
           <strong>
             <Link className="button is-dark-blue is-fullwidth" href="https://app.checkin.no/event/58282/javazone-superoverflow-2023">
-              Book your ticket here
+              Book your SuperOverflow ticket here
             </Link>
           </strong>
           <p>Note: The button will send you to the webpage of our ticket partner Checkin.</p>
