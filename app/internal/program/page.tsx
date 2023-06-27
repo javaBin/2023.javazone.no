@@ -1,6 +1,6 @@
-import { Program, Session, SessionFormat } from './program'
+import {Program, Session, SessionFormat} from './program'
 import styles from './page.module.css'
-import { SessionGroup } from './SessionGroup'
+import {SessionGroup} from './SessionGroup'
 
 export default async function ProgramPage() {
   const data: Program = await fetch(

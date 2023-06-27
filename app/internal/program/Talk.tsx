@@ -1,7 +1,7 @@
-import { Session } from './program'
+import {Session} from './program'
 import styles from './page.module.css'
-import { formatter, prettyFormat, prettyLanguage } from './utils'
-import { ReadMore } from "@/components/ReadMore"
+import {formatter, prettyFormat, prettyLanguage} from './utils'
+import {ReadMore} from "@/components/ReadMore"
 
 export const Talk = ({
   session: { endTime, format, language, room, speakers, startTime, title, abstract },

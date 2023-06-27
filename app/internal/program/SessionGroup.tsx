@@ -1,7 +1,7 @@
-import { Session, SessionFormat } from './program'
+import {Session, SessionFormat} from './program'
 import styles from './page.module.css'
-import { prettyFormat } from './utils'
-import { Talk } from './Talk'
+import {prettyFormat} from './utils'
+import {Talk} from './Talk'
 
 export const SessionGroup = ({
   group,

@@ -5,8 +5,8 @@ import Link from 'next/link';
 // @ts-ignore
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {useEffect} from "react";
 import * as React from "react";
+import {useEffect} from "react";
 import Image from "next/image";
 import styles from "../footer.module.css";
 

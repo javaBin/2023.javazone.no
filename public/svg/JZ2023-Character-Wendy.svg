@@ -10,9 +10,9 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
-<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 841.9"
-	 style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;"
+     xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 595.3 841.9"
+     style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#26A27E;}
 	.st1{fill:#5AD0A6;}
@@ -632,27 +632,27 @@
       </rdf:Description>
    </rdf:RDF>
 </x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?xpacket end="w"?>
 	</metadata>
 <g>
@@ -754,9 +754,9 @@
 					s-2.7,1.9,1.9,7.9c0.9,1.2-1.9,8.8-2.9,15c-0.3,2.1-0.3,4.3,0.1,6.4L356.9,268.1z"/>
 				<ellipse class="st2" cx="310.5" cy="393.5" rx="12.6" ry="9"/>
 			</g>
-			
+
 				<ellipse transform="matrix(0.5344 -0.8453 0.8453 0.5344 -102.4853 413.9886)" class="st11" cx="324.5" cy="300" rx="0.5" ry="0.6"/>
-			
+
 				<ellipse transform="matrix(0.5344 -0.8453 0.8453 0.5344 -111.3971 397.8113)" class="st11" cx="305.4" cy="300" rx="0.5" ry="0.6"/>
 		</g>
 		<path class="st8" d="M288.1,313l-2.8,23c0,0-0.5,4.2,2.8,4.4c2.9,0.1,2.8-3.3,2.7-4.6C289.8,328.5,288.1,313,288.1,313z"/>
@@ -772,17 +772,17 @@
 				C311.1,217.6,311.4,218.5,311.1,219.5z"/>
 			<path class="st3" d="M334.3,227.6c-0.4,1-1.3,1.7-3.2,0.9s-1.9-1.9-1.5-2.9c0.4-1,1.1-1.4,3-0.7
 				C334.4,225.6,334.7,226.6,334.3,227.6z"/>
-			
+
 				<ellipse transform="matrix(0.9628 -0.2704 0.2704 0.9628 -49.3376 91.8368)" class="st3" cx="308.7" cy="225" rx="9.1" ry="2.8"/>
-			
+
 				<ellipse transform="matrix(0.768 -0.6405 0.6405 0.768 -72.8724 263.0856)" class="st3" cx="326.7" cy="232.1" rx="2.9" ry="8.9"/>
 			<ellipse class="st9" cx="322.4" cy="227" rx="1.8" ry="1.7"/>
 			<ellipse class="st9" cx="315.6" cy="224.2" rx="1.8" ry="1.7"/>
 			<ellipse class="st0" cx="315.3" cy="225" rx="1.1" ry="1.1"/>
 			<ellipse class="st0" cx="322" cy="227.8" rx="1.1" ry="1.1"/>
-			
+
 				<ellipse transform="matrix(0.9628 -0.2704 0.2704 0.9628 -49.5216 91.5975)" class="st2" cx="307.7" cy="225.6" rx="4.3" ry="1.3"/>
-			
+
 				<ellipse transform="matrix(0.7679 -0.6405 0.6405 0.7679 -73.3109 263.8446)" class="st2" cx="327.5" cy="233.1" rx="1.4" ry="4.3"/>
 		</g>
 		<path class="st7" d="M318.7,221.3c0.6,0.9,2,1.5,3.6,1.4"/>

@@ -1,4 +1,4 @@
-import { SessionFormat, SessionLanguage } from "./program";
+import {SessionFormat, SessionLanguage} from "./program";
 
 export const prettyLanguage = (language: SessionLanguage) =>
   language === 'no' ? 'Norwegian 🇳🇴' : 'English 🇬🇧'

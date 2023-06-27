@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 import Image from 'next/image'
 
 const dividers = [1, 2, 3, 4, 5]

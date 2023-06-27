@@ -1,7 +1,6 @@
 import {ReactNode} from 'react'
 import Link from 'next/link'
-import { Metadata } from 'next'
-import styles from './speakers.module.css'
+import {Metadata} from 'next'
 import PageBanner from "../../components/PageBanner";
 
 export const metadata: Metadata = {

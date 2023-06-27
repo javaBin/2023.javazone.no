@@ -1,8 +1,8 @@
-import { ReactNode } from 'react'
+import {ReactNode} from 'react'
 import '../styles/globals.scss'
-import { Footer } from './footer'
-import { Header } from './header'
-import { Metadata } from 'next'
+import {Footer} from './footer'
+import {Header} from './header'
+import {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023',

@@ -1,6 +1,6 @@
 "use client"
 
-import { ReactNode, useState } from 'react'
+import {ReactNode, useState} from 'react'
 
 export const ReadMore = ({ children }: { children: ReactNode }) => {
   const [open, setIsOpen] = useState(false)

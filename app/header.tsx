@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, useState } from 'react'
+import {ReactNode, useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 

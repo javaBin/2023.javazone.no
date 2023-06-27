@@ -1,5 +1,5 @@
 import pagestyles from './about.module.css'
-import { Metadata } from 'next'
+import {Metadata} from 'next'
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - About JavaZone',

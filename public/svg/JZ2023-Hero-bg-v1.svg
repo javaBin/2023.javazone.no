@@ -10,9 +10,9 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
-<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.9 595.3"
-	 style="enable-background:new 0 0 841.9 595.3;" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;"
+     xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 841.9 595.3"
+     style="enable-background:new 0 0 841.9 595.3;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FED12D;stroke-linecap:round;stroke-miterlimit:10;}
 	.st1{fill:#F00000;}
@@ -28,7 +28,7 @@
 <metadata>
 	<x:xmpmeta  xmlns:x="adobe:ns:meta/">
 		<rdf:RDF  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-			
+
 				<rdf:Description  rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:illustrator="http://ns.adobe.com/illustrator/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/" xmlns:xmpGImg="http://ns.adobe.com/xap/1.0/g/img/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
 				<dc:format>image/svg+xml</dc:format>
 				<dc:title>
@@ -1273,13 +1273,13 @@ lqt+8feHM0PFxnh58GT5cEr+y00yxw3Yq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq/wD/2Q==
 		<g>
 			<path class="st5" d="M412.6,346.7c0,0-3.2,1.4-5.9,4.7c-12.8,15.7,15.2-8.1,39.6,20.9c35,41.7,79.5,54.9,85,17.9
 				c6.9-45.7-33.2-9.5-24.2-4.1c9.4,5.5,6.9-17.1,12.8-8.8c7.1,10.1-3,27.2-8.5,25.8C483.1,395.6,490.8,369.2,412.6,346.7z"/>
-			
+
 				<ellipse transform="matrix(0.7355 -0.6776 0.6776 0.7355 -137.3279 425.082)" class="st2" cx="475.7" cy="388.4" rx="4.8" ry="4"/>
 			<ellipse class="st2" cx="485.5" cy="396.3" rx="3.3" ry="3.3"/>
 			<ellipse class="st2" cx="462.2" cy="378.2" rx="3.3" ry="3.3"/>
-			
+
 				<ellipse transform="matrix(0.4044 -0.9146 0.9146 0.4044 -73.3606 695.9659)" class="st2" cx="497.7" cy="404.3" rx="2.1" ry="2.7"/>
-			
+
 				<ellipse transform="matrix(0.6461 -0.7632 0.7632 0.6461 -122.714 476.9534)" class="st2" cx="453" cy="370.8" rx="2.1" ry="2.7"/>
 			<path class="st2" d="M526.7,384.2c-0.1-1.3,3.1,8.7-2.8,17.5c-4.5,6.6-12,6.5-12,6.5S528,405.4,526.7,384.2z"/>
 		</g>
@@ -1305,7 +1305,7 @@ lqt+8feHM0PFxnh58GT5cEr+y00yxw3Yq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq/wD/2Q==
 			c-14.4-4.8-14.6-23.1-14.6-23.1s-8.9,17.1-22.1,16.9c-13.7-0.2-17.2-16.1-17.2-16.1s0,19.8-12.2,20.2
 			c-12.2,0.3-19.1-13.6-19.1-13.6s-3.1,21.2-10.7,23.3C351.9,323.3,345.4,317.5,345.4,317.5z"/>
 		<circle class="st1" cx="347.5" cy="392.9" r="2"/>
-		
+
 			<ellipse transform="matrix(0.1331 -0.9911 0.9911 0.1331 -100.9018 655.9458)" class="st1" cx="324.5" cy="385.7" rx="4" ry="1.9"/>
 		<ellipse transform="matrix(0.789 -0.6143 0.6143 0.789 -179.785 290.2567)" class="st1" cx="332.7" cy="406.9" rx="1.8" ry="3"/>
 		<circle class="st1" cx="327.1" cy="398" r="3.1"/>
@@ -1343,9 +1343,9 @@ lqt+8feHM0PFxnh58GT5cEr+y00yxw3Yq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq/wD/2Q==
 			/>
 		<ellipse transform="matrix(0.362 -0.9322 0.9322 0.362 220.1138 633.1569)" class="st1" cx="572.6" cy="155.8" rx="2.5" ry="3"/>
 		<circle class="st1" cx="581.3" cy="159.8" r="1.9"/>
-		
+
 			<ellipse transform="matrix(0.4392 -0.8984 0.8984 0.4392 183.3293 621.4604)" class="st1" cx="589.4" cy="163.9" rx="1.4" ry="1.8"/>
-		
+
 			<ellipse transform="matrix(0.6742 -0.7385 0.7385 0.6742 70.1058 496.7037)" class="st1" cx="598.1" cy="168.9" rx="1.3" ry="1.4"/>
 		<ellipse transform="matrix(0.6742 -0.7385 0.7385 0.6742 68.7272 504.8242)" class="st1" cx="606.6" cy="174.5" rx="0.8" ry="1"/>
 	</g>
