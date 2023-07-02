@@ -28,14 +28,8 @@ export default function TicketsPage() {
       <section className="content is-normal">
         <h2>Sold out</h2>
         <p>
-          We are all out of normal tickets, but there now is an alternative:
+          We are all out of tickets
         </p>
-        <Link
-          className="button is-dark-blue"
-          href="/superoverflow"
-        >
-          <b>Info about Superoverflow</b>
-        </Link>
       </section>
       <section className="content is-normal">
         <h2>Partner tickets</h2>
