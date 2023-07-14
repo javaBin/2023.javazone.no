@@ -1,5 +1,4 @@
 
-
 .program_title {
   color: var(--big-text-color);
   font-weight: bold;
@@ -16,6 +15,10 @@
   background-color: var(--dark-blue-background);
   list-style: none;
   white-space: pre-line;
+}
+
+.session_link, .session_link:hover {
+  color: var(--normal-text-color)
 }
 
 .session button {
