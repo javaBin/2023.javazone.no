@@ -1,13 +1,49 @@
-import { fetchIndividualProgram } from "@/app/program/fetchProgram";
+import { fetchIndividualProgram } from '@/app/program/fetchProgram'
 import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
+import { Metadata, ResolvedMetadata } from 'next'
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
     return ''
   }
   return formatter.formatRange(new Date(startTime), new Date(endTime))
+}
+
+export async function generateMetadata(
+  {
+    params,
+  }: {
+    params: {
+      id: string
+    }
+  },
+  parent: ResolvedMetadata,
+): Promise<Metadata> {
+  const session = await fetchIndividualProgram(params.id)
+  const parentMetadata = await parent
+  return {
+    title: session?.title
+      ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers.map((speaker) => speaker.name).join(', ')}`
+      : parentMetadata.title,
+    description: session?.abstract ?? parentMetadata.description,
+    openGraph: {
+      ...(parentMetadata.openGraph && parentMetadata.openGraph),
+      locale: session?.language,
+      title: session?.title ?? parentMetadata.title ?? '',
+      url: session?.id
+        ? `${parentMetadata.openGraph?.url}/program/${session?.id}`
+        : parentMetadata.openGraph?.url ?? '',
+    },
+    twitter: {
+      title: session?.title
+        ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers.map((speaker) => speaker.name).join(', ')}`
+        : parentMetadata.title ?? '',
+      description: session?.abstract ?? parentMetadata.description ?? '',
+      site: parentMetadata.twitter?.site ?? '',
+    },
+  }
 }
 
 export default async function Page({
@@ -18,7 +54,6 @@ export default async function Page({
   }
 }) {
   const session = await fetchIndividualProgram(params.id)
-
 
   if (!session) {
     return <div>Klarte ikke finne denne talken :/</div>
