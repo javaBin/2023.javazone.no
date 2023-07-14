@@ -1,10 +1,10 @@
 import styles from './page.module.css'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
-import { ReadMore } from "@/components/ReadMore"
 import { Session } from "@/app/program/program";
+import Link from "next/link";
 
 export const SimpleTalk = ({
-  session: { endTime, format, language, room, speakers, startTime, title, abstract },
+  session: { endTime, format, language, room, speakers, startTime, title, id },
 }: {
   session: Session
 }) => (
@@ -16,7 +16,7 @@ export const SimpleTalk = ({
     {startTime && <p>{formatter.format(new Date(startTime))}</p>}
     {endTime && <p>{formatter.format(new Date(endTime))}</p>}
     {room && <p>{room}</p>}
-    <ReadMore>{abstract}</ReadMore>
+    <Link href={`/program/${id}`}>Read more</Link>
   </li>
 )
 
