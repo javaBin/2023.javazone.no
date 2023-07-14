@@ -1,17 +1,10 @@
-import { Program, Session, SessionFormat } from './program'
+import { Session, SessionFormat } from './program'
 import styles from './page.module.css'
 import { SessionGroup } from './SessionGroup'
+import { fetchProgram } from '@/app/program/fetchProgram'
 
 export default async function ProgramPage() {
-  const data: Program = await fetch(
-    'https://sleepingpill.javazone.no/public/allSessions/javazone_2023',
-    {
-      next: {
-        revalidate: 60 * 10, // 10 minute cache
-        tags: ['talks'],
-      },
-    },
-  ).then((res) => res.json())
+  const data = await fetchProgram()
 
   const sessionsGroupedByType = data.sessions.reduce((groups, session) => {
     groups[session.format] = groups[session.format] ?? []
@@ -22,11 +15,9 @@ export default async function ProgramPage() {
   return (
     <article>
       <h1 className={styles.program_title}>JavaZone Program 2023</h1>
-      <section key="talks">
-        <SessionGroup group={'presentation'} sessions={sessionsGroupedByType['presentation']} />
-        <SessionGroup group={'lightning-talk'} sessions={sessionsGroupedByType['lightning-talk']} />
-        <SessionGroup group={'workshop'} sessions={sessionsGroupedByType['workshop']} />
-      </section>
+      <SessionGroup group={'presentation'} sessions={sessionsGroupedByType['presentation']} />
+      <SessionGroup group={'lightning-talk'} sessions={sessionsGroupedByType['lightning-talk']} />
+      <SessionGroup group={'workshop'} sessions={sessionsGroupedByType['workshop']} />
     </article>
   )
 }

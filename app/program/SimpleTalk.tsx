@@ -1,9 +1,9 @@
-import { Session } from './program'
 import styles from './page.module.css'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
 import { ReadMore } from "@/components/ReadMore"
+import { Session } from "@/app/program/program";
 
-export const Talk = ({
+export const SimpleTalk = ({
   session: { endTime, format, language, room, speakers, startTime, title, abstract },
 }: {
   session: Session
