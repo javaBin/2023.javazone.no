@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import { prettyFormat } from './utils'
-import { SimpleTalk } from './SimpleTalk'
 import { Session, SessionFormat } from '@/app/program/program'
+import { SimpleTalk } from "@/app/program/SimpleTalk";
 
 export const SessionGroup = ({
   group,
