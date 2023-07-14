@@ -16,3 +16,8 @@ export async function fetchProgram(
     next: revalidateConfig,
   }).then<Program>((res) => res.json())
 }
+
+export const fetchIndividualProgram = (id?: string, config?: NextRevalidateConfig) =>
+  fetchProgram({ revalidateConfig: config }).then((program) =>
+    program.sessions.find((session) => session.id === id),
+  )

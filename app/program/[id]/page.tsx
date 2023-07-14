@@ -1,4 +1,4 @@
-import { fetchProgram } from '@/app/program/fetchProgram'
+import { fetchIndividualProgram } from "@/app/program/fetchProgram";
 import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
@@ -17,8 +17,8 @@ export default async function Page({
     id: string
   }
 }) {
-  const program = await fetchProgram()
-  const session = program.sessions.find((session) => session.id === params.id)
+  const session = await fetchIndividualProgram(params.id)
+
 
   if (!session) {
     return <div>Klarte ikke finne denne talken :/</div>
@@ -51,7 +51,7 @@ export default async function Page({
       <h3>Day & time</h3>
       <p>{dayAndTime ? getDayAndTime(session) : 'N/A'}</p>
 
-      <h3>Intenden audience</h3>
+      <h3>Intended audience</h3>
       <p>{session.intendedAudience}</p>
 
       <ul style={{ listStyle: 'none', margin: '2rem 0' }}>
