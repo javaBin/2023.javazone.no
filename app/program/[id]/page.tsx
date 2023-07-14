@@ -2,7 +2,7 @@ import { fetchIndividualProgram } from '@/app/program/fetchProgram'
 import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
-import { Metadata, ResolvedMetadata } from 'next'
+import { Metadata, ResolvingMetadata } from "next";
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
@@ -19,7 +19,7 @@ export async function generateMetadata(
       id: string
     }
   },
-  parent: ResolvedMetadata,
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const session = await fetchIndividualProgram(params.id)
   const parentMetadata = await parent
