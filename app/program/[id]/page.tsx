@@ -81,19 +81,19 @@ export default async function Page({
         }}
       >
         <p>{prettyFormat(session.format)}</p>-<p>{prettyLanguage(session.language)}</p>-
-        {!!dayAndTime && !!session.room ? <p>{dayAndTime}</p> : <p>Day & time not available</p>}
+        {!!dayAndTime && !!session.room ? <p>{dayAndTime}</p> : <p>Day & time coming soon</p>}
       </div>
       <p>
         <b>Length:</b> {session.length} minutes
       </p>
       <p>
-        <b>Room:</b> {session.room ? session.room : 'N/A'}
+        <b>Room:</b> {session.room ? session.room : 'Coming soon'}
       </p>
       <h3>Abstract</h3>
       <p>{session.abstract}</p>
 
       <h3>Day & time</h3>
-      <p>{dayAndTime ? getDayAndTime(session) : 'N/A'}</p>
+      <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
 
       <h3>Intended audience</h3>
       <p>{session.intendedAudience}</p>
