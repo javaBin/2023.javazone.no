@@ -2,7 +2,7 @@ import { fetchIndividualProgram } from '@/app/program/fetchProgram'
 import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata, ResolvingMetadata } from 'next'
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
@@ -25,20 +25,29 @@ export async function generateMetadata(
   const parentMetadata = await parent
   return {
     title: session?.title
-      ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers.map((speaker) => speaker.name).join(', ')}`
+      ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers
+          .map((speaker) => speaker.name)
+          .join(', ')}`
       : parentMetadata.title,
     description: session?.abstract ?? parentMetadata.description,
     openGraph: {
       ...(parentMetadata.openGraph && parentMetadata.openGraph),
       locale: session?.language,
-      title: session?.title ?? parentMetadata.title ?? '',
+      title: session?.title
+        ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers
+            .map((speaker) => speaker.name)
+            .join(', ')}`
+        : parentMetadata.title ?? '',
       url: session?.id
         ? `${parentMetadata.openGraph?.url}/program/${session?.id}`
         : parentMetadata.openGraph?.url ?? '',
+      description: session?.abstract ?? parentMetadata.description ?? '',
     },
     twitter: {
       title: session?.title
-        ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers.map((speaker) => speaker.name).join(', ')}`
+        ? `JavaZone 2023 ${session.format}: ${session.title} - by ${session.speakers
+            .map((speaker) => speaker.name)
+            .join(', ')}`
         : parentMetadata.title ?? '',
       description: session?.abstract ?? parentMetadata.description ?? '',
       site: parentMetadata.twitter?.site ?? '',
