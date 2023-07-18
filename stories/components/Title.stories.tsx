@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import '../../styles/globals.css'
 
 import { Title } from '../../components/title/Title'
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 // @ts-ignore
 const meta = {
-  title: 'Title',
+  title: 'Components/Title',
   component: Title,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
@@ -29,7 +30,7 @@ export const H1: Story = {
 
 export const H2: Story = {
   args: {
-    type: 'h3',
+    type: 'h2',
     text: 'Secondary title',
   },
 }
