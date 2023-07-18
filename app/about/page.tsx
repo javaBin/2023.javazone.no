@@ -1,22 +1,23 @@
-import pagestyles from './about.module.css'
 import { Metadata } from 'next'
+import { Title } from '@/components/title/Title'
+import { Section } from '@/components/section/Section'
+import { BackgroundSection } from '@/components/BackgroundSection'
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - About JavaZone',
 }
 
 export default function About() {
+  console.log('rendering abour')
   return (
     <div>
       <div className="inline-block">
-        <h1 className="text-5xl leading-tight font-semibold text-[#FED12D]">
-          JavaZone: The biggest community-driven Java conference
-        </h1>
+        <Title>JavaZone: The biggest community-driven Java conference</Title>
       </div>
       <h2 className="text-3xl mb-8">What is it? Who is behind it?</h2>
 
-      <section className="block mb-6">
-        <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">WHAT IS JAVAZONE?</h2>
+      <Section>
+        <Title type="h2">WHAT IS JAVAZONE?</Title>
 
         <p className="mb-4">
           JavaZone is the biggest community-driven Java conference that has been organized in Oslo,
@@ -34,12 +35,12 @@ export default function About() {
           In addition, we also offered a selection of 11 workshops held on the day before the
           conference started.
         </p>
-      </section>
+      </Section>
 
-      <section className={pagestyles.child} />
+      <BackgroundSection type="about" />
 
-      <section className="block mb-6 mt-5">
-        <h2 className="text-3xl text-[#FED12D] font-semibold mb-4">WHO IS BEHIND IT?</h2>
+      <Section>
+        <Title type="h2">WHO IS BEHIND IT?</Title>
         <p className="mb-4">
           Organizing a conference of this size on a voluntary basis is a lot of hard work (and it is
           great fun too!). The conference organization is represented by the JavaZone Core Team – a
@@ -93,7 +94,7 @@ export default function About() {
           </a>
           .
         </p>
-      </section>
+      </Section>
     </div>
   )
 }

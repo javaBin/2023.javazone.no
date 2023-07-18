@@ -10,12 +10,18 @@ interface SectionProps {
    * Section content
    */
   children?: React.ReactNode
+
+  /**
+   * Background image
+   */
+  backgroundImage?: string
 }
 
 /**
  * Section component
  */
-export const Section = ({ type = 'normal', children }: SectionProps) => {
+export const Section = ({ type = 'normal', children, backgroundImage }: SectionProps) => {
+  console.log(backgroundImage)
   switch (type) {
     case 'normal':
       return <section className="text-base mb-3">{children}</section>

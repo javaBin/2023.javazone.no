@@ -6,10 +6,10 @@ import { Section } from '@/components/section/Section'
 export default function JourneyZonePage() {
   return (
     <Section>
-      <Title type="h1" text="JourneyZone 2023" />
+      <Title type="h1">JourneyZone 2023</Title>
 
       <Section>
-        <Title type="h2" text="What is this?" />
+        <Title type="h2">What is this?</Title>
         <p>
           JourneyZone is our annual trip exclusively for speakers just after the JavaZone
           conference. This year we will travel to Åndalsnes. Åndalsnes is located is located at the
@@ -18,7 +18,7 @@ export default function JourneyZonePage() {
         </p>
       </Section>
       <Section>
-        <Title type="h2" text="When? Where?" />
+        <Title type="h2">When? Where?</Title>
         <p>
           We are leaving Oslo early in the morning Friday (the day after JavaZone) September 8th. We
           will be back in Oslo (Central station) in the afternoon on Sunday, September 10th. We will
@@ -37,7 +37,7 @@ export default function JourneyZonePage() {
       />
 
       <Section>
-        <Title type="h2" text="Who can attend?" />
+        <Title type="h2">Who can attend?</Title>
         <p>
           All speakers of JavaZone are invited, but we have a limited number of spots available for
           the journey. Those who hold full presentations and workshops are prioritized, but
@@ -50,7 +50,7 @@ export default function JourneyZonePage() {
         </p>
       </Section>
       <Section>
-        <Title type="h2" text="Personal expenses" />
+        <Title type="h2">Personal expenses</Title>
         <p>
           JavaZone will cover almost all your expenses which is considered your reward for holding
           your talk at the conference. To ensure that we stretch the budget to accommodate as many
@@ -59,7 +59,7 @@ export default function JourneyZonePage() {
       </Section>
 
       <Section>
-        <Title type="h2" text="The program" />
+        <Title type="h2">The program</Title>
         <p>
           The program is, as usual, tightly packed and full of interesting events. The main
           activities are hiking and cycling, so good shoes and hiking gear and clothes are
@@ -78,7 +78,7 @@ export default function JourneyZonePage() {
       />
 
       <Section>
-        <Title type="h2" text="How to apply" />
+        <Title type="h2">How to apply</Title>
         <p>We will send info to all accepted speakers with details on how to apply</p>
       </Section>
     </Section>

@@ -22,22 +22,25 @@ type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const H1: Story = {
+  render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
     type: 'h1',
-    text: 'Primary title',
+    children: 'H1 title',
   },
 }
 
 export const H2: Story = {
+  render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
     type: 'h2',
-    text: 'Secondary title',
+    children: 'H2 title',
   },
 }
 
 export const H3: Story = {
+  render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
     type: 'h3',
-    text: 'text title',
+    children: 'H3 title',
   },
 }
