@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { Title } from '@/components/title/Title'
 import { Section } from '@/components/section/Section'
-import { BackgroundSection } from '@/components/BackgroundSection'
+import { BackgroundSection } from '@/components/backgroundSection/BackgroundSection'
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - About JavaZone',
