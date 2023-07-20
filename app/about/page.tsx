@@ -74,6 +74,7 @@ export default function About() {
               student@java.no
             </a>{' '}
             – Ellaoui Abdellaoui
+            and Ole Berg
           </li>
         </ul>
 
