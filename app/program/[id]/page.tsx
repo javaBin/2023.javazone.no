@@ -90,7 +90,7 @@ export default async function Page({
         <b>Room:</b> {session.room ? session.room : 'Coming soon'}
       </p>
       <h3>Abstract</h3>
-      <p>{session.abstract}</p>
+      <p style={{ whiteSpace: 'pre-line' }}>{session.abstract}</p>
 
       <h3>Day & time</h3>
       <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
