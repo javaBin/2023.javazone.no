@@ -30,6 +30,6 @@ export const Section = ({ type = 'normal', className, children }: SectionProps) 
         </section>
       )
     case 'normal':
-      return <section className={`text-base mb-6 ${className}`}>{children}</section>
+      return <section className={`text-base mb-4 ${className}`}>{children}</section>
   }
 }
