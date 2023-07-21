@@ -1,9 +1,10 @@
+import React from 'react'
 import { fetchIndividualProgram } from '@/app/program/fetchProgram'
 import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
 import { Metadata, ResolvingMetadata } from 'next'
-import styles from './page.module.css'
+import { Title } from '@/components/title/Title'
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
@@ -71,23 +72,19 @@ export default async function Page({
   const dayAndTime = getDayAndTime(session)
 
   return (
-    <div className="content is-normal">
-      <h1 className="title">{session.title}</h1>
-      <div className={styles.programHeader}>
-        <p>{prettyFormat(session.format)}</p>
-        <p>{prettyLanguage(session.language)}</p>
+    <div className="flex flex-col gap-4 text-base">
+      <Title>{session.title}</Title>
+      <div className="inline-flex gap-4 text-2xl font-bold">
+        <p>{prettyFormat(session.format)}</p>-<p>{prettyLanguage(session.language)}</p>-
         {!!dayAndTime && !!session.room ? <p>{dayAndTime}</p> : <p>Day & time coming soon</p>}
       </div>
-      <div>
-        <p>
-          <b>Length:</b> {session.length} minutes
-        </p>
-        <p>
-          <b>Room:</b> {session.room ? session.room : 'Coming soon'}
-        </p>
-      </div>
-
-      <h3>Abstract</h3>
+      <p>
+        <b>Length:</b> {session.length} minutes
+      </p>
+      <p>
+        <b>Room:</b> {session.room ? session.room : 'Coming soon'}
+      </p>
+      <Title type="program">Abstract</Title>
       <p className={styles.preline}>{session.abstract}</p>
 
       {session.workshopPrerequisites && (
@@ -97,20 +94,20 @@ export default async function Page({
         </>
       )}
 
-      <h3>Day & time</h3>
+      <Title type="program">Day & time</Title>
       <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
 
-      <h3>Intended audience</h3>
+      <Title type="program">Intended audience</Title>
       <p>{session.intendedAudience}</p>
 
-      <ul className={`${styles.speakerList} ${styles.topBottomMargin}`}>
+      <ul>
         {session.speakers.map((speaker) => (
-          <li key={speaker.name} className={styles.topBottomMargin}>
-            <h3>{speaker.name}</h3>
+          <li key={speaker.name} className="my-4 list-none">
+            <Title type="program">{speaker.name}</Title>
             <p>{speaker.bio}</p>
             {!!speaker.twitter && (
               <a href={`https://twitter.com/${speaker.twitter}`}>
-                <div className={styles.imageContainer}>
+                <div className="inline-flex align-middle gap-1">
                   <Image
                     src={'/icons/twitter-icon.svg'}
                     alt={'Twitter logo'}

@@ -4,7 +4,7 @@ interface TitleProps {
   /**
    * Type of header: title, subtitle, or column
    */
-  type?: 'title' | 'subtitle' | 'column' | 'card' | 'paragraph'
+  type?: 'title' | 'subtitle' | 'column' | 'card' | 'paragraph' | 'program'
 
   /**
    * Optional class name
@@ -44,6 +44,10 @@ export const Title = ({ type = 'title', className, children }: TitleProps) => {
     case 'paragraph':
       return (
         <h3 className={`text-2xl font-semibold text-[#FED12D] mb-4 ${className}`}>{children}</h3>
+      )
+    case 'program':
+      return (
+        <h3 className={`text-xl font-semibold text-[#FED12D] mb-4 ${className}`}>{children}</h3>
       )
   }
 }

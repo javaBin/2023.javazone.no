@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import { fetchProgram } from '@/app/program/fetchProgram'
+import { Title } from '@/components/title/Title'
 import dynamic from "next/dynamic";
 
 const FilteredSessions = dynamic(() => import('./FilteredSessions'), { ssr: false })
@@ -11,7 +12,7 @@ export default async function ProgramPage() {
 
   return (
     <article>
-      <h1 className={styles.program_title}>JavaZone Program 2023</h1>
+      <Title>JavaZone Program 2023</Title>
       <FilteredSessions sessions={sessions} />
     </article>
   )
