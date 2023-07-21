@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 }
 
 export default function About() {
-  console.log('rendering abour')
   return (
     <div>
       <div className="inline-block">
@@ -17,7 +16,7 @@ export default function About() {
       <h2 className="text-3xl mb-8">What is it? Who is behind it?</h2>
 
       <Section>
-        <Title type="h2">WHAT IS JAVAZONE?</Title>
+        <Title type="subtitle">WHAT IS JAVAZONE?</Title>
 
         <p className="mb-4">
           JavaZone is the biggest community-driven Java conference that has been organized in Oslo,
@@ -40,7 +39,7 @@ export default function About() {
       <BackgroundSection type="about" />
 
       <Section>
-        <Title type="h2">WHO IS BEHIND IT?</Title>
+        <Title type="subtitle">WHO IS BEHIND IT?</Title>
         <p className="mb-4">
           Organizing a conference of this size on a voluntary basis is a lot of hard work (and it is
           great fun too!). The conference organization is represented by the JavaZone Core Team – a

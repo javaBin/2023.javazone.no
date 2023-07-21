@@ -2,9 +2,14 @@ import React, { ReactNode } from 'react'
 
 interface TitleProps {
   /**
-   * Type of title, H1, H2 or H3
+   * Type of header: title, subtitle, or column
    */
-  type?: 'h1' | 'h2' | 'h3'
+  type?: 'title' | 'subtitle' | 'column' | 'card'
+
+  /**
+   * Optional class name
+   */
+  className?: string
   /**
    * Title content
    */
@@ -14,13 +19,27 @@ interface TitleProps {
 /**
  * Primary UI component for user interaction
  */
-export const Title = ({ type = 'h1', children }: TitleProps) => {
+export const Title = ({ type = 'title', className, children }: TitleProps) => {
   switch (type) {
-    case 'h1':
-      return <h1 className="text-4xl font-semibold text-[#FED12D] mb-2">{children}</h1>
-    case 'h2':
-      return <h2 className="text-2xl font-semibold text-[#FED12D] mb-2">{children}</h2>
-    case 'h3':
-      return <h3 className="text-xl text-[#FED12D] font-semibold mb-2">{children}</h3>
+    case 'title':
+      return (
+        <h1 className={`text-4xl font-semibold text-[#FED12D] mb-2 ${className}`}>{children}</h1>
+      )
+    case 'subtitle':
+      return (
+        <h2 className={`text-3xl font-semibold text-[#FED12D] mb-2 ${className}`}>{children}</h2>
+      )
+    case 'column':
+      return (
+        <h3 className={`text-2xl font-semibold text-[#FED12D] mb-2 max-w-[300px] ${className}`}>
+          {children}
+        </h3>
+      )
+    case 'card':
+      return (
+        <h3 className={`text-2xl font-semibold text-[#650729] bg-[#F6DA98]  mb-2 ${className}`}>
+          {children}
+        </h3>
+      )
   }
 }

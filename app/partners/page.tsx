@@ -1,8 +1,9 @@
-import { ReactNode } from 'react'
-import styles from './partners.module.css'
+import React, { ReactNode } from 'react'
 import { Metadata } from 'next'
 import { partners } from '../api/partners/partners'
 import dynamic from 'next/dynamic'
+import { Title } from '@/components/title/Title'
+import { Section } from '@/components/section/Section'
 
 const PartnerOverview = dynamic(() => import('./PartnerOverview'), { ssr: false })
 
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
 export default function Partners() {
   return (
     <>
-      <section className="content is-normal">
-        <h2>Sold out</h2>
+      <Section>
+        <Title type="subtitle">Sold out</Title>
         <p>We are now sold out of partner packages.</p>
-      </section>
+      </Section>
       <PartnerOverview partners={partners} />
 
-      <section className="content is-normal">
-        <h2>Video from JavaZone 2023 Partner meeting on March 14th</h2>
+      <Section>
+        <Title type="subtitle">Video from JavaZone 2023 Partner meeting on March 14th</Title>
         <video controls>
           <source src="/videos/partner-meeting.mp4" type="video/mp4" />
           <track
@@ -31,11 +32,11 @@ export default function Partners() {
             default
           />
         </video>
-      </section>
+      </Section>
 
-      <section className="content is-normal">
-        <h2>Partner information</h2>
-        <p>
+      <Section>
+        <Title type="subtitle">Partner information</Title>
+        <p className="mb-4">
           Even though all partners are considered equal, there are a few options to choose from.
           There is a base package that everyone gets, and then there are a few available expansions.
           Note that these expansions have limited availability.
@@ -46,18 +47,18 @@ export default function Partners() {
           contact your organisation to confirm your choices. After the initial draw, the remaining
           available packages will be allocated on a first-come, first-served basis.
         </p>
-      </section>
+      </Section>
 
-      <section className={`content is-normal ${styles.sectionCards} `}>
-        <h2>Packages</h2>
+      <Section className="font-['Noto Serif']">
+        <Title>Packages</Title>
         <StandardPackage />
         <DonutStand />
-        <h2>Possible expansions</h2>
+        <Title>Possible expansions</Title>
         <ConceptStand />
         <RestaurantStand />
-        <h2>Partner tickets</h2>
+        <Title>Partner tickets</Title>
         <PartnerCard title="Ticket types">
-          <ul>
+          <ul className="list-disc ml-8 my-4">
             <li>
               EarlyBird 0-30 billetter (inkl javaBin-medlemskap, ex MVA) -{' '}
               {moneyFormat.format(7590)}
@@ -75,7 +76,7 @@ export default function Partners() {
             </li>
           </ul>
         </PartnerCard>
-      </section>
+      </Section>
 
       <p>
         You can contact us about partnership details at{' '}
@@ -101,9 +102,11 @@ const PartnerCard = (props: {
 }) => {
   const priceText = props.price?.additional ? 'Additional price' : 'Price'
   return (
-    <section className={`panel content ${styles.panelShadow} is-normal is-info`}>
-      <h3 className={styles.panelHeading}>{props.title}</h3>
-      <div className="panel-list p-0 ml-5 pb-5">
+    <Section className={`rounded-md shadow-2xl is-normal is-info`}>
+      <Title type="card" className="px-4 py-8">
+        {props.title}
+      </Title>
+      <div className="p-0 ml-5 pb-5">
         {props.children}
         {props.price && (
           <p className="mt-auto">
@@ -115,30 +118,30 @@ const PartnerCard = (props: {
           </p>
         )}
       </div>
-    </section>
+    </Section>
   )
 }
 
 const StandardPackage = () => (
   <PartnerCard title="Standard Package" price={{ value: 87000 }}>
     <strong>Stand</strong>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>Location in conference hall</li>
       <li>6 square meters with backing wall</li>
     </ul>
 
     <strong>Profiling</strong>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>Logo on homepage, program, announcements, and other activities related to JavaZone</li>
     </ul>
 
     <strong>Stand tickets</strong>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>4 flexible conference tickets for operating the stand</li>
     </ul>
 
     <strong>Participant tickets</strong>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>Reduced price on tickets for your colleagues</li>
     </ul>
   </PartnerCard>
@@ -147,7 +150,7 @@ const StandardPackage = () => (
 const DonutStand = () => (
   <PartnerCard title="Donut Stand" price={{ value: 87000 }}>
     <strong>Stand</strong>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>Location outside the main hall in the “Donut” which runs around the hall</li>
       <li>Greater opportunity for a bit more freedom with decorations</li>
     </ul>
@@ -156,7 +159,7 @@ const DonutStand = () => (
 
 const ConceptStand = () => (
   <PartnerCard title="Concept Stand" price={{ value: 72000, additional: true }}>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>60 (10 x 6) square meters</li>
       <li>Large space for showing off your own concept</li>
       <li>Extremely limited – only 3 available</li>
@@ -166,7 +169,7 @@ const ConceptStand = () => (
 
 const RestaurantStand = () => (
   <PartnerCard title="Restaurant Stand" price={{ value: 78000, additional: true }}>
-    <ul>
+    <ul className="list-disc ml-8 my-4">
       <li>24 square meters (12m back wall)</li>
       <li>Food area with seating</li>
       <li>Continuous service of food throughout the conference</li>

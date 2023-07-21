@@ -7,6 +7,10 @@ interface SectionProps {
    */
   type?: 'normal' | '2-col'
   /**
+   * Optional class name
+   */
+  className?: string
+  /**
    * Section content
    */
   children?: React.ReactNode
@@ -15,15 +19,17 @@ interface SectionProps {
 /**
  * Section component
  */
-export const Section = ({ type = 'normal', children }: SectionProps) => {
+export const Section = ({ type = 'normal', className, children }: SectionProps) => {
   switch (type) {
     case '2-col':
       return (
-        <section className="text-base mb-3 flex justify-between gap-8 w-full relative max-md:grid max-md:text-center">
+        <section
+          className={`text-base mb-3 flex justify-between gap-8 w-full relative max-[890px]:grid ${className}`}
+        >
           {children}
         </section>
       )
     case 'normal':
-      return <section className="text-base mb-3">{children}</section>
+      return <section className={`text-base mb-6 ${className}`}>{children}</section>
   }
 }

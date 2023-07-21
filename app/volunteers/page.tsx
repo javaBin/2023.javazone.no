@@ -6,6 +6,8 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import * as React from 'react'
 import Image from 'next/image'
+import { Section } from '@/components/section/Section'
+import { Title } from '@/components/title/Title'
 
 export default function VolunteersPage() {
   useEffect(() => {
@@ -13,10 +15,8 @@ export default function VolunteersPage() {
   }, [])
 
   return (
-      <div>
-      <h1 className="text-center text-4xl font-semibold text-[#FED12D] mb-8">
-        Bli frivillig på JavaZone
-      </h1>
+    <div>
+      <Title className="text-center">Bli frivillig på JavaZone</Title>
       <p className="text-center text-2xl font-semibold text-[#FED12D] mb-6">
         Information in Norwegian for potential student volunteers
       </p>
@@ -126,16 +126,12 @@ export default function VolunteersPage() {
 
 const SectionContent = (props: { title: string; content: string; contentTwo?: string }) => {
   return (
-    <section className="flex justify-between max-md:grid mb-8">
-      <h2
-        className="text-4xl text-[#FED12D] font-semibold max-w-xs mb-8"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
+    <Section type="2-col">
+      <Title type="column" data-aos="fade-right" data-aos-duration="1000">
         {props.title}
-      </h2>
+      </Title>
       <div
-        className="w-3/5 right-0 max-md:w-full"
+        className="w-3/5 right-0 max-[890px]:w-full"
         data-aos="fade"
         data-aos-duration="1000"
         data-aos-delay="500"
@@ -143,7 +139,7 @@ const SectionContent = (props: { title: string; content: string; contentTwo?: st
         <p className="text-2xl mb-8">{props.content}</p>
         {props.contentTwo ? <p className="text-2xl">{props.contentTwo}</p> : <></>}
       </div>
-    </section>
+    </Section>
   )
 }
 
@@ -153,14 +149,10 @@ const SectionContentWithLinks = (props: {
   links: { text: string; url: string }[]
 }) => {
   return (
-    <section className="flex justify-between max-md:grid mb-8">
-      <h2
-        className="text-4xl text-[#FED12D] font-semibold max-w-xs mb-8"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
+    <Section type="2-col">
+      <Title type="column" data-aos="fade-right" data-aos-duration="1000">
         {props.title}
-      </h2>
+      </Title>
       <div
         className="w-3/5 right-0 max-md:w-full"
         data-aos="fade"
@@ -185,6 +177,6 @@ const SectionContentWithLinks = (props: {
           ))}
         </p>
       </div>
-    </section>
+    </Section>
   )
 }
