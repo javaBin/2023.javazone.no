@@ -1,6 +1,10 @@
 import React, { ReactNode } from 'react'
 
-interface LinkProps {
+type LinkProps = {
+  /**
+   * Type of link, footer or header
+   */
+  type?: 'footer' | 'normal'
   /**
    * Link href
    */
@@ -13,12 +17,21 @@ interface LinkProps {
    * link content
    */
   children: ReactNode
-}
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const Link = ({ href, className, children }: LinkProps) => {
-  return (
-    <a className={`text-[#5AD0A6] ${className}`} href={href}>
-      {children}
-    </a>
-  )
+export const Link = ({ type = 'normal', href, className, children, ...props }: LinkProps) => {
+  switch (type) {
+    case 'normal':
+      return (
+        <a className={`text-[#5AD0A6] ${className}`} href={href} {...props}>
+          {children}
+        </a>
+      )
+    case 'footer':
+      return (
+        <a className={`text-[#FED12D] hover:text-[#FF8525] ${className}`} href={href} {...props}>
+          {children}
+        </a>
+      )
+  }
 }

@@ -17,7 +17,7 @@ export default function Home() {
           <AnimatedHero />
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <AnimatedDivider />
           <AnimatedFireworks />
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
             NB! Want to be a partner? Click <Link href="/partners">here</Link>
           </div>
         </div>
-        <div className="mt-6">
+        <div className="flex justify-center mt-6">
           <AnimatedDivider />
         </div>
       </section>
