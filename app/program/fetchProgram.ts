@@ -17,7 +17,12 @@ export async function fetchProgram(
   }).then<Program>((res) => res.json())
 }
 
-export const fetchIndividualProgram = (id?: string, config?: NextRevalidateConfig) =>
+const CACHE_TIME = 60 * 15; // 15 minutes
+
+export const fetchIndividualProgram = (
+  id?: string,
+  config: NextRevalidateConfig = { revalidate: CACHE_TIME, tags: undefined },
+) =>
   fetchProgram({ revalidateConfig: config }).then((program) =>
     program.sessions.find((session) => session.id === id),
   )
