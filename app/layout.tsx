@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <div className="min-h-screen flex flex-col justify-between items-stretch">
           <div className="flex items-center grow shrink-0 py-12 !px-6 md:!px-12 ">
-            <div className="relative grow shrink w-auto my-0 w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] mx-auto">
+            <div className="relative grow shrink w-auto my-0 w-full lg:max-w-[960px] mx-auto">
               <main>{children}</main>
             </div>
           </div>

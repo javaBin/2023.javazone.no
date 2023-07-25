@@ -21,7 +21,7 @@ const HeaderLink = ({
 const Line = ({ className }: { className: string }) => (
   <>
     <span
-      className={`block w-[16px] h-[1px] bg-[#FED12D] absolute left-[calc(50%-8px)] duration-100 ease-out origin-center transition-[background-color] transition-[opacity] transition-[transform] ${className}`}
+      className={`block w-[16px] h-[1px] bg-big-text-color absolute left-[calc(50%-8px)] duration-100 ease-out origin-center transition-[background-color] transition-[opacity] transition-[transform] ${className}`}
       aria-hidden="true"
     />
   </>
@@ -64,7 +64,7 @@ export function Header() {
 
   return (
     <nav
-      className="lg:flex lg:items-stretch top-0 left-0 right-0 fixed z-30 bg-[#033E4F] min-h[3.25rem]"
+      className="lg:flex lg:items-stretch top-0 left-0 right-0 fixed z-30 bg-dark-blue-background min-h[3.25rem]"
       role="navigation"
       aria-label="main navigation"
     >

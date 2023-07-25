@@ -24,20 +24,24 @@ export const Link = ({ type = 'normal', href, className, children, ...props }: L
   switch (type) {
     case 'normal':
       return (
-        <a className={`text-[#5AD0A6] ${className}`} href={href} {...props}>
+        <a className={`text-link-color ${className}`} href={href} {...props}>
           {children}
         </a>
       )
     case 'footer':
       return (
-        <a className={`text-[#FED12D] hover:text-[#FF8525] ${className}`} href={href} {...props}>
+        <a
+          className={`text-big-text-color hover:text-hover-text-color ${className}`}
+          href={href}
+          {...props}
+        >
           {children}
         </a>
       )
     case 'header':
       return (
         <a
-          className={`text-[#FED12D] font-bold hover:text-[#FF8525] hover:bg-[#033443] cursor-pointer flex items-center py-2 px-3 relative grow-0 shrink-0 ${className}`}
+          className={`text-big-text-color font-bold hover:text-hover-text-color hover:bg-[#033443] cursor-pointer flex items-center py-2 px-3 relative grow-0 shrink-0 ${className}`}
           href={href}
           {...props}
         >
@@ -47,7 +51,7 @@ export const Link = ({ type = 'normal', href, className, children, ...props }: L
     case 'button':
       return (
         <a
-          className={`border-[1px] rounded cursor-pointer text-[#650729] bg-[#F6DA98] border-transparent py-[calc(.5em-1px)] px-[1em] text-center whitespace-nowrap justify-center hover:text-[#FF8525] ${className}`}
+          className={`border-[1px] rounded cursor-pointer text-red-text-color bg-normal-text-color border-transparent py-[calc(.5em-1px)] px-[1em] text-center whitespace-nowrap justify-center hover:text-hover-text-color ${className}`}
           href={href}
           {...props}
         >

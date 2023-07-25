@@ -17,14 +17,12 @@ export default function Theme() {
 
   return (
     <div>
-      <h1 className="title">
+      <Title>
         Dear JavaZone community, We are excited to announce that this year’s JavaZone conference
         theme is Circus!
-      </h1>
+      </Title>
 
-      <h1 className={'title has-text-centered'} style={{ marginBottom: '4rem' }}>
-        Why Circus, you might ask?
-      </h1>
+      <Title className="text-center !mb-12">Why Circus, you might ask?</Title>
 
       <div>
         <SectionContent
@@ -98,7 +96,12 @@ const SectionContent = (props: {
       <div data-aos="fade-right" data-aos-duration="1000">
         <Image src={props.src} width={400} height={200} alt={props.alt} />
       </div>
-      <div className="left-0 w-[60%]" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">
+      <div
+        className="left-0 w-[60%] max-md:w-full"
+        data-aos="fade"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
         <Title>{props.content}</Title>
         {props.contentTwo ? <p className="mb-4">{props.contentTwo}</p> : <></>}
         {props.contentThree ? <p className="mb-4">{props.contentThree}</p> : <></>}

@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div>
       <div className="inline-block">
-        <Title>JavaZone: The biggest community-driven Java conference</Title>
+        <Title type="big-title">JavaZone: The biggest community-driven Java conference</Title>
       </div>
       <h2 className="text-3xl mb-8">What is it? Who is behind it?</h2>
 

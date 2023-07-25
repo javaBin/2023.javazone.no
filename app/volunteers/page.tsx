@@ -18,7 +18,7 @@ export default function VolunteersPage() {
   return (
     <div>
       <Title className="text-center">Bli frivillig på JavaZone</Title>
-      <p className="text-center text-2xl font-semibold text-[#FED12D] mb-6">
+      <p className="text-center text-xl font-semibold text-big-text-color mb-6">
         Information in Norwegian for potential student volunteers
       </p>
 
@@ -46,7 +46,7 @@ export default function VolunteersPage() {
         </Link>
       </strong>
 
-      <h1 className="text-center text-4xl font-semibold text-[#FED12D] mt-8 mb-6">
+      <h1 className="text-center text-2xl font-semibold text-big-text-color mt-8 mb-6">
         Ofte stilte spørsmål
       </h1>
 
@@ -124,7 +124,7 @@ export default function VolunteersPage() {
 
 const SectionContent = (props: { title: string; content: string; contentTwo?: string }) => {
   return (
-    <Section type="2-col">
+    <Section type="2-col" key={props.title}>
       <Title type="column" data-aos="fade-right" data-aos-duration="1000">
         {props.title}
       </Title>
@@ -134,8 +134,8 @@ const SectionContent = (props: { title: string; content: string; contentTwo?: st
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        <p className="text-2xl mb-8">{props.content}</p>
-        {props.contentTwo ? <p className="text-2xl">{props.contentTwo}</p> : <></>}
+        <p className="text-xl mb-[1em]">{props.content}</p>
+        {props.contentTwo ? <p className="text-xl">{props.contentTwo}</p> : <></>}
       </div>
     </Section>
   )
@@ -147,7 +147,7 @@ const SectionContentWithLinks = (props: {
   links: { text: string; url: string }[]
 }) => {
   return (
-    <Section type="2-col">
+    <Section type="2-col" key={props.title}>
       <Title type="column" data-aos="fade-right" data-aos-duration="1000">
         {props.title}
       </Title>
@@ -157,13 +157,13 @@ const SectionContentWithLinks = (props: {
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        <p className="text-2xl mb-8">
+        <p className="text-xl mb-8">
           {props.content}{' '}
           {props.links.map((link, index) => (
             <>
               <a
                 key={index}
-                className="text-[#FED12D]"
+                className="text-big-text-color"
                 href={link.url}
                 target="_blank"
                 rel="noreferrer"

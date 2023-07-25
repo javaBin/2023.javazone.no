@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import '../../styles/globals.css'
 import Image from 'next/image'
@@ -15,7 +15,7 @@ interface Props {
 
 export default function PartnerOverview({ partners }: Props) {
   return (
-    <section className="block w-screen bg-[#FED12D] p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
+    <section className="block w-screen bg-big-text-color p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
       <h1 className="text-2xl text-center text-black uppercase my-4">Partners in 2023</h1>
       <div className="flex flex-wrap justify-center gap-10">
         {[...partners]
@@ -30,7 +30,7 @@ export default function PartnerOverview({ partners }: Props) {
                   className="h-16 w-40 hover:scale-[1.2]"
                   src={partner.logoUrl}
                   alt={partner.name}
-                  style={{"padding":"5px"}}
+                  style={{ padding: '5px' }}
                 />
               </a>
             )

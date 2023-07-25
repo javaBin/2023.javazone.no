@@ -50,5 +50,9 @@ const createFooterLinks = () =>
 
 export function Footer() {
   const footerLinks = createFooterLinks()
-  return <div className="bg-[#033E4F] flex justify-evenly py-4 max-md:flex-col">{footerLinks}</div>
+  return (
+    <div className="bg-dark-blue-background flex justify-evenly py-4 max-md:flex-col">
+      {footerLinks}
+    </div>
+  )
 }

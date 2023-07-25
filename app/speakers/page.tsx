@@ -8,10 +8,17 @@ export const metadata: Metadata = {
   title: 'JavaZone 2023 - Speakers',
 }
 
+/*
+* background-color: #fff;
+border-radius: 6px;
+box-shadow: 0 .5em 1em -.125em hsla(0,0%,4%,.1),0 0 0 1px hsla(0,0%,4%,.02);
+color: #4a4a4a;
+display: block;
+padding: 1.25rem;*/
 export default function SpeakersPage() {
   const TalkTypeCard = (props: { type: string; timing: string; children: ReactNode }) => {
     return (
-      <div className="box">
+      <div className="block text-white bg-dark-blue-background p-5 rounded shadow-2xl mb-6">
         <Title type="paragraph">{props.type}</Title>
         <i>{props.timing}</i>
         {props.children}
@@ -132,7 +139,7 @@ export default function SpeakersPage() {
 
         <div className="max-w-screen-lg mb-10">
           <div className="flex justify-center">
-            <div className="w-[50%] max-md:w-[100%] bg-[#033E4F]">
+            <div className="w-[50%] max-md:w-[100%] bg-dark-blue-background">
               <div className="px-16 py-12 text-lg text-white">
                 <Title type="subtitle">Submission tips</Title>
                 <p className="mb-4">Learn how to increase your chance of getting accepted.</p>

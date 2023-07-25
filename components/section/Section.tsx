@@ -24,7 +24,7 @@ export const Section = ({ type = 'normal', className, children }: SectionProps) 
     case '2-col':
       return (
         <section
-          className={`text-base mb-3 flex justify-between gap-8 w-full relative max-[890px]:grid ${className}`}
+          className={`text-base mb-6 flex justify-between gap-8 w-full relative max-[890px]:grid ${className}`}
         >
           {children}
         </section>

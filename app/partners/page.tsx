@@ -20,7 +20,7 @@ export default function Partners() {
       </Section>
       <PartnerOverview partners={partners} />
 
-      <Section>
+      <Section className="mt-4">
         <Title type="subtitle">Video from JavaZone 2023 Partner meeting on March 14th</Title>
         <video controls>
           <source src="/videos/partner-meeting.mp4" type="video/mp4" />
