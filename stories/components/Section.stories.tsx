@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react'
 import '../../styles/globals.css'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { Section } from '../../components/section/Section'
 import { Title } from '@/components/title/Title'
@@ -33,12 +33,5 @@ export const NormalSection: Story = {
   ),
   args: {
     type: 'normal',
-  },
-}
-
-export const Undefined: Story = {
-  args: {
-    type: 'undefined',
-    children: 'Undefined Section',
   },
 }

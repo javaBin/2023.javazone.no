@@ -21,26 +21,26 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const H1: Story = {
+export const bigTitle: Story = {
   render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
-    type: 'h1',
-    children: 'H1 title',
+    type: 'big-title',
+    children: 'big-title',
   },
 }
 
-export const H2: Story = {
+export const title: Story = {
   render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
-    type: 'h2',
-    children: 'H2 title',
+    type: 'title',
+    children: 'title',
   },
 }
 
-export const H3: Story = {
+export const subTitle: Story = {
   render: (args) => <Title type={args.type}>{args.children}</Title>,
   args: {
-    type: 'h3',
-    children: 'H3 title',
+    type: 'subtitle',
+    children: 'subTitle',
   },
 }

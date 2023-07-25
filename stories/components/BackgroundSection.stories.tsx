@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react'
 import '../../styles/globals.css'
+import type { Meta, StoryObj } from '@storybook/react'
 
 import { BackgroundSection } from '../../components/backgroundSection/BackgroundSection'
 import { Title } from '@/components/title/Title'
