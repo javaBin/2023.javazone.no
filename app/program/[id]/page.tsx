@@ -3,6 +3,7 @@ import { formatter, prettyFormat, prettyLanguage } from '@/app/program/utils'
 import Image from 'next/image'
 import { Session } from '@/app/program/program'
 import { Metadata, ResolvingMetadata } from 'next'
+import styles from './page.module.css'
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
@@ -72,25 +73,22 @@ export default async function Page({
   return (
     <div className="content is-normal">
       <h1 className="title">{session.title}</h1>
-      <div
-        style={{
-          display: 'inline-flex',
-          fontWeight: 600,
-          gap: '2rem',
-          fontSize: 'x-large',
-        }}
-      >
-        <p>{prettyFormat(session.format)}</p>-<p>{prettyLanguage(session.language)}</p>-
+      <div className={styles.programHeader}>
+        <p>{prettyFormat(session.format)}</p>
+        <p>{prettyLanguage(session.language)}</p>
         {!!dayAndTime && !!session.room ? <p>{dayAndTime}</p> : <p>Day & time coming soon</p>}
       </div>
-      <p>
-        <b>Length:</b> {session.length} minutes
-      </p>
-      <p>
-        <b>Room:</b> {session.room ? session.room : 'Coming soon'}
-      </p>
+      <div>
+        <p>
+          <b>Length:</b> {session.length} minutes
+        </p>
+        <p>
+          <b>Room:</b> {session.room ? session.room : 'Coming soon'}
+        </p>
+      </div>
+
       <h3>Abstract</h3>
-      <p style={{ whiteSpace: 'pre-line' }}>{session.abstract}</p>
+      <p className={styles.abstract}>{session.abstract}</p>
 
       <h3>Day & time</h3>
       <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
@@ -98,14 +96,14 @@ export default async function Page({
       <h3>Intended audience</h3>
       <p>{session.intendedAudience}</p>
 
-      <ul style={{ listStyle: 'none', margin: '2rem 0' }}>
+      <ul className={`${styles.speakerList} ${styles.topBottomMargin}`}>
         {session.speakers.map((speaker) => (
-          <li key={speaker.name} style={{ margin: '2rem 0' }}>
+          <li key={speaker.name} className={styles.topBottomMargin}>
             <h3>{speaker.name}</h3>
             <p>{speaker.bio}</p>
             {!!speaker.twitter && (
               <a href={`https://twitter.com/${speaker.twitter}`}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div className={styles.imageContainer}>
                   <Image
                     src={'/icons/twitter-icon.svg'}
                     alt={'Twitter logo'}

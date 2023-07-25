@@ -1,0 +1,33 @@
+.programHeader {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.abstract {
+  white-space: pre-line;
+}
+
+.topBottomMargin {
+  margin: 2rem 0 !important;
+}
+
+.speakerList {
+  list-style: none !important;
+}
+
+.imageContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .programHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: x-large;
+  }
+}

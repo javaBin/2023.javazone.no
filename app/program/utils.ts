@@ -7,6 +7,7 @@ export const formatter = new Intl.DateTimeFormat(['en'], {
   weekday: 'long',
   hour: 'numeric',
   minute: 'numeric',
+  month: "long"
 })
 export const prettyFormat = (format: Filter['format']) => {
   switch (format) {
