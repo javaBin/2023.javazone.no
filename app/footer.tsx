@@ -1,4 +1,3 @@
-import '../styles/globals.scss'
 import React from 'react'
 import { Link } from '@/components/link/Link'
 

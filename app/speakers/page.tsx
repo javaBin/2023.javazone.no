@@ -43,7 +43,7 @@ export default function SpeakersPage() {
           <b className="is-underlined">April 17th</b>.
         </p>
         <strong>
-          <Link className="button is-dark-blue" href="https://talks.javazone.no">
+          <Link type="button" href="https://talks.javazone.no">
             Submit your talk!
           </Link>
         </strong>

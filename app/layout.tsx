@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="has-navbar-fixed-top">
+      <body className="pt-[3.25rem]">
         <Header />
         <div className="min-h-screen flex flex-col justify-between items-stretch">
           <div className="flex items-center grow shrink-0 py-12 !px-6 md:!px-12 ">

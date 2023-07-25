@@ -8,6 +8,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import { Section } from '@/components/section/Section'
 import { Title } from '@/components/title/Title'
+import { Link } from '@/components/link/Link'
 
 export default function VolunteersPage() {
   useEffect(() => {
@@ -40,10 +41,7 @@ export default function VolunteersPage() {
       </div>
 
       <strong>
-        <Link
-          className="button is-dark-blue is-fullwidth"
-          href="https://forms.gle/EMDxZVii6mhT6utj7"
-        >
+        <Link type="button" className="flex w-full" href="https://forms.gle/EMDxZVii6mhT6utj7">
           Meld deg som frivillig!
         </Link>
       </strong>
