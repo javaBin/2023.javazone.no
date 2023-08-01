@@ -10,8 +10,8 @@ const dummySession1: Session = {
   language: 'en',
   abstract: 'This is a dummy session',
   title: 'Dummy Session 1',
-  startTime: '2023-08-15T10:00:00',
-  endTime: '2023-08-15T10:30:00',
+  startTime: '2023-09-06T10:00:00',
+  endTime: '2023-09-06T10:30:00',
   startTimeZulu: '2023-08-15T08:00:00Z',
   endTimeZulu: '2023-08-15T08:30:00Z',
   id: 'session1',
@@ -29,8 +29,8 @@ const dummySession2: Session = {
   language: 'no',
   abstract: 'This is another dummy session',
   title: 'Dummy Session 2',
-  startTime: '2023-08-15T14:00:00',
-  endTime: '2023-08-15T15:00:00',
+  startTime: '2023-09-07T14:00:00',
+  endTime: '2023-09-07T15:00:00',
   startTimeZulu: '2023-08-15T12:00:00Z',
   endTimeZulu: '2023-08-15T13:00:00Z',
   id: 'session2',
@@ -45,11 +45,10 @@ const dummyProgram = [dummySession1, dummySession2]
 
 describe('filter', () => {
   it('should filter sessions by date', () => {
-    const filterOptions = {
-      date: '2023-08-15',
-    }
-    const filteredSessions = filter(dummyProgram, filterOptions)
-    expect(filteredSessions).toEqual([dummySession1, dummySession2])
+    const filteredSessions = filter(dummyProgram, {
+      weekday: 3,
+    })
+    expect(filteredSessions).toEqual([dummySession1])
   })
 
   it('should filter sessions by sessionFormat', () => {
@@ -93,13 +92,12 @@ describe('filter', () => {
   })
 
   it('should return an empty array if no sessions match the filters', () => {
-    const filterOptions = {
-      date: '2023-08-16',
-      sessionFormat: 'workshop' as SessionFormat,
-      language: 'en' as SessionLanguage,
-      favorites: ['session1'],
-    }
-    const filteredSessions = filter(dummyProgram, filterOptions)
+    const filteredSessions = filter(dummyProgram, {
+      weekday: 3,
+      format: 'favorites',
+      language: undefined,
+      favorites: [],
+    })
     expect(filteredSessions).toEqual([])
   })
 })

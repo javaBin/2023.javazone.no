@@ -6,26 +6,21 @@ type FormatFilter = Exclude<SessionFormat, 'workshop'> | 'favorites'
 type LanguageFilter = SessionLanguage
 
 export interface Filter {
-  date?: string // Datoen som tekst i formatet "YYYY-MM-DD"
+  weekday?: 3 | 4 // Datoen som tekst i formatet "YYYY-MM-DD"
   format?: FormatFilter
   language?: LanguageFilter
   favorites?: string[] // En liste over sessionIds som er favoritter
 }
 
-export const filter = (sessions: Session[], { date, favorites, format, language }: Filter = {}) => {
+export const filter = (sessions: Session[], { weekday, language }: Filter = {}) => {
   return sessions.filter((session) => {
-    const filterDate = !date || session.startTime?.startsWith(date) || false
+    const startTime = session.startTime ? new Date(session.startTime) : undefined
+    const filterDate = !weekday || startTime?.getDay() === weekday
     const filterLanguage = !language || session.language === language
-
-    if (format === "favorites") {
-      return favorites?.includes(session.sessionId) && filterLanguage && filterDate
-    }
-    const filterFormat = !format || session.format === format
-
-    return filterDate && filterFormat && filterLanguage
+    return filterDate && filterLanguage
   })
 }
-const filterStorageKey = 'program-filter'
+export const filterStorageKey = 'program-filter'
 export const useFilter = () => {
   const [filterState, setFilterState] = useState<Filter>(() => {
     const storedState = window.localStorage.getItem(filterStorageKey)
@@ -38,8 +33,8 @@ export const useFilter = () => {
 
   const updateFilter = useCallback((filter: Filter) => {
     setFilterState((current) => ({...current, ...filter}))
-    window.localStorage.setItem(filterStorageKey, JSON.stringify(filter))
-  }, [])
+    window.localStorage.setItem(filterStorageKey, JSON.stringify({...filterState, ...filter}))
+  }, [filterState])
 
   return {
     filterState,

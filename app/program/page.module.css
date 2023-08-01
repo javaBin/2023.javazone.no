@@ -7,29 +7,43 @@
 
 .session {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 1rem;
   margin: 2rem;
   padding: 2rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.05);
   background-color: var(--dark-blue-background);
+
+}
+
+.session_item {
   list-style: none;
   white-space: pre-line;
+}
+
+.session_item p {
+  margin: 0.5rem 0;
 }
 
 .session_link, .session_link:hover {
   color: var(--normal-text-color)
 }
 
-.session button {
-  align-self: flex-start;
-}
-
 .session_title {
   font-weight: bold;
-  color: var(--big-text-color)
+  color: var(--big-text-color);
+  margin-bottom: 1rem;
 }
 
 .content {
   padding: 2rem 0;
+}
+
+.favorite {
+  align-self: center;
+  font-size: xx-large;
+  background-color: var(--big-text-color);
+  border-radius: 10%;
+  border: none;
 }

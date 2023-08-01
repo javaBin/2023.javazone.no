@@ -1,0 +1,59 @@
+.filter_container {
+  container-type: inline-size;
+}
+
+.filter {
+  background-color: var(--dark-blue-background);
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "day"
+    "language"
+    "format"
+    "clear-filter";
+}
+
+.filter p {
+  font-weight: bold;
+  color: var(--big-text-color);
+}
+
+.day {
+  grid-area: day;
+}
+
+.language {
+  grid-area: language;
+}
+
+.format {
+  grid-area: format;
+}
+
+.clear_filter {
+  grid-area: clear-filter;
+}
+
+.button {
+  font-family: inherit;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+  margin: 0.2rem;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.button[data-active=true] {
+  background-color: white;
+}
+
+@container (min-width: 500px) {
+  .filter {
+    grid-template-areas:
+      "day language"
+      "format format"
+      "clear-filter clear-filter";
+  }
+}
