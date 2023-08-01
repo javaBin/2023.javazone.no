@@ -17,7 +17,6 @@ export default async function ProgramPage() {
       <h1 className={styles.program_title}>JavaZone Program 2023</h1>
       <SessionGroup group={'presentation'} sessions={sessionsGroupedByType['presentation']} />
       <SessionGroup group={'lightning-talk'} sessions={sessionsGroupedByType['lightning-talk']} />
-      <SessionGroup group={'workshop'} sessions={sessionsGroupedByType['workshop']} />
     </article>
   )
 }

@@ -55,6 +55,9 @@ export function Header() {
           <HeaderLink onClick={handleLinkClick} href="/program">
             Program
           </HeaderLink>
+          <HeaderLink onClick={handleLinkClick} href="/workshops">
+            Workshops
+          </HeaderLink>
           <HeaderLink onClick={handleLinkClick} href="/tickets">
             Tickets
           </HeaderLink>
