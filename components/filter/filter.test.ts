@@ -1,6 +1,7 @@
 // Opprett noen dummy data for testing
 import { Session, SessionFormat, SessionLanguage } from '@/app/program/program'
-import { filter } from './ProgramFilter'
+
+import { filter } from "./filter";
 
 const dummySession1: Session = {
   intendedAudience: 'Developers',
@@ -67,10 +68,10 @@ describe('filter', () => {
   })
 
   it('should filter sessions by favorites', () => {
-    const filterOptions = {
+    const filteredSessions = filter(dummyProgram, {
       favorites: ['session1'],
-    }
-    const filteredSessions = filter(dummyProgram, filterOptions)
+      format: "favorites"
+    })
     expect(filteredSessions).toEqual([dummySession1])
   })
 

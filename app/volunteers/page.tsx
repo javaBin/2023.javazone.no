@@ -2,7 +2,6 @@
 
 import voulenterstyles from './volunteers.module.css';
 import Link from 'next/link';
-// @ts-ignore
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";

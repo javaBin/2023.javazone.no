@@ -3,11 +3,10 @@
 import Image from "next/image";
 import styles from "./theme.module.css";
 import themeStyles from "./theme.module.css";
-// @ts-ignore
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import * as React from "react";
-import {useEffect} from "react";
+import { CSSProperties, useEffect } from "react";
 
 export default function Theme() {
   useEffect(() => {
@@ -60,7 +59,7 @@ const SectionContent = (props: {
   content: string
   contentTwo?: string
   contentThree?: string
-  style?: any
+  style?: CSSProperties
 }) => {
   return (
     <section className={`content is-normal ${styles.displayFlex}`} style={props.style}>
