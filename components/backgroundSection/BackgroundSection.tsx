@@ -2,8 +2,7 @@ import React from 'react'
 
 interface BackgroundSectionProps {
   /**
-   * TODO
-   * Type of section, normal or undefined
+   * Type of section, based on where it is used (Defines the background image)
    */
   type?: 'about'
 }

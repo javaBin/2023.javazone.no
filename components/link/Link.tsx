@@ -32,6 +32,7 @@ export const Link = ({ type = 'normal', href, className, children, ...props }: L
       return (
         <a
           className={`text-big-text-color hover:text-hover-text-color ${className}`}
+          rel="noreferrer noopener"
           href={href}
           {...props}
         >
@@ -60,22 +61,3 @@ export const Link = ({ type = 'normal', href, className, children, ...props }: L
       )
   }
 }
-/*
-
-background-color: var(--normal-text-color);
-border-color: transparent;
-color: #650729;
-button {
-  background-color: #fff;
-  border-color: #dbdbdb;
-  border-width: 1px;
-  color: #363636;
-  cursor: pointer;
-  justify-content: center;
-  padding: calc(.5em - 1px) 1em;
-  text-align: center;
-  white-space: nowrap;
-}
-
-
-*/

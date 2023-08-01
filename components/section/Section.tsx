@@ -2,7 +2,6 @@ import React from 'react'
 
 interface SectionProps {
   /**
-   * TODO
    * Type of section, normal or 2 columns section
    */
   type?: 'normal' | '2-col'

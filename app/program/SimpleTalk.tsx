@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import styles from './page.module.css'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
 import { Session } from '@/app/program/program'
 import Link from 'next/link'

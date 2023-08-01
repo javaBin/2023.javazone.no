@@ -2,8 +2,6 @@
 
 import * as React from "react";
 import Image from "next/image";
-import styles from "./theme.module.css";
-import themeStyles from "./theme.module.css";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { CSSProperties, useEffect } from "react";

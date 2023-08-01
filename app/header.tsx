@@ -26,6 +26,10 @@ const Line = ({ className }: { className: string }) => (
     />
   </>
 )
+type BurgerProps = {
+  active: boolean
+  setActive: (b: boolean) => void
+}
 const paths = [
   { text: 'Partners', href: '/partners' },
   { text: 'Speakers', href: '/speakers' },
@@ -38,12 +42,8 @@ const paths = [
   { text: 'About us', href: '/about' },
 ]
 
-export function Header() {
-  const [burger, setBurger] = useState(false)
 
-  const handleLinkClick = () => setBurger(false)
-
-const Burger = ({ active, setActive }: { active: boolean; setActive: (b: boolean) => void }) => (
+const Burger = ({ active, setActive }: BurgerProps) => (
   <a
     role="button"
     onClick={() => setActive(!active)}
