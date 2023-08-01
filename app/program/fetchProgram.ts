@@ -10,14 +10,19 @@ export async function fetchProgram(
     revalidateConfig,
   }: {
     revalidateConfig?: NextRevalidateConfig
-  } = { revalidateConfig: undefined },
+  } = {
+    revalidateConfig: {
+      tags: undefined,
+      revalidate: CACHE_TIME,
+    },
+  },
 ) {
   return await fetch('https://sleepingpill.javazone.no/public/allSessions/javazone_2023', {
     next: revalidateConfig,
   }).then<Program>((res) => res.json())
 }
 
-const CACHE_TIME = 60 * 15; // 15 minutes
+const CACHE_TIME = 60 * 15 // 15 minutes
 
 export const fetchIndividualProgram = (
   id?: string,
