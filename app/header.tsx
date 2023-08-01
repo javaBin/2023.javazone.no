@@ -18,6 +18,18 @@ const HeaderLink = ({
   </Link>
 )
 
+const paths = [
+  { text: 'Partners', href: '/partners' },
+  { text: 'Speakers', href: '/speakers' },
+  { text: 'Program', href: '/program' },
+  { text: 'Workshops', href: '/workshops' },
+  { text: 'Tickets', href: '/tickets' },
+  { text: 'Frivillig', href: '/volunteers' },
+  { text: 'JourneyZone', href: 'speakers/journeyzone' },
+  { text: "This year's theme", href: '/theme' },
+  { text: 'About us', href: '/about' },
+]
+
 export function Header() {
   const [burger, setBurger] = useState(false)
 
@@ -46,34 +58,11 @@ export function Header() {
 
       <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
         <div className="navbar-start">
-          <HeaderLink onClick={handleLinkClick} href="/partners">
-            Partners
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/speakers">
-            Speakers
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/program">
-            Program
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/workshops">
-            Workshops
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/tickets">
-            Tickets
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/volunteers">
-            Frivillig
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/speakers/journeyzone">
-            JourneyZone
-          </HeaderLink>
-          <HeaderLink onClick={handleLinkClick} href="/theme">
-            This year{"'"}s theme
-          </HeaderLink>
-
-          <HeaderLink onClick={handleLinkClick} href="/about">
-            About us
-          </HeaderLink>
+          {paths.map((path) => (
+            <HeaderLink href={path.href} key={path.href} onClick={handleLinkClick}>
+              {path.text}
+            </HeaderLink>
+          ))}
         </div>
       </div>
     </nav>
