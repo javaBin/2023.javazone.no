@@ -11,7 +11,7 @@ export const partners = [
     homepageUrl: 'https://www.apotek1.no/om-apotek1',
   },
   { logoUrl: '/logos/arktekk.svg', name: 'Arktekk', homepageUrl: 'https://arktekk.no/' },
-  { logoUrl: '/logos/bankidbankaxept.svg', name: 'BankIdBankAxept', homepageUrl: 'https://bidbax.no' },
+  { logoUrl: '/logos/bankid.svg', name: 'BankIdBankAxept', homepageUrl: 'https://bidbax.no' },
   { logoUrl: '/logos/bekk.svg', name: 'Bekk Consulting AS', homepageUrl: 'https://www.bekk.no/' },
   { logoUrl: '/logos/bouvet.svg', name: 'Bouvet Norge AS', homepageUrl: 'https://www.bouvet.no/' },
   { logoUrl: '/logos/buypass.svg', name: 'Buypass AS', homepageUrl: 'https://www.buypass.no/' },
