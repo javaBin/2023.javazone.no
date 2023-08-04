@@ -26,6 +26,7 @@ export interface Session {
   startSlotZulu: string
   speakers: Speaker[]
   registerLoc?: string
+  workshopPrerequisites?: string
 }
 
 export interface Speaker {

@@ -88,7 +88,14 @@ export default async function Page({
       </div>
 
       <h3>Abstract</h3>
-      <p className={styles.abstract}>{session.abstract}</p>
+      <p className={styles.preline}>{session.abstract}</p>
+
+      {session.workshopPrerequisites && (
+        <>
+          <h3>Prerequisites</h3>
+          <p className={styles.preline}>{session.workshopPrerequisites}</p>
+        </>
+      )}
 
       <h3>Day & time</h3>
       <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
