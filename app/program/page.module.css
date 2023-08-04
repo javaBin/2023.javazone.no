@@ -27,6 +27,7 @@
 }
 
 .session_link, .session_link:hover {
+  width: 100%;
   color: var(--normal-text-color)
 }
 
