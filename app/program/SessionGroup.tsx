@@ -16,8 +16,8 @@ export const SessionGroup = ({
       <Title type="subtitle">{prettyFormat(group)}</Title>
       {sessions.map((session) => (
         <SimpleTalk session={session} key={session.id}>
-          {session.sessionId ? (
-            <Link type="button" href={session.registerLoc ?? '#'}>
+          {session.registerLoc ? (
+            <Link type="button" href={session.registerLoc}>
               Registration
             </Link>
           ) : null}
