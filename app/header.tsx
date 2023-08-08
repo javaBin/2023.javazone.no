@@ -42,7 +42,6 @@ const paths = [
   { text: 'About us', href: '/about' },
 ]
 
-
 const Burger = ({ active, setActive }: BurgerProps) => (
   <a
     role="button"
@@ -82,31 +81,6 @@ export function Header() {
             {path.text}
           </HeaderLink>
         ))}
-        <HeaderLink onClick={handleLinkClick} href="/partners">
-          Partners
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/speakers">
-          Speakers
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/program">
-          Program
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/tickets">
-          Tickets
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/volunteers">
-          Frivillig
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/speakers/journeyzone">
-          JourneyZone
-        </HeaderLink>
-        <HeaderLink onClick={handleLinkClick} href="/theme">
-          This year{"'"}s theme
-        </HeaderLink>
-
-        <HeaderLink onClick={handleLinkClick} href="/about">
-          About us
-        </HeaderLink>
       </div>
     </nav>
   )

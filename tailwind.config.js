@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     // Overwrite the existing default Tailwind values here
     fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem', // 16px
+      lg: '1.125rem',
       xl: '1.5rem',
       '2xl': '1.75rem',
       '3xl': '2rem',

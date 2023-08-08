@@ -5,7 +5,6 @@ import { filter, useFilter } from '@/components/filter/filter'
 import { SimpleTalk } from '@/app/program/SimpleTalk'
 import { ProgramFilter } from '@/app/program/ProgramFilter'
 import { useMemo } from 'react'
-import styles from '@/app/program/page.module.css'
 
 interface FilteredSessionProps {
   sessions: Session[]
@@ -53,7 +52,7 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
             <SimpleTalk key={session.sessionId} session={session}>
               <button
                 aria-label={!isFavorite ? 'Add to favorites' : 'Remove from favorites'}
-                className={styles.favorite}
+                className="self-center text-3xl border-none bg-big-text-color rounded-[10%] px-2"
                 onClick={() => toggleFavorite(session, isFavorite)}
               >
                 {isFavorite ? '💔' : '❤️'}

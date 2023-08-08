@@ -72,10 +72,11 @@ export default async function Page({
   const dayAndTime = getDayAndTime(session)
 
   return (
-    <div className="flex flex-col gap-4 text-base">
+    <div className="flex flex-col gap-4 text-base ">
       <Title>{session.title}</Title>
-      <div className="inline-flex gap-4 text-2xl font-bold">
-        <p>{prettyFormat(session.format)}</p>-<p>{prettyLanguage(session.language)}</p>-
+      <div className="block bold mb-4 sm:flex sm:justify-between sm:gap-2 sm:text-xl sm:font-bold">
+        <p>{prettyFormat(session.format)}</p>
+        <p>{prettyLanguage(session.language)}</p>
         {!!dayAndTime && !!session.room ? <p>{dayAndTime}</p> : <p>Day & time coming soon</p>}
       </div>
       <p>
@@ -85,12 +86,12 @@ export default async function Page({
         <b>Room:</b> {session.room ? session.room : 'Coming soon'}
       </p>
       <Title type="program">Abstract</Title>
-      <p className={styles.preline}>{session.abstract}</p>
+      <p className="whitespace-pre-line">{session.abstract}</p>
 
       {session.workshopPrerequisites && (
         <>
           <h3>Prerequisites</h3>
-          <p className={styles.preline}>{session.workshopPrerequisites}</p>
+          <p className="whitespace-pre-line">{session.workshopPrerequisites}</p>
         </>
       )}
 
