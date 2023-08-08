@@ -1,7 +1,9 @@
+import { Title } from "@/components/title/Title";
+
 export default function SuperOverflowPage() {
   return (
     <div>
-      <h1 className="title">Superoverflow</h1>
+      <Title type="big-title">SuperOverflow</Title>
 
       <section className="content is-normal">
           <p>We regret to inform you that we have made the difficult decision to cancel JavaZone SuperOverflow 2023 due to insufficient registrations.</p>
