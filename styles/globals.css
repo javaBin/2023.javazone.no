@@ -29,17 +29,8 @@ a:hover{
   text-decoration: none;
 }
 
-.title {
-  color: var(--big-text-color);
-}
-
 strong {
   color: var(--big-text-color);
-}
-
-.box{
-  background-color: #033E4F;
-  color: white;
 }
 
 .banner {

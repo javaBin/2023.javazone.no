@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Session } from '@/app/program/program'
 import { Metadata, ResolvingMetadata } from 'next'
 import { Title } from '@/components/title/Title'
+import { Link } from '@/components/link/Link'
 
 function getDayAndTime({ endTime, startTime }: Session) {
   if (!startTime || !endTime) {
@@ -108,7 +109,7 @@ export default async function Page({
             <p>{speaker.bio}</p>
             {!!speaker.twitter && (
               <a href={`https://twitter.com/${speaker.twitter}`}>
-                <div className="inline-flex align-middle gap-1">
+                <div className="inline-flex items-center gap-1">
                   <Image
                     src={'/icons/twitter-icon.svg'}
                     alt={'Twitter logo'}
@@ -122,6 +123,15 @@ export default async function Page({
           </li>
         ))}
       </ul>
+
+      {session.registerLoc && (
+        <>
+          <Title type="program">Registration</Title>
+          <Link type="button" href={session.registerLoc} className="self-start">
+            Registration
+          </Link>
+        </>
+      )}
     </div>
   )
 }

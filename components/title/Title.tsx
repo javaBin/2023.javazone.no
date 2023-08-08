@@ -19,7 +19,7 @@ type TitleProps = {
 /**
  * Primary UI component for user interaction
  */
-export const Title = ({ type = 'title', className, children, ...props }: TitleProps) => {
+export const Title = ({ type = 'title', className = '', children, ...props }: TitleProps) => {
   switch (type) {
     case 'big-title':
       return (

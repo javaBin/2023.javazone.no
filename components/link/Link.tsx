@@ -19,8 +19,7 @@ type LinkProps = {
   children: ReactNode
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const Link = ({ type = 'normal', href, className, children, ...props }: LinkProps) => {
-  className = className || ''
+export const Link = ({ type = 'normal', href, className = '', children, ...props }: LinkProps) => {
   switch (type) {
     case 'normal':
       return (
