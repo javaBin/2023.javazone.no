@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Title } from '@/components/title/Title'
 import { Section } from '@/components/section/Section'
 import { Link } from '@/components/link/Link'
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - Speakers',
@@ -29,7 +30,7 @@ export default function SpeakersPage() {
   return (
     <Section>
       <Title className="leading-tight">Call for speakers</Title>
-
+      <PageBanner/>
       <Section>
         <Title type="subtitle">About JavaZone</Title>
         <p className="mb-4">
