@@ -41,3 +41,58 @@ strong {
   background-color: #033E4F;
   color: white;
 }
+
+.banner {
+  display: block;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.banner:before,
+.banner:after {
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.banner:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #650729);
+}
+
+.banner:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #650729);
+}
+
+.wheely {
+  animation: wiggle 2s infinite linear
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+

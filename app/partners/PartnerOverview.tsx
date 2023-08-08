@@ -27,7 +27,7 @@ export default function PartnerOverview({ partners }: Props) {
                   height={0}
                   width={0}
                   sizes={'100vw'}
-                  className="h-16 w-40 hover:scale-[1.2]"
+                  className="h-16 w-40 transform transition-transform hover:scale-125"
                   src={partner.logoUrl}
                   alt={partner.name}
                   style={{ padding: '5px' }}

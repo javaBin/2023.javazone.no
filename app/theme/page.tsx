@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import { CSSProperties, useEffect } from "react";
 import { Section } from '@/components/section/Section'
 import { Title } from '@/components/title/Title'
+import PageBanner from "@/components/PageBanner";
 
 export default function Theme() {
   useEffect(() => {
@@ -19,6 +20,8 @@ export default function Theme() {
         Dear JavaZone community, We are excited to announce that this year’s JavaZone conference
         theme is Circus!
       </Title>
+
+      <PageBanner/>
 
       <Title className="text-center !mb-12">Why Circus, you might ask?</Title>
 

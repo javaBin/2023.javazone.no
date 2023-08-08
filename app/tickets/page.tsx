@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { Title } from '@/components/title/Title'
 import { Section } from '@/components/section/Section'
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023 - Tickets',
@@ -11,6 +12,7 @@ export default function TicketsPage() {
   return (
     <div>
       <Title>Tickets</Title>
+      <PageBanner/>
 
       <Section>
         <Title type="subtitle">About JavaZone</Title>
