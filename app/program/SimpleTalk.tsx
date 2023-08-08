@@ -1,8 +1,8 @@
-import styles from './page.module.css'
+import React, { ReactNode } from 'react'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
 import { Session } from '@/app/program/program'
 import Link from 'next/link'
-import { ReactNode } from 'react'
+import { Title } from '@/components/title/Title'
 
 export const SimpleTalk = ({
   session: { endTime, format, language, room, speakers, startTime, title, id, length },
@@ -11,10 +11,13 @@ export const SimpleTalk = ({
   session: Session
   children?: ReactNode
 }) => (
-  <div className={styles.session}>
-    <Link href={`/program/${id}`} className={styles.session_link}>
-      <li className={styles.session_item}>
-        <h3 className={styles.session_title}>{title}</h3>
+  <div className="flex justify-between g-4 m-8 p-8 shadow-2xl bg-dark-blue-background">
+    <Link
+      href={`/program/${id}`}
+      className="w-full hover:w-full text-normal-text-color hover:text-normal-text-color"
+    >
+      <li className="whitespace-pre-line list-none [&>p]:my-2">
+        <Title type="program">{title}</Title>
         <p>Speakers: {speakers.map((speaker) => speaker.name).join(', ')}</p>
         <p>Type: {prettyFormat(format)}</p>
         <p>Language: {prettyLanguage(language)}</p>

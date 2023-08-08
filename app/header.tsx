@@ -1,8 +1,8 @@
 'use client'
 
-import { ReactNode, useState } from 'react'
-import Link from 'next/link'
+import React, { ReactNode, useState } from 'react'
 import Image from 'next/image'
+import { Link } from '@/components/link/Link'
 
 const HeaderLink = ({
   children,
@@ -13,11 +13,23 @@ const HeaderLink = ({
   href: string
   onClick?: () => void
 }) => (
-  <Link className={`navbar-item`} style={{ fontWeight: 'bold' }} href={href} onClick={onClick}>
+  <Link type="header" href={href} onClick={onClick}>
     {children}
   </Link>
 )
 
+const Line = ({ className }: { className: string }) => (
+  <>
+    <span
+      className={`block w-[16px] h-[1px] bg-big-text-color absolute left-[calc(50%-8px)] duration-100 ease-out origin-center transition-[background-color] transition-[opacity] transition-[transform] ${className}`}
+      aria-hidden="true"
+    />
+  </>
+)
+type BurgerProps = {
+  active: boolean
+  setActive: (b: boolean) => void
+}
 const paths = [
   { text: 'Partners', href: '/partners' },
   { text: 'Speakers', href: '/speakers' },
@@ -30,40 +42,45 @@ const paths = [
   { text: 'About us', href: '/about' },
 ]
 
-export function Header() {
-  const [burger, setBurger] = useState(false)
+const Burger = ({ active, setActive }: BurgerProps) => (
+  <a
+    role="button"
+    onClick={() => setActive(!active)}
+    className="bg-none border-none cursor-pointer block h-[3.25rem] w-[3.25rem] relative ml-auto hover:text-[#26A27E] hover:bg-[#033443] lg:hidden"
+    aria-label="menu"
+    aria-expanded="false"
+  >
+    <Line className={`top-[calc(50%-6px)] ${active ? 'translate-y-[5px] rotate-45' : ''}`} />
+    <Line className={`top-[calc(50%-1px)] ${active ? 'hidden' : ''}`} />
+    <Line className={`top-[calc(50%+4px)] ${active ? 'translate-y-[-5px] rotate-[-45deg]' : ''}`} />
+  </a>
+)
 
-  const handleLinkClick = () => setBurger(false)
+export function Header() {
+  const [active, setActive] = useState(false)
+
+  const handleLinkClick = () => setActive(false)
 
   return (
-    <nav className={'navbar is-fixed-top'} role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="/">
+    <nav
+      className="lg:flex lg:items-stretch top-0 left-0 right-0 fixed z-30 bg-dark-blue-background min-h[3.25rem]"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="flex items-stretch grow-0 shrink-0 min-h-[3.25rem]">
+        <Link type="header" href="/">
           <Image src="/svg/JZ2023-Hero.svg" height={48} width={48} alt="logo" />
-        </a>
+        </Link>
 
-        <a
-          role="button"
-          onClick={() => setBurger(!burger)}
-          className={`navbar-burger ${burger && 'is-active'}`}
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+        <Burger active={active} setActive={setActive} />
       </div>
 
-      <div id="navbarBasicExample" className={burger ? 'navbar-menu is-active' : 'navbar-menu'}>
-        <div className="navbar-start">
-          {paths.map((path) => (
-            <HeaderLink href={path.href} key={path.href} onClick={handleLinkClick}>
-              {path.text}
-            </HeaderLink>
-          ))}
-        </div>
+      <div className={`flex max-lg:flex-col ${active ? '' : 'max-lg:hidden'} `}>
+        {paths.map((path) => (
+          <HeaderLink href={path.href} key={path.href} onClick={handleLinkClick}>
+            {path.text}
+          </HeaderLink>
+        ))}
       </div>
     </nav>
   )

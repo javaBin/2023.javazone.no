@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap");
+
+:root{
+  --dark-blue-background: #033E4F;
+  --background-JZ-gradient: linear-gradient(#650729, var(--dark-blue-background));
+  --big-text-color: #FED12D;
+  --normal-text-color: #F6DA98;
+  --hover-text-color: #FF8525;
+  --red-text-color: #650729;
+  --link-color: #5AD0A6;
+}
+
+body{
+  color: var(--normal-text-color);
+  background: var(--background-JZ-gradient);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover{
+  color: #26A27E;
+  text-decoration: none;
+}
+
+.title {
+  color: var(--big-text-color);
+}
+
+strong {
+  color: var(--big-text-color);
+}
+
+.box{
+  background-color: #033E4F;
+  color: white;
+}
