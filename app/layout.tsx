@@ -1,8 +1,8 @@
-import {ReactNode} from 'react'
-import '../styles/globals.scss'
-import {Footer} from './footer'
-import {Header} from './header'
-import {Metadata} from 'next'
+import { ReactNode } from 'react'
+import '../styles/globals.css'
+import { Footer } from './footer'
+import { Header } from './header'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'JavaZone 2023',
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="has-navbar-fixed-top">
+      <body className="pt-[3.25rem]">
         <Header />
-        <div className={`hero is-fullheight`}>
-          <div className={`hero-body`}>
-            <div className="container is-max-desktop">
+        <div className="min-h-screen flex flex-col justify-between items-stretch">
+          <div className="flex items-center grow shrink-0 py-12 !px-6 md:!px-12 ">
+            <div className="relative grow shrink w-auto my-0 w-full lg:max-w-[960px] mx-auto">
               <main>{children}</main>
             </div>
           </div>
-          <div className="hero-foot">
+          <div className="flex-grow-0 shrink">
             <Footer />
           </div>
         </div>

@@ -1,4 +1,5 @@
-import styles from "./footer.module.css"
+import React from 'react'
+import { Link } from '@/components/link/Link'
 
 interface FooterLinkProps {
   href: string
@@ -34,15 +35,15 @@ const footerData = [
 
 const FooterLink = ({ href, text }: FooterLinkProps) => {
   return (
-    <a className={`link is-info ${styles.link}`} href={href} target="_blank" rel="noopener noreferrer">
+    <Link type="footer" href={href} target="_blank" rel="noopener noreferrer">
       {text}
-    </a>
+    </Link>
   )
 }
 
 const createFooterLinks = () =>
   footerData.map(({ url, text }) => (
-    <p key={url} className="level-item has-text-centered">
+    <p key={url} className="text-center mt-3">
       <FooterLink href={url} text={text} />
     </p>
   ))
@@ -50,8 +51,8 @@ const createFooterLinks = () =>
 export function Footer() {
   const footerLinks = createFooterLinks()
   return (
-    <footer className="footer">
-      <nav className="level">{footerLinks}</nav>
-    </footer>
+    <div className="bg-dark-blue-background flex justify-evenly py-4 max-md:flex-col">
+      {footerLinks}
+    </div>
   )
 }

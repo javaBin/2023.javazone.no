@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
+import '../../styles/globals.css'
 import Image from 'next/image'
-import styles from './partnerOverview.module.css'
 
 interface Partner {
   homepageUrl: string
@@ -13,23 +13,11 @@ interface Props {
   partners: Partner[]
 }
 
-const imageContainer = {
-  width: '10rem',
-  height: '4rem',
-  padding: "5px",
-  transition: 'transform 0.3s',
-}
-
-export default function PartnerOverview({partners}: Props) {
+export default function PartnerOverview({ partners }: Props) {
   return (
-    <section className={styles.wrapper}>
-      <h1 className={styles.title}>Partners in 2023</h1>
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        gap: "2.5rem",
-        flexWrap: "wrap"
-      }}>
+    <section className="block w-screen bg-big-text-color p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
+      <h1 className="text-2xl text-center text-black uppercase my-4">Partners in 2023</h1>
+      <div className="flex flex-wrap justify-center gap-10">
         {[...partners]
           .sort(() => Math.random() - 0.5)
           .map((partner) => {
@@ -39,17 +27,10 @@ export default function PartnerOverview({partners}: Props) {
                   height={0}
                   width={0}
                   sizes={'100vw'}
+                  className="h-16 w-40 hover:scale-[1.2]"
                   src={partner.logoUrl}
                   alt={partner.name}
-                  style={imageContainer}
-                  onMouseOver={(e) => {
-                    const target = e.target as HTMLStyleElement;
-                    target.style.transform = 'scale(1.2)';
-                  }}
-                  onMouseLeave={(e) => {
-                    const target = e.target as HTMLStyleElement;
-                    target.style.transform = 'scale(1)';
-                  }}
+                  style={{ padding: '5px' }}
                 />
               </a>
             )

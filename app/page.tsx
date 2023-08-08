@@ -4,27 +4,29 @@ import AnimatedDivider from '../components/AnimatedDivider'
 import AnimatedHero from '../components/AnimatedHero'
 import AnimatedFireworks from '../components/AnimatedFireworks'
 import Image from 'next/image'
+import React from 'react'
+import { Title } from '@/components/title/Title'
 
 export default function Home() {
   return (
-    <div className={'columns'}>
+    <div className="flex m-[0.75rem]">
       <div className={styles.wendy}>
         <Image src={'/svg/JZ2023-Character-Wendy-cropped.svg'} width={300} height={300} alt={'f'} />
       </div>
 
-      <section className={`has-text-centered`}>
+      <section className="text-center">
         <div className="mb-4">
           <AnimatedHero />
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <AnimatedDivider />
           <AnimatedFireworks />
         </div>
 
-        <h1 className={`title ${styles.fontAndColor} mt-4`}>
+        <Title className={`mt-4 font-['Noto Serif', 'Open Sans', 'serif'] `}>
           Welcome to The Amazing JavaZone 6-7 September in Oslo Spektrum
-        </h1>
+        </Title>
         <div className={'mb-4'}>
           <p>Conference: September 6-7, 2023</p>
           <p>Workshop: September 5, 2023</p>
@@ -32,17 +34,13 @@ export default function Home() {
         </div>
         <div>
           <div>
-            Click <Link href="https://2022.javazone.no/#/program">here</Link> to view the program of
-            JavaZone 2022
+            <Link href="/program">Program</Link> is now ready! 🚀
           </div>
-          <div>
-            <Link href="/tickets">Ticket sale</Link> opens February 20th
-          </div>
-          <div className="has-text-weight-bold">
+          <div className="font-bold">
             NB! Want to be a partner? Click <Link href="/partners">here</Link>
           </div>
         </div>
-        <div className="mt-6">
+        <div className="flex justify-center mt-6">
           <AnimatedDivider />
         </div>
       </section>
