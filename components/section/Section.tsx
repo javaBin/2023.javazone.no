@@ -18,7 +18,7 @@ interface SectionProps {
 /**
  * Section component
  */
-export const Section = ({ type = 'normal', className, children }: SectionProps) => {
+export const Section = ({ type = 'normal', className = '', children }: SectionProps) => {
   switch (type) {
     case '2-col':
       return (
