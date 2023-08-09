@@ -35,7 +35,7 @@ strong {
 
 .banner {
   display: block;
-  width: 1000rem;
+  width: 99vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   overflow: hidden;
@@ -43,6 +43,12 @@ strong {
   white-space: nowrap;
   position: relative;
   margin-bottom: 20px;
+}
+
+@media (min-width: 2000px) {
+  .banner {
+    width: 100vw;
+  }
 }
 
 .wheely {
