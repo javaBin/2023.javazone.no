@@ -4,7 +4,7 @@ export default function PageBanner() {
 
   return (
     <div className="banner">
-      {Array.from({ length: 6 }, (_, index) => (
+      {Array.from({ length: 40 }, (_, index) => (
         <div key={index} className={"inline-flex gap-5 m-3"}>
           <Image src={"/svg/JZ2023-Item-Bracket.svg"} alt={"bracket"} width={30} height={30}/>
           <Image src={"/svg/JZ2023-Item-Tilde.svg"} alt={"tilde"} width={30} height={30}/>
