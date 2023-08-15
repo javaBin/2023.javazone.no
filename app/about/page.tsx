@@ -75,7 +75,7 @@ export default function About() {
             <a href="mailto:student@java.no" target="_blank" rel="noreferrer">
               student@java.no
             </a>{' '}
-            – Ellaoui Abdellaoui
+            – Bendik Dyrli, Ellaoui Abdellaoui
             and Ole Berg
           </li>
         </ul>
