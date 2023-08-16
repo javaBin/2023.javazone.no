@@ -2,6 +2,7 @@
 
 import '../../styles/globals.css'
 import Image from 'next/image'
+import { Title } from "@/components/title/Title";
 
 interface Partner {
   homepageUrl: string
@@ -16,7 +17,7 @@ interface Props {
 export default function PartnerOverview({ partners }: Props) {
   return (
     <section className="block w-screen bg-big-text-color p-4 ml-[calc(-50vw+50%)] mr-[calc(-50vw+50%)]">
-      <h1 className="text-2xl text-center text-black uppercase my-4">Partners in 2023</h1>
+      <Title className="text-center text-red-text-color">Partners in 2023</Title>
       <div className="flex flex-wrap justify-center gap-10">
         {[...partners]
           .sort(() => Math.random() - 0.5)

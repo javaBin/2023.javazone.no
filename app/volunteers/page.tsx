@@ -45,9 +45,9 @@ export default function VolunteersPage() {
         </Link>
       </strong>
 
-      <h1 className="text-center text-2xl font-semibold text-big-text-color mt-8 mb-6">
+      <Title className="text-center mt-8 mb-6">
         Ofte stilte spørsmål
-      </h1>
+      </Title>
 
       {SectionContent({
         title: "I don't speak Norwegian what about me?",

@@ -18,7 +18,7 @@ export const SimpleTalk = ({
         className="w-full hover:w-full text-normal-text-color hover:text-normal-text-color"
       >
         <li className="whitespace-pre-line list-none [&>p]:my-2">
-          <Title type="program">{title}</Title>
+          <Title type="subtitle">{title}</Title>
           <p>Speakers: {speakers.map((speaker) => speaker.name).join(', ')}</p>
           <p>Type: {prettyFormat(format)}</p>
           <p>Language: {prettyLanguage(language)}</p>

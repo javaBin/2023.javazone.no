@@ -29,51 +29,51 @@ export const Title = ({ type = 'title', className = '', children, ...props }: Ti
       )
     case 'title':
       return (
-        <h1
+        <h2
           {...props}
           className={`text-3xl leading-9 font-semibold text-big-text-color mb-4 ${className}`}
         >
           {children}
-        </h1>
+        </h2>
       )
     case 'subtitle':
       return (
-        <h1
+        <h3
           {...props}
           className={`text-2xl leading-9 font-semibold text-big-text-color mb-4 ${className}`}
         >
           {children}
-        </h1>
+        </h3>
       )
     case 'column':
       return (
-        <h1
+        <h4
           {...props}
           className={`text-2xl font-semibold text-big-text-color mb-4 max-w-[300px] ${className}`}
         >
           {children}
-        </h1>
+        </h4>
       )
     case 'card':
       return (
-        <h1
+        <h4
           {...props}
           className={`text-2xl font-semibold text-red-text-color bg-normal-text-color mb-4 ${className}`}
         >
           {children}
-        </h1>
+        </h4>
       )
     case 'paragraph':
       return (
-        <h1 {...props} className={`text-2xl font-semibold text-big-text-color mb-4 ${className}`}>
+        <h4 {...props} className={`text-2xl font-semibold text-big-text-color mb-4 ${className}`}>
           {children}
-        </h1>
+        </h4>
       )
     case 'program':
       return (
-        <h1 {...props} className={`text-xl font-semibold text-big-text-color mb-4 ${className}`}>
+        <h4 {...props} className={`text-xl font-semibold text-big-text-color mb-4 ${className}`}>
           {children}
-        </h1>
+        </h4>
       )
   }
 }

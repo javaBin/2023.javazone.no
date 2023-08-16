@@ -29,10 +29,10 @@ export default function SpeakersPage() {
 
   return (
     <Section>
-      <Title className="leading-tight">Call for speakers</Title>
+      <Title type="big-title" className="leading-tight">Call for speakers</Title>
       <PageBanner/>
       <Section>
-        <Title type="subtitle">About JavaZone</Title>
+        <Title>About JavaZone</Title>
         <p className="mb-4">
           {`JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of
           pre-conference workshop, followed by two days of lightning talks and presentations in
@@ -58,7 +58,7 @@ export default function SpeakersPage() {
       </Section>
 
       <Section>
-        <Title type="subtitle">What is it like speaking at JavaZone?</Title>
+        <Title>What is it like speaking at JavaZone?</Title>
         <p className="mb-4">
           Over the last decade JavaZone has grown to become one of the most important Java events in
           Europe! You can see for yourself – over 1500 videos from previous years talks are
@@ -154,8 +154,8 @@ export default function SpeakersPage() {
       </Section>
 
       <Section>
-        <Title type="subtitle">{`What's in it for me?`}</Title>
-        <Title type="paragraph">Accepted presentations, lightning talks, and workshops</Title>
+        <Title>{`What's in it for me?`}</Title>
+        <Title type="subtitle">Accepted presentations, lightning talks, and workshops</Title>
         <p className="mb-4">
           {`As a JavaZone speaker, you get free admission to the conference. Additionally, you are
           also invited to the speakers' dinner, held on September 6th.`}
@@ -167,7 +167,7 @@ export default function SpeakersPage() {
             here
           </a>
         </p>
-        <Title type="paragraph">Coverage of expenses</Title>
+        <Title type="subtitle">Coverage of expenses</Title>
         <p className="mb-4">
           Please see our <Link href="/speakers/monetary-policy">reimbursement policy</Link> if you
           have any questions regarding coverage of other expenses.
@@ -175,7 +175,7 @@ export default function SpeakersPage() {
       </Section>
 
       <Section>
-        <Title type="subtitle">Important principles</Title>
+        <Title>Important principles</Title>
         <p className="mb-4">
           JavaZone is proud to be an independent and community-driven conference. It is organized by
           volunteers from <Link href="https://javabin.no">javaBin</Link> (the Norwegian Java User

@@ -11,7 +11,7 @@ export default async function ProgramPage() {
 
   return (
     <article>
-      <Title>JavaZone Program 2023</Title>
+      <Title type="big-title">JavaZone Program 2023</Title>
       <FilteredSessions sessions={sessions} />
     </article>
   )

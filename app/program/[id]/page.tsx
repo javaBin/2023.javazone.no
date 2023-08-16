@@ -91,7 +91,7 @@ export default async function Page({
 
       {session.workshopPrerequisites && (
         <>
-          <h3>Prerequisites</h3>
+          <Title type="program">Prerequisites</Title>
           <p className="whitespace-pre-line">{session.workshopPrerequisites}</p>
         </>
       )}

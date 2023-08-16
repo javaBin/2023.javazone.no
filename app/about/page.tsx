@@ -13,7 +13,7 @@ export default function About() {
       <div className="inline-block">
         <Title type="big-title">JavaZone: The biggest community-driven Java conference</Title>
       </div>
-      <h2 className="text-3xl mb-8">What is it? Who is behind it?</h2>
+      <Title className="text-3xl mb-8">What is it? Who is behind it?</Title>
 
       <Section>
         <Title type="subtitle">WHAT IS JAVAZONE?</Title>

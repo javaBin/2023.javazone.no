@@ -24,7 +24,7 @@ export default function Home() {
           <AnimatedFireworks />
         </div>
 
-        <Title className={`mt-4 font-['Noto Serif', 'Open Sans', 'serif'] `}>
+        <Title type="big-title">
           Welcome to The Amazing JavaZone 6-7 September in Oslo Spektrum
         </Title>
         <div className={'mb-4'}>

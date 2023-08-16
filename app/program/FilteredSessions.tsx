@@ -7,6 +7,7 @@ import { SimpleTalk } from '@/app/program/SimpleTalk'
 import { ProgramFilter, Statistics } from '@/app/program/ProgramFilter'
 import { useMemo } from 'react'
 import { formatter } from '@/app/program/utils'
+import { Title } from "@/components/title/Title";
 
 interface FilteredSessionProps {
   sessions: Session[]
@@ -67,9 +68,9 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
         .sort(([timeA], [timeB]) => timeA.localeCompare(timeB))
         .map(([time, sessions]) => (
           <section key={time}>
-            <h4 className="text-2xl leading-9 font-semibold text-big-text-color mb-4">
+            <Title>
               {formatter.format(new Date(time))}
-            </h4>
+            </Title>
             {sessions
               .sort((a, b) => a.room!.localeCompare(b.room!) || a.startTime!.localeCompare(b.startTime!))
               .map((session) => {

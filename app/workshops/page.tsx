@@ -1,13 +1,14 @@
 import { SessionGroup } from "@/app/program/SessionGroup";
 import { fetchProgram } from "@/app/program/fetchProgram";
-import styles from "./page.module.css"
 import PageBanner from "@/components/PageBanner";
+import { Title } from "@/components/title/Title";
 
 export default async function Workshops() {
   const workshops = (await fetchProgram()).sessions.filter(session => session.format === "workshop")
 
   return <article>
-    <h1 className={styles.program_title}>JavaZone Workshops 2023</h1>
+    <Title type="big-title">JavaZone Workshops 2023</Title>
+    <Title>Find your workshop - Registration opens on August 21nd at 12:00</Title>
     <PageBanner/>
     <SessionGroup group={"workshop"} sessions={workshops} />
   </article>

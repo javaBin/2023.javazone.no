@@ -15,7 +15,7 @@ export default function Partners() {
   return (
     <>
       <Section>
-        <Title type="subtitle">Sold out</Title>
+        <Title type="big-title">JavaZone 2023 Partners (Sold out)</Title>
         <p>We are now sold out of partner packages.</p>
       </Section>
       <PartnerOverview partners={partners} />
@@ -35,7 +35,7 @@ export default function Partners() {
       </Section>
 
       <Section>
-        <Title type="subtitle">Partner information</Title>
+        <Title type="title">Partner information</Title>
         <p className="mb-4">
           Even though all partners are considered equal, there are a few options to choose from.
           There is a base package that everyone gets, and then there are a few available expansions.
@@ -50,13 +50,13 @@ export default function Partners() {
       </Section>
 
       <Section className="font-['Noto Serif']">
-        <Title>Packages</Title>
+        <Title type="subtitle">Packages</Title>
         <StandardPackage />
         <DonutStand />
-        <Title>Possible expansions</Title>
+        <Title type="subtitle">Possible expansions</Title>
         <ConceptStand />
         <RestaurantStand />
-        <Title>Partner tickets</Title>
+        <Title type="subtitle">Partner tickets</Title>
         <PartnerCard title="Ticket types">
           <ul className="list-disc ml-8 my-4">
             <li>

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function TicketsPage() {
   return (
     <div>
-      <Title>Tickets</Title>
+      <Title type="big-title">Tickets</Title>
       <PageBanner/>
 
       <Section>
-        <Title type="subtitle">About JavaZone</Title>
+        <Title>About JavaZone</Title>
         <p>
           JavaZone 2023 will be the 21st physical JavaZone conference and will consist of a day of
           pre-conference workshop, followed by two days of lightning talks and presentations in
@@ -23,18 +23,18 @@ export default function TicketsPage() {
         </p>
       </Section>
       <Section>
-        <Title type="subtitle">Price</Title>
+        <Title>Price</Title>
         <p className="mb-4">
           <b>7 990,- (ex MVA and fee)</b>
         </p>
         <p>Late bird (after April 1st) : 8 790,- (ex MVA and fee)</p>
       </Section>
       <Section>
-        <Title type="subtitle">Sold out</Title>
+        <Title>Sold out</Title>
         <p className="mb-4">We are all out of tickets</p>
       </Section>
       <Section>
-        <Title type="subtitle">Partner tickets</Title>
+        <Title>Partner tickets</Title>
         <p>
           If you are working for one of our partners, do not order your tickets here. Instead your
           partner contact will order your tickets directly from us. Read more about partnership{' '}
@@ -42,7 +42,7 @@ export default function TicketsPage() {
         </p>
       </Section>
       <Section>
-        <Title type="subtitle">What is included?</Title>
+        <Title>What is included?</Title>
         <p className="mb-4">
           The tickets includes admission to JavaZone both days (September 6th and 7th). It also
           includes admission to the workshops on September 5th (The workshops have limited seating,
