@@ -5,10 +5,18 @@ import { ReactNode } from 'react'
 const WEDNESDAY = 3
 const THURSDAY = 4
 
+export interface Statistics {
+  all: number
+  presentation: number
+  lightningTalks: number
+  favorites: number
+  aiZone: number
+}
+
 interface Props {
   filter: Filter
   onFilterChange: (filter: Filter) => void
-  statistics: { all: number; presentation: number; lightningTalks: number; favorites: number }
+  statistics: Statistics
 }
 
 type ButtonProps = {
@@ -56,13 +64,14 @@ const Button = (props: ButtonProps) => {
 export const ProgramFilter = ({
   onFilterChange,
   filter,
-  statistics = { presentation: 0, favorites: 0, lightningTalks: 0, all: 0 },
+  statistics = { presentation: 0, favorites: 0, lightningTalks: 0, all: 0, aiZone: 0 },
 }: Props) => {
   const clearFilter = () =>
     onFilterChange({
       format: undefined,
       language: undefined,
       weekday: undefined,
+      isAIZone: false
     })
 
   return (
@@ -113,26 +122,38 @@ export const ProgramFilter = ({
         <p className="bold text-big-text-color">Format</p>
         <Button
           dataActive={filter.format === undefined}
-          onClick={() => onFilterChange({ format: undefined })}
+          onClick={() => onFilterChange({ format: undefined, isAIZone: false })}
         >
           All ({statistics.all})
         </Button>
         <Button
           dataActive={filter.format === 'presentation'}
-          onClick={() => onFilterChange({ format: 'presentation' })}
+          onClick={() => onFilterChange({ format: 'presentation', isAIZone: false })}
         >
           Presentation ({statistics.presentation})
         </Button>
         <Button
           dataActive={filter.format === 'lightning-talk'}
-          onClick={() => onFilterChange({ format: 'lightning-talk' })}
+          onClick={() => onFilterChange({ format: 'lightning-talk', isAIZone: false })}
         >
           Lightning talks ({statistics.lightningTalks})
+        </Button>
+        <Button
+          dataActive={filter.isAIZone}
+          onClick={() =>
+            onFilterChange({
+              isAIZone: !filter.isAIZone,
+              format: undefined
+            })
+          }
+        >
+          AI Zone ({statistics.aiZone})
         </Button>
         <Button
           dataActive={filter.format === 'favorites'}
           onClick={() =>
             onFilterChange({
+              isAIZone: false,
               format: 'favorites',
             })
           }

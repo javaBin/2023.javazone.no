@@ -4,7 +4,7 @@ import 'core-js/actual/array/group-by'
 import { Session } from '@/app/program/program'
 import { filter, useFilter } from '@/components/filter/filter'
 import { SimpleTalk } from '@/app/program/SimpleTalk'
-import { ProgramFilter } from '@/app/program/ProgramFilter'
+import { ProgramFilter, Statistics } from '@/app/program/ProgramFilter'
 import { useMemo } from 'react'
 import { formatter } from '@/app/program/utils'
 
@@ -16,17 +16,23 @@ interface GroupedSessions {
   [time: string]: Session[]
 }
 
+const isAIZoneSession = (room: string = '') => room.toLowerCase() === 'room 3'
+
 const getStatCount = (format: Session['format']) => (session: Session) => session.format === format
 
 export default function FilteredSessions({ sessions }: FilteredSessionProps) {
   const { filterState, updateFilter } = useFilter()
   const filteredSessions = filter(sessions, filterState)
-  const sessionsToInclude = filteredSessions.filter(
-    (session) =>
+  const sessionsToInclude = filteredSessions.filter((session) => {
+    const formatMatches =
       !filterState.format ||
       session.format === filterState.format ||
-      filterState.favorites?.includes(session.sessionId),
-  )
+      filterState.favorites?.includes(session.sessionId)
+    if (!filterState.isAIZone) {
+      return formatMatches || filterState.favorites?.includes(session.sessionId)
+    }
+    return isAIZoneSession(session.room) || filterState.favorites?.includes(session.sessionId)
+  })
 
   // New grouping feature coming soon to JS, in TC39 stage 3: https://github.com/tc39/proposal-array-grouping
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -41,7 +47,8 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
       favorites: filteredSessions.filter(
         (session) => filterState.favorites?.includes(session.sessionId),
       ).length,
-    }
+      aiZone: filteredSessions.filter((session) => isAIZoneSession(session.room)).length,
+    } satisfies Statistics
   }, [filterState.favorites, filteredSessions])
 
   const toggleFavorite = (session: Session, isFavorite: boolean) => {

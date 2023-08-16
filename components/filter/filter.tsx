@@ -10,6 +10,7 @@ export interface Filter {
   format?: FormatFilter
   language?: LanguageFilter
   favorites?: string[] // En liste over sessionIds som er favoritter
+  isAIZone?: boolean
 }
 
 export const filter = (sessions: Session[], { weekday, language }: Filter = {}) => {
