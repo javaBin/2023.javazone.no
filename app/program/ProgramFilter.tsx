@@ -66,25 +66,22 @@ export const ProgramFilter = ({
     })
 
   return (
-    <section className="bg-dark-blue-background p-4 grid gap-4 grid-cols-1 lg:grid-cols-2">
+    <section className="bg-dark-blue-background p-4 grid gap-4 grid-cols-1 lg:grid-cols-2 mb-8">
       <div className="col-span-1">
         <p className="bold text-big-text-color">Day</p>
         <Button
-          disabled
           dataActive={filter.weekday === undefined}
           onClick={() => onFilterChange({ weekday: undefined })}
         >
           Both
         </Button>
         <Button
-          disabled
           dataActive={filter.weekday === WEDNESDAY}
           onClick={() => onFilterChange({ weekday: WEDNESDAY })}
         >
           Wednesday
         </Button>
         <Button
-          disabled
           dataActive={filter.weekday === THURSDAY}
           onClick={() => onFilterChange({ weekday: THURSDAY })}
         >

@@ -23,8 +23,8 @@ export const SimpleTalk = ({
           <p>Type: {prettyFormat(format)}</p>
           <p>Language: {prettyLanguage(language)}</p>
           <p>Length: {length} minutes</p>
-          {startTime && <p>{formatter.format(new Date(startTime))}</p>}
-          {endTime && <p>{formatter.format(new Date(endTime))}</p>}
+          {startTime && <p>Start: {formatter.format(new Date(startTime))}</p>}
+          {endTime && <p>End: {formatter.format(new Date(endTime))}</p>}
           {room && <p>{room}</p>}
         </li>
       </Link>
