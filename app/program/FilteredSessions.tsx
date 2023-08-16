@@ -71,7 +71,7 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
               {formatter.format(new Date(time))}
             </h4>
             {sessions
-              .sort((a, b) => a.room!.localeCompare(b.room!))
+              .sort((a, b) => a.room!.localeCompare(b.room!) || a.startTime!.localeCompare(b.startTime!))
               .map((session) => {
                 const isFavorite = filterState.favorites?.includes(session.sessionId) ?? false
                 return (
