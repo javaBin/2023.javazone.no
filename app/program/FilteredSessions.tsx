@@ -37,7 +37,7 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
   // New grouping feature coming soon to JS, in TC39 stage 3: https://github.com/tc39/proposal-array-grouping
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  const groupedSessions: GroupedSessions = sessionsToInclude.groupBy((e: Session) => e.startTime)
+  const groupedSessions: GroupedSessions = sessionsToInclude.groupBy((e: Session) => e.startSlot)
 
   const stats = useMemo(() => {
     return {
@@ -70,20 +70,22 @@ export default function FilteredSessions({ sessions }: FilteredSessionProps) {
             <h4 className="text-2xl leading-9 font-semibold text-big-text-color mb-4">
               {formatter.format(new Date(time))}
             </h4>
-            {sessions.map((session) => {
-              const isFavorite = filterState.favorites?.includes(session.sessionId) ?? false
-              return (
-                <SimpleTalk key={session.sessionId} session={session}>
-                  <button
-                    aria-label={!isFavorite ? 'Add to favorites' : 'Remove from favorites'}
-                    className="self-center text-3xl border-none bg-big-text-color rounded-[10%] px-2"
-                    onClick={() => toggleFavorite(session, isFavorite)}
-                  >
-                    {isFavorite ? '💔' : '❤️'}
-                  </button>
-                </SimpleTalk>
-              )
-            })}
+            {sessions
+              .sort((a, b) => a.room!.localeCompare(b.room!))
+              .map((session) => {
+                const isFavorite = filterState.favorites?.includes(session.sessionId) ?? false
+                return (
+                  <SimpleTalk key={session.sessionId} session={session}>
+                    <button
+                      aria-label={!isFavorite ? 'Add to favorites' : 'Remove from favorites'}
+                      className="self-center text-3xl border-none bg-big-text-color rounded-[10%] px-2"
+                      onClick={() => toggleFavorite(session, isFavorite)}
+                    >
+                      {isFavorite ? '💔' : '❤️'}
+                    </button>
+                  </SimpleTalk>
+                )
+              })}
           </section>
         ))}
     </div>
