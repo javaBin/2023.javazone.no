@@ -8,7 +8,7 @@ export default async function Workshops() {
 
   return <article>
     <Title type="big-title">JavaZone Workshops 2023</Title>
-    <Title>Find your workshop - Registration opens on August 21nd at 12:00</Title>
+    <Title>Find your workshop - Registration opens on August 21st at 12:00</Title>
     <PageBanner/>
     <SessionGroup group={"workshop"} sessions={workshops} />
   </article>
