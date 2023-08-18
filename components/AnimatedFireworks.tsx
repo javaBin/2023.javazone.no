@@ -1,24 +1,38 @@
 'use client'
 
-import Fireworks from "@fireworks-js/react";
-import {useState} from "react";
+import { useEffect, useState } from 'react'
+import dynamic from 'next/dynamic'
+
+const Fireworks = dynamic(() => import('@fireworks-js/react'))
 
 export default function AnimatedFireworks() {
-  /*make a boolean variable called timeout that turns true when 5 seconds has passed */
-  const [timeOver, setTimeOver] = useState(true);
-  setTimeout(() => {
-    setTimeOver(false);
-  }, 5000);
+  const [timeOver, setTimeOver] = useState(false)
 
-  return ( /*if timeout is true, then show the fireworks */
-    timeOver ? (
+  useEffect(() => {
+    const disableAnimation = window.matchMedia('(prefers-reduced-motion)').matches
+
+    if (disableAnimation) {
+      setTimeOver(true)
+      return
+    }
+
+    const timeout = setTimeout(() => {
+      setTimeOver(true)
+    }, 5000)
+
+    return () => clearTimeout(timeout)
+  }, [])
+
+  return (
+    /*if timeout is true, then show the fireworks */
+    !timeOver ? (
       <div>
         <Fireworks
           options={{
             rocketsPoint: {
               min: 0,
-              max: 100
-            }
+              max: 100,
+            },
           }}
           style={{
             top: 0,
@@ -29,11 +43,6 @@ export default function AnimatedFireworks() {
           }}
         />
       </div>
-    )
-      :
-      (
-        <>
-        </>
-      )
+    ) : null
   )
 }
