@@ -7,7 +7,7 @@ export default function Info() {
   return (
     <article>
       <Title type="big-title">General information</Title>
-      <Section>
+      <Section id="javazone101">
         <Title>JavaZone 101 - The Who, What and Where</Title>
         <p className="mb-4">
           JavaZone – the biggest European community-driven conference for modern developers will be
@@ -52,7 +52,7 @@ export default function Info() {
           Spektrum - entrance 3 (and thus walk straight past the queue on Wednesday)
         </p>
       </Section>
-      <Section>
+      <Section id="conference-days">
         <Title>Two conference days</Title>
         <p className="mb-4">
           Two days full of talks from renowned Norwegian and international speakers, in varying
@@ -64,15 +64,16 @@ export default function Info() {
         </p>
         <p className="mb-4">The last talk will be finished at 18:00 on Thursday September 7th.</p>
       </Section>
-      <Section>
+      <Section id="afterparty">
         <Title>An afterparty to remember</Title>
         <p className="mb-4">
           After a long day of unique learning experiences, it feels good to chill out with some good
           food and drink. JavaZone parties are legendary - and we can promise something amazing for
-          our afterparty this year as well! Scroll down for more information about AweZone!
+          our afterparty this year as well! Scroll down for more information about{' '}
+          <Link href={'#awezone'}>AweZone!</Link>
         </p>
       </Section>
-      <Section>
+      <Section id="workshops">
         <Title>Hands-on workshops</Title>
         <p className="mb-4">
           Do you prefer practical tasks more than theory? Take part in one of our great workshops
@@ -82,14 +83,14 @@ export default function Info() {
           <Link href={'/workshops'}>https://2023.javazone.no/workshops</Link>
         </p>
       </Section>
-      <Section>
+      <Section id="love-at-javazone">
         <Title>...And a whole lotta love ❤️</Title>
         <p>
           You will meet lots of interesting people at JavaZone! Grab your coffee (or tea) and mingle
           away!
         </p>
       </Section>
-      <Section>
+      <Section id="program">
         <Title>The JavaZone Program</Title>
         <p className="mb-4">
           The full program is available at{' '}
@@ -106,7 +107,7 @@ export default function Info() {
           understanding of a concept than lightning talks.
         </p>
       </Section>
-      <Section>
+      <Section id="awezone">
         <Title>AweZone: Celebrating the community</Title>
         <p className="mb-4">
           AweZone is JavaZone&apos;s traditional party which takes place on Wednesday evening.
@@ -118,8 +119,8 @@ export default function Info() {
         <p className="mb-4">
           On Wednesday, we will be starting the pre-party at Oslo Spektrum at 19:20. At 20:00, we
           will be leaving Oslo Spektrum together and moving towards Youngstorget, and the best geeky
-          super-party ever – AweZone! We will be spending the evening at Tukthuset, Himkok, and
-          Kulturhuset.
+          super-party ever – AweZone! We will be spending the evening at <strong>Tukthuset</strong>,{' '}
+          <strong>Himkok</strong>, and <strong>Kulturhuset</strong>.
         </p>
         <p className="mb-4">
           You will be able to enjoy the drinks, stay in the chill-out areas, participate in
@@ -131,7 +132,7 @@ export default function Info() {
           are on us, some will be on our partners!
         </p>
       </Section>
-      <Section>
+      <Section id="principles">
         <Title>A few very important principles</Title>
         <p className="mb-4">
           JavaZone is a 100% community-organized conference created by javaBin. The program is
@@ -166,7 +167,7 @@ export default function Info() {
         </p>
       </Section>
 
-      <Section>
+      <Section id="food">
         <Title>Food</Title>
         <p className="mb-4">More information coming.</p>
         <Image
@@ -177,7 +178,7 @@ export default function Info() {
         />
       </Section>
 
-      <Section>
+      <Section id="sustainability">
         <Title>Sustainable waste management and recycling at JavaZone</Title>
         <p className="mb-4">
           In an era where environmental consciousness is at the forefront, responsible waste
@@ -210,7 +211,7 @@ export default function Info() {
         </p>
       </Section>
 
-      <Section>
+      <Section id="questions">
         <Title>Questions?</Title>
         <p className="mb-4">
           Do not hesitate to contact us if you have any questions. Contact us at{' '}
