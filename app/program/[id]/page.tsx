@@ -100,13 +100,13 @@ export default async function Page({
       <p>{dayAndTime ? getDayAndTime(session) : 'Coming soon'}</p>
 
       <Title type="program">Intended audience</Title>
-      <p>{session.intendedAudience}</p>
+      <p className="whitespace-pre-line">{session.intendedAudience}</p>
 
       <ul>
         {session.speakers.map((speaker) => (
           <li key={speaker.name} className="my-4 list-none">
             <Title type="program">{speaker.name}</Title>
-            <p>{speaker.bio}</p>
+            <p className="whitespace-pre-line">{speaker.bio}</p>
             {!!speaker.twitter && (
               <a href={`https://twitter.com/${speaker.twitter}`}>
                 <div className="inline-flex items-center gap-1">
