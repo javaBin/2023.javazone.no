@@ -35,7 +35,7 @@ export default function Info() {
           height={600}
         />
       </Section>
-      <Section>
+      <Section id="claim-your-tickets">
         <Title>Claiming your ticket</Title>
         <p className="mb-4">
           As the previous years we are all sold out . If you are one of the lucky to be a ticket
