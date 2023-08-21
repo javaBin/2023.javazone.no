@@ -109,7 +109,7 @@ export default function Info() {
       <Section>
         <Title>AweZone: Celebrating the community</Title>
         <p className="mb-4">
-          AweZone is JavaZone's traditional party which takes place on Wednesday evening.
+          AweZone is JavaZone&apos;s traditional party which takes place on Wednesday evening.
         </p>
         <p className="mb-4">
           The party offers a great chance to catch up with old friends, meet new ones, and also
@@ -193,7 +193,7 @@ export default function Info() {
         </p>
         <p className="mb-4">
           One notable aspect of this waste management initiative is the sorting and collection of
-          beverage containers for deposit refund, known as "pant" in Norway. The bottles and cans
+          beverage containers for deposit refund, known as &quot;pant&quot; in Norway. The bottles and cans
           are systematically collected, sorted, and sent for recycling, embodying the ethos of
           resource efficiency.
         </p>
