@@ -12,7 +12,7 @@ export default async function ProgramPage() {
   return (
     <article>
       <Title type="big-title">JavaZone Program 2023</Title>
-      <p className="mb-4">Psst..🦻 do you want mark sessions as favorite for you to follow? Press the ❤️ icon and filter by &quot;My favorites&quot;. Your favorites is stored locally in your browser.</p>
+      <p className="mb-4">Psst..🦻 do you want mark sessions as favorite for you to follow? Press the ❤️ icon on any session and filter by &quot;My favorites&quot;. Your favorites is stored locally in your browser.</p>
       <FilteredSessions sessions={sessions} />
     </article>
   )
