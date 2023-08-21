@@ -34,10 +34,10 @@ export default function Home() {
         </div>
         <div>
           <div>
-            <Link href="/program">Program</Link> is now ready! 🚀
+            <Link href="/program">Program  is now ready! 🚀</Link>
           </div>
-          <div className="font-bold">
-            NB! Want to be a partner? Click <Link href="/partners">here</Link>
+          <div>
+            <Link href="/info">General information can be found here</Link>
           </div>
         </div>
         <div className="flex justify-center mt-6">
