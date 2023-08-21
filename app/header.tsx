@@ -31,6 +31,7 @@ type BurgerProps = {
   setActive: (b: boolean) => void
 }
 const paths = [
+  { text: 'Info', href: '/info' },
   { text: 'Partners', href: '/partners' },
   { text: 'Speakers', href: '/speakers' },
   { text: 'Program', href: '/program' },
