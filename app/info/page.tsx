@@ -193,9 +193,9 @@ export default function Info() {
         </p>
         <p className="mb-4">
           One notable aspect of this waste management initiative is the sorting and collection of
-          beverage containers for deposit refund, known as &quot;pant&quot; in Norway. The bottles and cans
-          are systematically collected, sorted, and sent for recycling, embodying the ethos of
-          resource efficiency.
+          beverage containers for deposit refund, known as &quot;pant&quot; in Norway. The bottles
+          and cans are systematically collected, sorted, and sent for recycling, embodying the ethos
+          of resource efficiency.
         </p>
         <p className="mb-4">
           Considerable portions of waste generated during JavaZone are earmarked for recycling.
@@ -213,8 +213,9 @@ export default function Info() {
       <Section>
         <Title>Questions?</Title>
         <p className="mb-4">
-          Do not hesitate to contact us if you have any questions. Contact us at <Link href="mailto:javazone@java.no">javazone@java.no</Link>
-          and we’ll try our best to give you an answer.
+          Do not hesitate to contact us if you have any questions. Contact us at{' '}
+          <Link href="mailto:javazone@java.no">javazone@java.no</Link> and we’ll try our best to
+          give you an answer.
         </p>
         <p className="mb-4">We are looking forward to seeing you at JavaZone 2023!</p>
       </Section>
