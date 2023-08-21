@@ -213,7 +213,7 @@ export default function Info() {
       <Section>
         <Title>Questions?</Title>
         <p className="mb-4">
-          Do not hesitate to contact us if you have any questions. Contact us at javazone@java.no
+          Do not hesitate to contact us if you have any questions. Contact us at <Link href="mailto:javazone@java.no">javazone@java.no</Link>
           and we’ll try our best to give you an answer.
         </p>
         <p className="mb-4">We are looking forward to seeing you at JavaZone 2023!</p>
