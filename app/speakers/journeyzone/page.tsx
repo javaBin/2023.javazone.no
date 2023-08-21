@@ -76,11 +76,6 @@ export default function JourneyZonePage() {
         width={1000}
         height={200}
       />
-
-      <Section>
-        <Title type="subtitle">How to apply</Title>
-        <p>We will send info to all accepted speakers with details on how to apply</p>
-      </Section>
     </Section>
   )
 }
