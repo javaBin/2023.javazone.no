@@ -2,7 +2,6 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import AnimatedDivider from '../components/AnimatedDivider'
 import AnimatedHero from '../components/AnimatedHero'
-import AnimatedFireworks from '../components/AnimatedFireworks'
 import Image from 'next/image'
 import React from 'react'
 import { Title } from '@/components/title/Title'
@@ -21,7 +20,6 @@ export default function Home() {
 
         <div className="flex justify-center">
           <AnimatedDivider />
-          <AnimatedFireworks />
         </div>
 
         <Title type="big-title">
