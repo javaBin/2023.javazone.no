@@ -172,7 +172,7 @@ export default function Info() {
         <p className="mb-4"><Link href={"/food"}>Read more about food served at JavaZone.</Link></p>
         <Image
           src={'/images/JavaZone2022Donut.jpeg'}
-          alt={'A lot of people inside the conference main area'}
+          alt={'A lot of donuts on tables with people in the background'}
           width={1200}
           height={600}
         />
