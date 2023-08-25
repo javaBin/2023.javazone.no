@@ -169,7 +169,7 @@ export default function Info() {
 
       <Section id="food">
         <Title>Food</Title>
-        <p className="mb-4">More information coming.</p>
+        <p className="mb-4"><Link href={"/food"}>Read more about food served at JavaZone.</Link></p>
         <Image
           src={'/images/JavaZone2022Donut.jpeg'}
           alt={'A lot of people inside the conference main area'}
