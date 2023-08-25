@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import { formatter, prettyFormat, prettyLanguage } from './utils'
-import { Session } from '@/app/program/program'
+import { Session } from '@/app/(main)/program/program'
 import Link from 'next/link'
 import { Title } from '@/components/title/Title'
 

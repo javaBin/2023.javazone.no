@@ -1,5 +1,5 @@
 import { filter, useFilter, Filter } from './filter';
-import { Session } from "@/app/program/program";
+import { Session } from "@/app/(main)/program/program";
 
 // Dummy data for testing
 const dummySessions: Session[] = [

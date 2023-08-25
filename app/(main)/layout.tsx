@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import '../styles/globals.css'
+import '../../styles/globals.css'
 import { Footer } from './footer'
 import { Header } from './header'
 import { Metadata } from 'next'

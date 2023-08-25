@@ -1,6 +1,6 @@
 'use client'
 
-import '../../styles/globals.css'
+import '../../../styles/globals.css'
 import Image from 'next/image'
 import { Title } from "@/components/title/Title";
 

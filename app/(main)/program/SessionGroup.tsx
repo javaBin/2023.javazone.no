@@ -1,6 +1,6 @@
 import { prettyFormat } from './utils'
-import { Session, SessionFormat } from '@/app/program/program'
-import { SimpleTalk } from '@/app/program/SimpleTalk'
+import { Session, SessionFormat } from '@/app/(main)/program/program'
+import { SimpleTalk } from '@/app/(main)/program/SimpleTalk'
 import { Title } from '@/components/title/Title'
 import { Link } from '@/components/link/Link'
 

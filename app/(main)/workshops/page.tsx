@@ -1,5 +1,5 @@
-import { SessionGroup } from "@/app/program/SessionGroup";
-import { fetchProgram } from "@/app/program/fetchProgram";
+import { SessionGroup } from "@/app/(main)/program/SessionGroup";
+import { fetchProgram } from "@/app/(main)/program/fetchProgram";
 import PageBanner from "@/components/PageBanner";
 import { Title } from "@/components/title/Title";
 

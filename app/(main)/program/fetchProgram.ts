@@ -1,4 +1,4 @@
-import { Program } from '@/app/program/program'
+import { Program } from '@/app/(main)/program/program'
 
 interface NextRevalidateConfig {
   revalidate?: false | number

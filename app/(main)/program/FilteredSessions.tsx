@@ -1,12 +1,12 @@
 'use client'
 
 import 'core-js/actual/array/group-by'
-import { Session } from '@/app/program/program'
+import { Session } from '@/app/(main)/program/program'
 import { filter, useFilter } from '@/components/filter/filter'
-import { SimpleTalk } from '@/app/program/SimpleTalk'
-import { ProgramFilter, Statistics } from '@/app/program/ProgramFilter'
+import { SimpleTalk } from '@/app/(main)/program/SimpleTalk'
+import { ProgramFilter, Statistics } from '@/app/(main)/program/ProgramFilter'
 import { useMemo } from 'react'
-import { formatter } from '@/app/program/utils'
+import { formatter } from '@/app/(main)/program/utils'
 import { Title } from "@/components/title/Title";
 
 interface FilteredSessionProps {

@@ -1,4 +1,4 @@
-import { fetchProgram } from '@/app/program/fetchProgram'
+import { fetchProgram } from '@/app/(main)/program/fetchProgram'
 import { Title } from '@/components/title/Title'
 import dynamic from 'next/dynamic'
 

@@ -1,4 +1,4 @@
-import { Session, SessionFormat, SessionLanguage } from '@/app/program/program'
+import { Session, SessionFormat, SessionLanguage } from '@/app/(main)/program/program'
 import { useCallback, useState } from 'react'
 
 
