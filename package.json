@@ -19,7 +19,7 @@
     "core-js": "^3.32.0",
     "lottie-react": "^2.4.0",
     "next": "13.4.9",
-    "next-sitemap": "^4.1.8",
+    "next-sitemap": "^4.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
