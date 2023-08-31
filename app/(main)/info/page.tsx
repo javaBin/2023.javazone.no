@@ -169,7 +169,9 @@ export default function Info() {
 
       <Section id="food">
         <Title>Food</Title>
-        <p className="mb-4"><Link href={"/food"}>Read more about food served at JavaZone.</Link></p>
+        <p className="mb-4">
+          <Link href={'/food'}>Read more about food served at JavaZone.</Link>
+        </p>
         <Image
           src={'/images/JavaZone2022Donut.jpeg'}
           alt={'A lot of donuts on tables with people in the background'}
@@ -218,6 +220,25 @@ export default function Info() {
           <Link href="mailto:javazone@java.no">javazone@java.no</Link> and we’ll try our best to
           give you an answer.
         </p>
+        <div className="inline-flex">
+          <a href="https://apps.apple.com/us/app/javazone/id384888388">
+            <Image
+              src="/icons/download-app-store.svg"
+              alt="Download the JavaZone app on the App Store"
+              width={250}
+              height={48}
+            />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=no.javazone.scheduler">
+            <Image
+              src="/icons/google-play-badge.png"
+              alt="Download the JavaZone app on the Google Play"
+              width={250}
+              height={48}
+            />
+          </a>
+        </div>
+
         <p className="mb-4">We are looking forward to seeing you at JavaZone 2023!</p>
       </Section>
     </article>
