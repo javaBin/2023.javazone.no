@@ -220,7 +220,7 @@ export default function Info() {
           <Link href="mailto:javazone@java.no">javazone@java.no</Link> and we’ll try our best to
           give you an answer.
         </p>
-        <div className="inline-flex">
+        <div className="inline-flex items-center">
           <a href="https://apps.apple.com/us/app/javazone/id384888388">
             <Image
               src="/icons/download-app-store.svg"
