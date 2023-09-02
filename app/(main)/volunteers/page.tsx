@@ -16,7 +16,7 @@ export default function VolunteersPage() {
 
   return (
     <div>
-      <Title className="text-center">Bli frivillig på JavaZone</Title>
+      <Title type="big-title" className="text-center">Bli frivillig på JavaZone</Title>
       <p className="text-center text-xl font-semibold text-big-text-color mb-6">
         Information in Norwegian for potential student volunteers
       </p>
