@@ -6,7 +6,7 @@ import { Section } from '@/components/section/Section'
 export default function JourneyZonePage() {
   return (
     <Section>
-      <Title type="title">JourneyZone 2023</Title>
+      <Title type="big-title">JourneyZone 2023</Title>
 
       <Section>
         <Title type="subtitle">What is this?</Title>
