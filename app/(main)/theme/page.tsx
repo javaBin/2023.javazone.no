@@ -16,7 +16,7 @@ export default function Theme() {
 
   return (
     <div>
-      <Title>
+      <Title type="big-title">
         Dear JavaZone community, We are excited to announce that this year’s JavaZone conference
         theme is Circus!
       </Title>
