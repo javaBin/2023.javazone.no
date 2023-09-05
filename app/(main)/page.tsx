@@ -25,7 +25,7 @@ export default function Home() {
         <Title type="big-title">
           Welcome to The Amazing JavaZone 6-7 September in Oslo Spektrum
         </Title>
-        <Title type="subtitle">Join the Discord: <Link href={"https://discord.javazone.no"}>discord.javazone.no</Link></Title>
+        <Title type="subtitle">Join the Discord: <Link href={"https://discord.javazone.no"}>discord.javazone.no</Link> 🔥</Title>
         <div className={'mb-4'}>
           <p>Conference: September 6-7, 2023</p>
           <p>Workshop: September 5, 2023</p>
