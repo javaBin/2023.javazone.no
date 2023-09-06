@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Title } from '@/components/title/Title'
 
 export const SimpleTalk = ({
-  session: { endTime, format, language, room, speakers, startTime, title, id, length },
+  session: { endTime, format, language, room, speakers, startTime, title, id, length,video },
   children,
 }: {
   session: Session
@@ -26,6 +26,7 @@ export const SimpleTalk = ({
           {startTime && <p>Start: {formatter.format(new Date(startTime))}</p>}
           {endTime && <p>End: {formatter.format(new Date(endTime))}</p>}
           {room && <p>{room}</p>}
+          {video && <p>🎥 Video available</p>}
         </li>
       </Link>
       {children}

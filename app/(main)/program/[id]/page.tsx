@@ -86,6 +86,18 @@ export default async function Page({
       <p>
         <b>Room:</b> {session.room ? session.room : 'Coming soon'}
       </p>
+      {session.video && (
+        <div className="pt-[56.25%] relative h-0">
+          <iframe
+            className="border-0 absolute top-0 left-0"
+            title="program video"
+            src={`https://player.vimeo.com/video/${session.video}`}
+            allowFullScreen
+            width={"100%"}
+            height={"100%"}
+          ></iframe>
+        </div>
+      )}
       <Title type="program">Abstract</Title>
       <p className="whitespace-pre-line">{session.abstract}</p>
 
